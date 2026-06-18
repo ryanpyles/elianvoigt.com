@@ -1,0 +1,189 @@
+[
+  {
+    "id": "marg-001",
+    "text": "Við megum ekki nefna það sem tekur okkur.",
+    "language": "Icelandic",
+    "translation": "We must not name what takes us.",
+    "handwrittenStyle": "shaky",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-17",
+    "damaged": true
+  },
+  {
+    "id": "marg-002",
+    "text": "The water remembers syntax.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "urgent",
+    "placement": "margin_left",
+    "opacity": 0.08,
+    "associatedDocument": "declensions-of-dark-water",
+    "damaged": false
+  },
+  {
+    "id": "marg-003",
+    "text": "Hvað gerist þegar við þönum út formið?",
+    "language": "Icelandic",
+    "translation": "What happens when we stretch the form?",
+    "handwrittenStyle": "careful",
+    "placement": "margin_bottom",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-26",
+    "damaged": false
+  },
+  {
+    "id": "marg-004",
+    "text": "He didn't drown. He was misdeclined.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "rushed",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-18",
+    "damaged": true
+  },
+  {
+    "id": "marg-005",
+    "text": "Þeir komu of snemma á þessu ári.",
+    "language": "Icelandic",
+    "translation": "They arrived too early this year.",
+    "handwrittenStyle": "uncertain",
+    "placement": "margin_left",
+    "opacity": 0.08,
+    "associatedDocument": "summer-of-the-glass-bees",
+    "damaged": false
+  },
+  {
+    "id": "marg-006",
+    "text": "Check ledger line 44.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "careful",
+    "placement": "margin_bottom",
+    "opacity": 0.08,
+    "associatedDocument": "what-survives-is-proof",
+    "damaged": false
+  },
+  {
+    "id": "marg-007",
+    "text": "Ekki nota eignarfall.",
+    "language": "Icelandic",
+    "translation": "Do not use the genitive.",
+    "handwrittenStyle": "urgent",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-20",
+    "damaged": true
+  },
+  {
+    "id": "marg-008",
+    "text": "The cost of unbinding is too high.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "shaky",
+    "placement": "margin_left",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-21",
+    "damaged": false
+  },
+  {
+    "id": "marg-009",
+    "text": "Sæfangi krefst stutts andardráttar.",
+    "language": "Icelandic",
+    "translation": "Sæfangi requires a short breath.",
+    "handwrittenStyle": "careful",
+    "placement": "margin_bottom",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-22",
+    "damaged": false
+  },
+  {
+    "id": "marg-010",
+    "text": "The silence spans 4 seconds here.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "uncertain",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-24",
+    "damaged": true
+  },
+  {
+    "id": "marg-011",
+    "text": "Fjögur bönn, fjögur mistök.",
+    "language": "Icelandic",
+    "translation": "Four prohibitions, four mistakes.",
+    "handwrittenStyle": "rushed",
+    "placement": "margin_left",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-25",
+    "damaged": false
+  },
+  {
+    "id": "marg-012",
+    "text": "The lease rewrites the tenant.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "urgent",
+    "placement": "margin_bottom",
+    "opacity": 0.08,
+    "associatedDocument": "terms-of-unbeing",
+    "damaged": true
+  },
+  {
+    "id": "marg-013",
+    "text": "Þögnin er aðal skjalið.",
+    "language": "Icelandic",
+    "translation": "The silence is the primary document.",
+    "handwrittenStyle": "careful",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "administrative-uses-of-silence",
+    "damaged": false
+  },
+  {
+    "id": "marg-014",
+    "text": "Winter is frozen upon us.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "shaky",
+    "placement": "margin_left",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-23",
+    "damaged": true
+  },
+  {
+    "id": "marg-015",
+    "text": "Við erum öll flokkuð sem frávik.",
+    "language": "Icelandic",
+    "translation": "We are all classified as anomalies.",
+    "handwrittenStyle": "uncertain",
+    "placement": "margin_bottom",
+    "opacity": 0.08,
+    "associatedDocument": "vikamal-coastal-grammar",
+    "damaged": false
+  },
+  {
+    "id": "marg-016",
+    "text": "They took the records, but left the shadows.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "rushed",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "archival-index-what-survives",
+    "damaged": false
+  },
+  {
+    "id": "marg-017",
+    "text": "post-Eighth contamination detected.",
+    "language": "English",
+    "translation": null,
+    "handwrittenStyle": "rushed",
+    "placement": "margin_right",
+    "opacity": 0.08,
+    "associatedDocument": "field-note-004-26",
+    "damaged": false
+  }
+]

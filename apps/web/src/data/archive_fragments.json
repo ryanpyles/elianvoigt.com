@@ -1,0 +1,352 @@
+[
+  {
+    "id": "frag-001",
+    "text": "Storms arrive after misdeclensions.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_bottom",
+    "relatedTo": "declensions-of-dark-water",
+    "language": "English",
+    "damaged": true
+  },
+  {
+    "id": "frag-002",
+    "text": "19██-11-04T03:14:00Z",
+    "type": "timestamps",
+    "opacity": 0.12,
+    "placement": "metadata_block",
+    "relatedTo": "field-note-004-17",
+    "language": "System",
+    "damaged": true
+  },
+  {
+    "id": "frag-003",
+    "text": "BX-441-A",
+    "type": "catalog_numbers",
+    "opacity": 0.15,
+    "placement": "corner",
+    "relatedTo": "field-note-004-18",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-004",
+    "text": "65.9°N 21.8°W",
+    "type": "coordinates",
+    "opacity": 0.1,
+    "placement": "margin_right",
+    "relatedTo": "declensions-of-dark-water",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-005",
+    "text": "RESTRICTED CIRCULATION",
+    "type": "archival_stamps",
+    "opacity": 0.09,
+    "placement": "corner",
+    "relatedTo": "vikamal-coastal-grammar",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-006",
+    "text": "[Salt water damage. Ink bleeding into margins.]",
+    "type": "restoration_notes",
+    "opacity": 0.11,
+    "placement": "footer",
+    "relatedTo": "field-note-004-23",
+    "language": "English",
+    "damaged": true
+  },
+  {
+    "id": "frag-007",
+    "text": "What Evan leaves behind is not grief in any ordinary sense.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_top",
+    "relatedTo": "what-survives-is-proof",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-008",
+    "text": "MUNICIPAL HOLD 004.17b",
+    "type": "catalog_numbers",
+    "opacity": 0.14,
+    "placement": "margin_left",
+    "relatedTo": "field-note-004-17",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-009",
+    "text": "1994.04.12 14:00",
+    "type": "timestamps",
+    "opacity": 0.1,
+    "placement": "metadata_block",
+    "relatedTo": "administrative-uses-of-silence",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-010",
+    "text": "PARTIAL RECONSTRUCTION",
+    "type": "archival_stamps",
+    "opacity": 0.12,
+    "placement": "corner",
+    "relatedTo": "vikamal-coastal-grammar",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-011",
+    "text": "[Page torn along the binding]",
+    "type": "restoration_notes",
+    "opacity": 0.1,
+    "placement": "footer",
+    "relatedTo": "recovered-glossary-brynjavik",
+    "language": "English",
+    "damaged": true
+  },
+  {
+    "id": "frag-012",
+    "text": "COAST/17/UNTRANSLATED",
+    "type": "catalog_numbers",
+    "opacity": 0.15,
+    "placement": "margin_right",
+    "relatedTo": "field-note-004-19",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-013",
+    "text": "Memory can be archived without being kept.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_bottom",
+    "relatedTo": "summer-of-the-glass-bees",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-014",
+    "text": "65.91°N 21.84°W",
+    "type": "coordinates",
+    "opacity": 0.09,
+    "placement": "margin_left",
+    "relatedTo": "field-note-004-20",
+    "language": "System",
+    "damaged": true
+  },
+  {
+    "id": "frag-015",
+    "text": "2001.02.18 03:00",
+    "type": "timestamps",
+    "opacity": 0.12,
+    "placement": "metadata_block",
+    "relatedTo": "untranslated-notes-vestfirdir",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-016",
+    "text": "UNTRANSLATED",
+    "type": "archival_stamps",
+    "opacity": 0.1,
+    "placement": "corner",
+    "relatedTo": "untranslated-notes-vestfirdir",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-017",
+    "text": "RITUAL/AFLENDING/004.21",
+    "type": "catalog_numbers",
+    "opacity": 0.14,
+    "placement": "metadata_block",
+    "relatedTo": "field-note-004-21",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-018",
+    "text": "[Text entirely obscured by mold]",
+    "type": "restoration_notes",
+    "opacity": 0.11,
+    "placement": "footer",
+    "relatedTo": "field-note-004-19",
+    "language": "English",
+    "damaged": true
+  },
+  {
+    "id": "frag-019",
+    "text": "Each choice has a fee; each refusal risks foreclosure of the self.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_right",
+    "relatedTo": "terms-of-unbeing",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-020",
+    "text": "1998.11.03",
+    "type": "timestamps",
+    "opacity": 0.1,
+    "placement": "margin_left",
+    "relatedTo": "recovered-glossary-brynjavik",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-021",
+    "text": "MEMORIAL/004.20",
+    "type": "catalog_numbers",
+    "opacity": 0.15,
+    "placement": "margin_top",
+    "relatedTo": "field-note-004-20",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-022",
+    "text": "66.0°N 22.0°W (Drifting)",
+    "type": "coordinates",
+    "opacity": 0.09,
+    "placement": "margin_bottom",
+    "relatedTo": "field-note-004-21",
+    "language": "System",
+    "damaged": true
+  },
+  {
+    "id": "frag-023",
+    "text": "RECOVERED",
+    "type": "archival_stamps",
+    "opacity": 0.12,
+    "placement": "corner",
+    "relatedTo": "field-note-004-22",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-024",
+    "text": "[Translation disputed by second archivist]",
+    "type": "restoration_notes",
+    "opacity": 0.11,
+    "placement": "footer",
+    "relatedTo": "field-note-004-24",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-025",
+    "text": "The data survives. The texture does not.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_left",
+    "relatedTo": "summer-of-the-glass-bees",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-026",
+    "text": "FUNERARY/SÆFANGI/004.22",
+    "type": "catalog_numbers",
+    "opacity": 0.14,
+    "placement": "metadata_block",
+    "relatedTo": "field-note-004-22",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-027",
+    "text": "2005.09.22 23:45",
+    "type": "timestamps",
+    "opacity": 0.1,
+    "placement": "margin_right",
+    "relatedTo": "three-incorrect-definitions-mercy",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-028",
+    "text": "ACTIVE DIRECTIVE",
+    "type": "archival_stamps",
+    "opacity": 0.12,
+    "placement": "corner",
+    "relatedTo": "field-note-004-25",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-029",
+    "text": "[Ink degraded by atmospheric dampness]",
+    "type": "restoration_notes",
+    "opacity": 0.1,
+    "placement": "footer",
+    "relatedTo": "field-note-004-26",
+    "language": "English",
+    "damaged": true
+  },
+  {
+    "id": "frag-030",
+    "text": "SEASONAL/HRIMFALL/004.23",
+    "type": "catalog_numbers",
+    "opacity": 0.15,
+    "placement": "margin_top",
+    "relatedTo": "field-note-004-23",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-031",
+    "text": "It isn't a confession. It's a relay.",
+    "type": "hidden_lines",
+    "opacity": 0.08,
+    "placement": "margin_bottom",
+    "relatedTo": "what-survives-is-proof",
+    "language": "English",
+    "damaged": false
+  },
+  {
+    "id": "frag-032",
+    "text": "65.88°N 21.82°W",
+    "type": "coordinates",
+    "opacity": 0.09,
+    "placement": "margin_right",
+    "relatedTo": "vikamal-coastal-grammar",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-033",
+    "text": "2010.06.14 09:00",
+    "type": "timestamps",
+    "opacity": 0.1,
+    "placement": "margin_left",
+    "relatedTo": "archival-index-what-survives",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-034",
+    "text": "SYNTAX/SILENCE/004.24",
+    "type": "catalog_numbers",
+    "opacity": 0.14,
+    "placement": "metadata_block",
+    "relatedTo": "field-note-004-24",
+    "language": "System",
+    "damaged": false
+  },
+  {
+    "id": "frag-035",
+    "text": "[Marginalia completely redacted by black ink]",
+    "type": "restoration_notes",
+    "opacity": 0.11,
+    "placement": "footer",
+    "relatedTo": "terms-of-unbeing",
+    "language": "English",
+    "damaged": true
+  }
+]
