@@ -8,11 +8,34 @@ import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-res
 import pocketbaseAuthPlugin from './plugins/vite-plugin-pocketbase-auth.js';
 
 import { readFileSync } from 'node:fs';
+import { pathToFileURL } from 'node:url';
 
 const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'));
 const allDeps = Object.keys(pkg.dependencies || {});
 
 const isDev = process.env.NODE_ENV !== 'production';
+
+// Dev-only: serve the /api/substack serverless function (which Vercel runs in
+// production) through Vite's middleware so the feed works in local dev too.
+const substackDevApi = {
+	name: 'substack-dev-api',
+	configureServer(server) {
+		server.middlewares.use('/api/substack', async (req, res) => {
+			const shim = {
+				setHeader: (k, v) => res.setHeader(k, v),
+				status: (c) => { res.statusCode = c; return shim; },
+				json: (o) => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(o)); },
+			};
+			try {
+				const mod = await import(pathToFileURL(path.resolve(__dirname, '../../api/substack.js')).href);
+				await (mod.default || mod)(req, shim);
+			} catch (e) {
+				res.statusCode = 500;
+				res.end(JSON.stringify({ ok: false, error: String((e && e.message) || e) }));
+			}
+		});
+	},
+};
 
 const configHorizonsViteErrorHandler = `
 const observer = new MutationObserver((mutations) => {
@@ -290,7 +313,7 @@ export default defineConfig({
 	},
 	customLogger: logger,
 	plugins: [
-		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), selectionModePlugin(), iframeRouteRestorationPlugin(), pocketbaseAuthPlugin()] : []),
+		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), selectionModePlugin(), iframeRouteRestorationPlugin(), pocketbaseAuthPlugin(), substackDevApi] : []),
 		react(),
 		addTransformIndexHtml
 	],

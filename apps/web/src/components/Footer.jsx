@@ -1,43 +1,59 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { links, imprintNote, primaryMessage } from '@/data/siteContent.js';
 
 export default function Footer() {
+  const reviewHref = `mailto:${links.pressEmail}?subject=${encodeURIComponent('Review copy request — Elian Voigt')}`;
+  const contactHref = `mailto:${links.contactEmail}?subject=${encodeURIComponent('A note for Elian Voigt')}`;
+
   return (
-    <footer className="bg-background py-12 mt-24">
+    <footer className="bg-background pt-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-border/30 pt-12">
         <div className="md:col-span-2 space-y-4">
-          <Link to="/" className="flex flex-col group inline-block">
+          <Link to="/" className="inline-block group">
             <span className="font-serif text-2xl tracking-widest uppercase group-hover:text-muted-foreground transition-colors">
               Elian Voigt
             </span>
           </Link>
           <p className="font-serif text-sm text-muted-foreground max-w-md leading-relaxed">
-            Elian Voigt is the literary fiction identity of FORMÆTRIX Imprint, publishing novels about language, memory, grief, archives, ritual, bureaucracy, and the strange machinery beneath ordinary life.
+            {primaryMessage}
           </p>
+          <p className="ev-catalog-no italic pt-2">{imprintNote}</p>
         </div>
-        
+
         <div className="space-y-4">
-          <h3 className="metadata-label">Archive</h3>
+          <h3 className="ev-eyebrow">Read</h3>
           <ul className="space-y-2 metadata-text">
-            <li><Link to="/archive" className="hover:text-muted-foreground transition-colors">Index</Link></li>
-            <li><Link to="/archive/field-notes" className="hover:text-muted-foreground transition-colors">Field Notes</Link></li>
-            <li><Link to="/archive/taxonomy" className="hover:text-muted-foreground transition-colors">Taxonomy</Link></li>
+            <li><a href="#latest" className="hover:text-foreground transition-colors">Latest release</a></li>
+            <li><a href="#reading-order" className="hover:text-foreground transition-colors">Reading order</a></li>
+            <li><Link to="/publishing-catalogue" className="hover:text-foreground transition-colors">Full catalogue</Link></li>
+            <li><Link to="/archive/field-notes" className="hover:text-foreground transition-colors">Field notes</Link></li>
           </ul>
         </div>
 
         <div className="space-y-4">
-          <h3 className="metadata-label">Institutional</h3>
+          <h3 className="ev-eyebrow">Subscribe &amp; Press</h3>
           <ul className="space-y-2 metadata-text">
-            <li><Link to="/about" className="hover:text-muted-foreground transition-colors">About</Link></li>
-            <li><Link to="/privacy" className="hover:text-muted-foreground transition-colors">Privacy Policy</Link></li>
-            <li><a href="https://formatrix.press" target="_blank" rel="noopener noreferrer" className="hover:text-muted-foreground transition-colors">FORMÆTRIX Imprint</a></li>
+            <li>
+              <a href={links.substack} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                Substack
+              </a>
+            </li>
+            <li><a href="#subscribe" className="hover:text-foreground transition-colors">Reader list</a></li>
+            <li><a href={reviewHref} className="hover:text-foreground transition-colors">Request review copy</a></li>
+            <li><a href={contactHref} className="hover:text-foreground transition-colors">Contact</a></li>
+            <li>
+              <a href={links.imprint} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                FORMÆTRIX Imprint
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-6 footer-attribution">
         <div className="metadata-text" style={{ margin: 0 }}>© 2026 ELIAN VOIGT / FORMÆTRIX IMPRINT.</div>
-        <div className="metadata-text" style={{ margin: 0 }}>CUSTODIAL RECORD: RYAN J. PYLES.</div>
+        <div className="metadata-text opacity-40" style={{ margin: 0 }}>CUSTODIAL RECORD: RYAN J. PYLES.</div>
         <div className="metadata-text opacity-40" style={{ margin: 0 }}>ALL RIGHTS RESERVED.</div>
       </div>
     </footer>

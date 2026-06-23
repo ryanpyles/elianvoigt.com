@@ -37,7 +37,15 @@
     --sterilized-clean: 0 0% 98%;
     --contractual-dense: 40 10% 92%;
     --forensic-sparse: 0 0% 95%;
-    
+
+    /* Elian Voigt artifact palette — black, ivory, deep red, tarnished gold */
+    --ev-ink: 30 12% 7%;        /* near-black */
+    --ev-ivory: 40 30% 95%;     /* page ivory */
+    --ev-blood: 0 56% 31%;      /* deep red / oxblood */
+    --ev-blood-bright: 0 50% 42%;
+    --ev-gold: 41 42% 41%;      /* tarnished / antique gold */
+    --ev-gold-bright: 43 48% 52%;
+
     --radius: 0rem;
 
     /* Institutional Mono Styling */
@@ -106,6 +114,14 @@
     --sterilized-clean: 0 0% 10%;
     --contractual-dense: 40 10% 12%;
     --forensic-sparse: 0 0% 12%;
+
+    /* Elian Voigt artifact palette (dark) */
+    --ev-ink: 40 15% 88%;
+    --ev-ivory: 240 6% 8%;
+    --ev-blood: 0 52% 48%;
+    --ev-blood-bright: 0 56% 58%;
+    --ev-gold: 43 46% 56%;
+    --ev-gold-bright: 44 52% 66%;
   }
 
   * {
@@ -1204,5 +1220,183 @@
       hsla(var(--foreground) / 0.15) calc(100% - 40px),
       transparent 100%
     );
+  }
+
+  /* ============================================================
+     ELIAN VOIGT — ARTIFACT SYSTEM
+     Catalog cards, seals, ledgers, fragments, slow motion.
+     ============================================================ */
+
+  .ev-eyebrow {
+    font-family: var(--mono-text);
+    font-size: 0.62rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: hsl(var(--ev-gold));
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .ev-eyebrow::before {
+    content: "";
+    width: 1.6rem;
+    height: 1px;
+    background: hsl(var(--ev-gold) / 0.7);
+  }
+
+  .ev-catalog-no {
+    font-family: var(--mono-text);
+    font-size: 0.6rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: hsl(var(--foreground) / 0.45);
+  }
+
+  .ev-blood {
+    color: hsl(var(--ev-blood));
+  }
+  .ev-gold {
+    color: hsl(var(--ev-gold));
+  }
+
+  /* Thin double rule, ledger-style */
+  .ev-rule {
+    border: 0;
+    height: 3px;
+    background:
+      linear-gradient(hsl(var(--foreground) / 0.35), hsl(var(--foreground) / 0.35)) top/100% 1px no-repeat,
+      linear-gradient(hsl(var(--foreground) / 0.18), hsl(var(--foreground) / 0.18)) bottom/100% 1px no-repeat;
+  }
+
+  /* Wax-seal / institutional stamp */
+  .ev-seal {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 9999px;
+    border: 1px solid hsl(var(--ev-gold) / 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: hsl(var(--ev-gold));
+    font-family: var(--mono-text);
+    font-size: 0.5rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .ev-seal::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border-radius: 9999px;
+    border: 1px dashed hsl(var(--ev-gold) / 0.4);
+    animation: ev-seal-turn 90s linear infinite;
+  }
+  @keyframes ev-seal-turn {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Archive card — a book or record as artifact */
+  .ev-card {
+    position: relative;
+    background:
+      linear-gradient(hsl(var(--card) / 0.5), hsl(var(--card) / 0.2));
+    border: 1px solid hsl(var(--foreground) / 0.16);
+    transition: border-color 0.6s ease, transform 0.6s ease, box-shadow 0.6s ease;
+  }
+  .ev-card:hover {
+    border-color: hsl(var(--ev-gold) / 0.55);
+    box-shadow: 0 24px 60px -40px hsl(var(--ev-ink) / 0.8);
+  }
+  /* corner registration ticks */
+  .ev-card::before,
+  .ev-card::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-color: hsl(var(--ev-gold) / 0.55);
+    border-style: solid;
+    opacity: 0.7;
+  }
+  .ev-card::before {
+    top: 8px; left: 8px;
+    border-width: 1px 0 0 1px;
+  }
+  .ev-card::after {
+    bottom: 8px; right: 8px;
+    border-width: 0 1px 1px 0;
+  }
+
+  /* Buy / action buttons */
+  .ev-buy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--mono-text);
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.7rem 1.25rem;
+    background: hsl(var(--ev-ink));
+    color: hsl(var(--ev-ivory));
+    border: 1px solid hsl(var(--ev-ink));
+    transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+  }
+  .ev-buy:hover {
+    background: hsl(var(--ev-blood));
+    border-color: hsl(var(--ev-blood));
+    color: hsl(var(--ev-ivory));
+  }
+  .ev-buy--ghost {
+    background: transparent;
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--foreground) / 0.35);
+  }
+  .ev-buy--ghost:hover {
+    background: transparent;
+    border-color: hsl(var(--ev-gold));
+    color: hsl(var(--ev-gold));
+  }
+
+  /* Ledger rows — reading order */
+  .ev-ledger-row {
+    display: grid;
+    grid-template-columns: 3.5rem 1fr auto;
+    align-items: baseline;
+    gap: 1.25rem;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid hsl(var(--foreground) / 0.12);
+    transition: background-color 0.5s ease, padding-left 0.5s ease;
+  }
+  .ev-ledger-row:hover {
+    background: hsl(var(--ev-gold) / 0.05);
+    padding-left: 0.75rem;
+  }
+
+  /* Fragment / epigraph quote */
+  .ev-fragment {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    line-height: 1.5;
+    color: hsl(var(--foreground) / 0.82);
+  }
+
+  /* Slow vertical drift for ambient marks */
+  @keyframes ev-drift {
+    0%, 100% { transform: translateY(0); opacity: 0.55; }
+    50% { transform: translateY(-6px); opacity: 0.8; }
+  }
+  .ev-drift {
+    animation: ev-drift 14s ease-in-out infinite;
+  }
+
+  /* Vertical spine label */
+  .ev-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
   }
 }
