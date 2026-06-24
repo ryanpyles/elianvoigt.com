@@ -963,45 +963,102 @@
     line-height: 1.5;
   }
 
-  /* Thematic Book Classes */
+  /* ============================================================
+     PER-BOOK THEMING — each catalogue detail page is its own
+     subpage. book.styleClass sets the accent, wash, and motif.
+     ============================================================ */
+  .book-detail {
+    --bk-accent: hsl(var(--foreground));
+    --bk-accent-2: hsl(var(--foreground));
+    --bk-wash: hsla(var(--foreground) / 0.04);
+    background-attachment: fixed;
+  }
+  .book-detail .bk-accent-bar {
+    height: 3px;
+    width: 100%;
+    background: var(--bk-accent);
+    opacity: 0.85;
+    margin-bottom: 2.5rem;
+  }
+  .book-detail .section-label { color: var(--bk-accent); opacity: 0.78; }
+  .book-detail .book-positioning {
+    border-left-color: var(--bk-accent);
+    background: linear-gradient(90deg, var(--bk-wash) 0%, transparent 100%);
+    padding: 1rem 1.25rem;
+  }
+  .book-detail .catalogue-entry-genre {
+    border-color: var(--bk-accent);
+    color: var(--bk-accent);
+  }
+  .book-detail .catalogue-rule { background: var(--bk-accent); opacity: 0.45; }
+  .book-detail .keyword-chip {
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+  }
+  .book-detail .keyword-chip:hover {
+    color: var(--bk-accent);
+    border-color: var(--bk-accent);
+    background: var(--bk-wash);
+    opacity: 1;
+  }
+  .book-detail .quote-purpose { color: var(--bk-accent); opacity: 0.75; }
+  .book-detail .metadata-grid .catalogue-format-value { color: var(--bk-accent-2); opacity: 0.9; }
+  .book-detail .fragments-box {
+    border-color: var(--bk-accent) !important;
+    background: var(--bk-wash) !important;
+  }
+
+  /* I — Feast of the Broadcast Saints: signal red + electric blue, scanlines */
   .book-broadcast {
-    background-image: radial-gradient(circle at 70% 20%, rgba(201, 98, 31, 0.05) 0%, transparent 60%);
+    --bk-accent: #cf3a2e;
+    --bk-accent-2: #2f6fd6;
+    --bk-wash: rgba(207, 58, 46, 0.06);
+    background-image:
+      repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.018) 0 1px, transparent 1px 4px),
+      radial-gradient(circle at 72% 14%, rgba(207, 58, 46, 0.06) 0%, transparent 55%);
   }
 
+  /* II — What Survives Is Proof: oxblood ink, ledger rules */
   .book-evidence {
-    background-image: radial-gradient(circle at 70% 20%, rgba(200, 190, 174, 0.05) 0%, transparent 60%);
+    --bk-accent: #7c2d2d;
+    --bk-accent-2: #3a3330;
+    --bk-wash: rgba(124, 45, 45, 0.05);
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 31px, rgba(124, 45, 45, 0.05) 31px 32px);
   }
 
+  /* III — Declensions of Dark Water: slate-teal, rising tide */
   .book-linguistic {
-    background-image: radial-gradient(circle at 70% 20%, rgba(100, 150, 180, 0.05) 0%, transparent 60%);
+    --bk-accent: #2f6e86;
+    --bk-accent-2: #3a6076;
+    --bk-wash: rgba(47, 110, 134, 0.06);
+    background-image: linear-gradient(180deg, transparent 50%, rgba(47, 110, 134, 0.07) 100%);
   }
 
-  .book-linguistic .quote-item {
-    border-left-color: rgba(100, 150, 180, 0.3);
-  }
-
-  .book-linguistic .comparable-item {
-    border-bottom-color: rgba(100, 150, 180, 0.3);
-  }
-
+  /* IV — Terms of Unbeing: oxblood charcoal, form grid */
   .book-legal {
-    background-image: radial-gradient(circle at 70% 20%, rgba(220, 210, 190, 0.05) 0%, transparent 60%);
+    --bk-accent: #8a2b33;
+    --bk-accent-2: #4a4440;
+    --bk-wash: rgba(138, 43, 51, 0.05);
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0 23px, rgba(0, 0, 0, 0.02) 23px 24px),
+      repeating-linear-gradient(90deg, transparent 0 23px, rgba(0, 0, 0, 0.02) 23px 24px);
   }
 
-  .book-legal .quote-item {
-    border-left-color: rgba(220, 210, 190, 0.3);
-  }
-
-  .book-legal .comparable-item {
-    border-bottom-color: rgba(220, 210, 190, 0.3);
-  }
-
+  /* V — Summer of the Glass Bees: tarnished gold + glass green, specimen dots */
   .book-specimen {
-    background-image: radial-gradient(circle at 70% 20%, rgba(180, 150, 100, 0.05) 0%, transparent 60%);
+    --bk-accent: #9a7b2e;
+    --bk-accent-2: #4a7d6b;
+    --bk-wash: rgba(154, 123, 46, 0.06);
+    background-image: radial-gradient(rgba(154, 123, 46, 0.1) 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 
+  /* VI — The Quiet Metric: plum-grey, minimal */
   .book-quiet {
-    background-image: radial-gradient(circle at 70% 20%, rgba(80, 90, 100, 0.05) 0%, transparent 60%);
+    --bk-accent: #6b5a78;
+    --bk-accent-2: #565156;
+    --bk-wash: rgba(107, 90, 120, 0.06);
+    background-image: radial-gradient(circle at 70% 18%, rgba(107, 90, 120, 0.05) 0%, transparent 60%);
   }
 
   @media (max-width: 768px) {

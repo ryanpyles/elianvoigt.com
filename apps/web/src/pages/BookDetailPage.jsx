@@ -5,6 +5,15 @@ import Header from '@/components/Header.jsx';
 import RetrievalTerminal from '@/components/RetrievalTerminal.jsx';
 import { bookPages } from '@/data/catalogueData.js';
 
+const FRAGMENT_LABELS = {
+  'book-broadcast': 'Broadcast Fragments',
+  'book-evidence': 'Marginalia',
+  'book-linguistic': 'Recovered Phrases',
+  'book-legal': 'Clauses',
+  'book-specimen': 'Field Tags',
+  'book-quiet': 'Observations',
+};
+
 export default function BookDetailPage() {
   const { bookId } = useParams();
   const book = bookPages.find(b => b.id === bookId);
@@ -33,54 +42,14 @@ export default function BookDetailPage() {
         <meta name="description" content={book.shortDescription || `Details for ${book.title}`} />
       </Helmet>
 
-      <style>{`
-        .book-broadcast .metadata-grid .catalogue-format-key {
-          color: #ef4444; /* Warning Red */
-          font-weight: 600;
-        }
-        .book-broadcast .metadata-grid .catalogue-format-value {
-          color: #3b82f6; /* Signal Blue */
-          font-weight: 600;
-          opacity: 0.9;
-        }
-        .book-broadcast .book-positioning {
-          border-left-color: #3b82f6;
-          background: linear-gradient(90deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
-          padding: 1rem 1.5rem;
-        }
-        .book-broadcast .quote-purpose {
-          color: #ef4444;
-        }
-
-        .book-quiet {
-          --background: 43 28% 95%; /* warm white */
-          --foreground: 0 0% 17%; /* charcoal */
-          background-color: hsl(var(--background));
-          color: hsl(var(--foreground));
-        }
-        .book-quiet .metadata-grid .catalogue-format-key {
-          color: #4b5563; /* charcoal gray */
-        }
-        .book-quiet .metadata-grid .catalogue-format-value {
-          color: #1f2937; /* deeper charcoal */
-          font-weight: 600;
-        }
-        .book-quiet .book-positioning {
-          border-left-color: #374151; /* charcoal border */
-          background: linear-gradient(90deg, rgba(31, 41, 55, 0.05) 0%, transparent 100%);
-          padding: 1rem 1.5rem;
-        }
-        .book-quiet .quote-purpose {
-          color: #4b5563;
-        }
-      `}</style>
-
       <Header />
       <RetrievalTerminal />
 
       <main className="main-content flex-1 pt-24 pb-32">
         <div className="catalogue-wrap max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
+          <div className="bk-accent-bar" aria-hidden="true"></div>
+
           <nav className="book-breadcrumb mb-12 font-typewriter text-xs uppercase tracking-widest opacity-60">
             <Link to="/publishing-catalogue" className="hover:opacity-100 transition-opacity">Catalogue</Link>
             <span className="mx-2">/</span>
@@ -128,8 +97,8 @@ export default function BookDetailPage() {
               />
               
               {book.taglines && book.taglines.length > 0 && (
-                <div className="mt-8 p-6 bg-[hsla(var(--foreground)/0.03)] border border-[hsla(var(--foreground)/0.1)] rounded-sm">
-                  <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4">Broadcast Fragments</div>
+                <div className="fragments-box mt-8 p-6 bg-[hsla(var(--foreground)/0.03)] border border-[hsla(var(--foreground)/0.1)] rounded-sm">
+                  <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4">{FRAGMENT_LABELS[book.styleClass] || 'Fragments'}</div>
                   <ul className="space-y-3">
                     {book.taglines.map((tagline, idx) => (
                       <li key={idx} className="text-sm font-medium flex gap-3 opacity-80">
@@ -147,7 +116,7 @@ export default function BookDetailPage() {
               <article className="book-content max-w-prose">
                 {book.shortDescription && (
                   <section className="mb-10">
-                    <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Summary</div>
+                    <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Summary</div>
                     <p className="font-serif text-lg md:text-xl leading-relaxed opacity-90">
                       {book.shortDescription}
                     </p>
@@ -156,7 +125,7 @@ export default function BookDetailPage() {
                 
                 {book.expandedSynopsis && (
                   <section className="mb-10">
-                    <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Expanded Synopsis</div>
+                    <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Expanded Synopsis</div>
                     <p className="font-serif text-base md:text-lg leading-relaxed opacity-80">
                       {book.expandedSynopsis}
                     </p>
@@ -165,10 +134,10 @@ export default function BookDetailPage() {
 
                 {book.thematicKeywords && book.thematicKeywords.length > 0 && (
                   <section className="mb-10">
-                    <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Thematic Parameters</div>
+                    <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Thematic Parameters</div>
                     <div className="flex flex-wrap gap-2">
                       {book.thematicKeywords.map((keyword, index) => (
-                        <span key={index} className="px-2.5 py-1 text-[0.65rem] font-typewriter uppercase tracking-widest border border-[hsla(var(--foreground)/0.15)] bg-[hsla(var(--foreground)/0.02)] opacity-70 hover:opacity-100 transition-opacity cursor-default">
+                        <span key={index} className="keyword-chip px-2.5 py-1 text-[0.65rem] font-typewriter uppercase tracking-widest border border-[hsla(var(--foreground)/0.15)] bg-[hsla(var(--foreground)/0.02)] opacity-70 hover:opacity-100 transition-opacity cursor-default">
                           {keyword}
                         </span>
                       ))}
@@ -181,7 +150,7 @@ export default function BookDetailPage() {
                 <div className="book-metadata">
                   {book.metadataLabels && Object.keys(book.metadataLabels).length > 0 && (
                     <section className="mb-10">
-                      <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Institutional Ledger</div>
+                      <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Institutional Ledger</div>
                       <div className="metadata-grid flex flex-col gap-3 font-typewriter text-xs">
                         {Object.entries(book.metadataLabels).map(([key, value]) => (
                           <div key={key} className="flex justify-between items-baseline gap-4">
@@ -198,7 +167,7 @@ export default function BookDetailPage() {
 
                   {book.formats && book.formats.length > 0 && (
                     <section className="mb-10">
-                      <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Specifications</div>
+                      <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Specifications</div>
                       <div className="flex flex-col gap-3 font-typewriter text-xs">
                         {book.formats.map((format, index) => (
                           <div key={index} className="flex justify-between items-baseline gap-4">
@@ -215,7 +184,7 @@ export default function BookDetailPage() {
                 <div className="book-comparable">
                   {book.comparableTitles && book.comparableTitles.length > 0 && (
                     <section>
-                      <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Cross-Referenced Materials</div>
+                      <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Cross-Referenced Materials</div>
                       <div className="flex flex-col gap-6">
                         {book.comparableTitles.map((item, index) => {
                           const isObj = typeof item === 'object' && item !== null;
@@ -242,7 +211,7 @@ export default function BookDetailPage() {
 
               {book.promotionalQuotes && book.promotionalQuotes.length > 0 && (
                 <section className="pt-8 border-t border-[hsla(var(--foreground)/0.1)]">
-                  <div className="text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-8">Critical Reception</div>
+                  <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-8">From the Record</div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
                     {book.promotionalQuotes.map((quoteItem, index) => {
                       const isObj = typeof quoteItem === 'object' && quoteItem !== null;
