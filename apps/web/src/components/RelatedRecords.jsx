@@ -77,7 +77,7 @@ export default function RelatedRecords({ currentTheme, currentClassification, cu
               {crossThematic.map((conn, idx) => (
                 <li key={idx} className="operational-text">
                   <Link to={`/archive/themes/${(conn?.theme || '').toLowerCase()}`} className="hover:opacity-100 transition-opacity duration-300">
-                    {conn?.theme || 'Unknown'} Hub. Thematic intersection. FORMÆTRIX Imprint.
+                    {conn?.theme || 'Unknown'} Hub. Thematic intersection.
                   </Link>
                   <div className="metadata-footnote mt-1">
                     [THEMATIC HUB / {(conn?.theme || 'UNKNOWN').toUpperCase()}]
@@ -95,7 +95,7 @@ export default function RelatedRecords({ currentTheme, currentClassification, cu
               {(bookData.primaryThemes || []).map((theme, idx) => (
                 <li key={idx} className="operational-text">
                   <Link to={`/archive/themes/${(theme || '').toLowerCase()}`} className="hover:opacity-100 transition-opacity duration-300">
-                    {theme}. Primary thematic classification. FORMÆTRIX Imprint.
+                    {theme}. Primary thematic classification.
                   </Link>
                   <div className="metadata-footnote mt-1">
                     [THEME / {(theme || '').toUpperCase()}]
@@ -113,7 +113,7 @@ export default function RelatedRecords({ currentTheme, currentClassification, cu
               {relatedClassifications.map((cls, idx) => (
                 <li key={`cls-${idx}`} className="operational-text">
                   <Link to="/archive/taxonomy" className="hover:opacity-100 transition-opacity duration-300">
-                    {cls}. Institutional classification standard. FORMÆTRIX Imprint.
+                    {cls}. Institutional classification standard.
                   </Link>
                   <div className="metadata-footnote mt-1">
                     [TAXONOMY / {(cls || '').toUpperCase()}]
@@ -122,7 +122,7 @@ export default function RelatedRecords({ currentTheme, currentClassification, cu
               ))}
               {relatedLocationsData.map((loc, idx) => (
                 <li key={`loc-${idx}`} className="operational-text">
-                  {loc}. Geographic site record. FORMÆTRIX Imprint.
+                  {loc}. Geographic site record.
                   <div className="metadata-footnote mt-1">
                     [LOCATION / {(loc || '').toUpperCase()}]
                   </div>
@@ -139,7 +139,7 @@ export default function RelatedRecords({ currentTheme, currentClassification, cu
               {relatedNotes.map((note) => (
                 <li key={note?.id || Math.random()} className="operational-text">
                   <Link to={`/field-notes/${note?.slug || ''}`} className="hover:opacity-100 transition-opacity duration-300">
-                    {note?.title || 'Untitled Fragment'}. Field Note FN-{note?.fieldNoteNumber || note?.id?.substring(0,4) || 'XXXX'}. FORMÆTRIX Imprint.
+                    {note?.title || 'Untitled Fragment'}. Field Note FN-{note?.fieldNoteNumber || note?.id?.substring(0,4) || 'XXXX'}.
                   </Link>
                   <div className="metadata-footnote mt-1">
                     [FIELD NOTE / {note?.classification || 'UNASSIGNED'}]

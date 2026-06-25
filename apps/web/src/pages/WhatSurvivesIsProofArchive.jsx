@@ -68,7 +68,7 @@ export default function WhatSurvivesIsProofArchive() {
 
         <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
           <p>
-            The evidentiary transcripts catalogued below correspond to the systemic cover-ups investigated in the novel *What Survives Is Proof* by Elian Voigt, distributed by FORMÆTRIX Imprint. The archive notes significant contradictions across multiple restoration layers.
+            The evidentiary transcripts catalogued below correspond to the systemic cover-ups investigated in the novel *What Survives Is Proof* by Elian Voigt. The archive notes significant contradictions across multiple restoration layers.
           </p>
         </section>
 

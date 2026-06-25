@@ -60,6 +60,13 @@ export default function AboutAndPress() {
       <div className="max-w-[90rem] mx-auto px-6 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-stretch">
         {/* About */}
         <div className="flex flex-col justify-center">
+          <img
+            src="/author/elian-voigt.png"
+            alt="Elian Voigt"
+            loading="lazy"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+            className="mb-8 w-52 max-w-full self-start object-contain mix-blend-multiply"
+          />
           <span className="ev-eyebrow">The Author Identity</span>
           <h2 className="mt-6 font-serif text-4xl md:text-5xl ink-bleed">About Elian Voigt</h2>
           <div className="mt-7 space-y-5 max-w-xl font-serif text-lg leading-relaxed text-foreground/80">

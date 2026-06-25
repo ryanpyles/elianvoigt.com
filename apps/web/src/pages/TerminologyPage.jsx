@@ -77,7 +77,7 @@ export default function TerminologyPage() {
 
         <section className="mb-16 font-serif text-lg leading-relaxed text-muted-foreground">
           <p>
-            This index represents a partial release of institutional vocabulary maintained by FORMÆTRIX Imprint. Several definitions remain unstable, highly restricted, or deliberately omitted due to semantic hazard. Custodial personnel are reminded that knowing the name of an anomaly does not constitute containment of the anomaly.
+            This index represents a partial release of institutional vocabulary. Several definitions remain unstable, highly restricted, or deliberately omitted due to semantic hazard. Custodial personnel are reminded that knowing the name of an anomaly does not constitute containment of the anomaly.
           </p>
         </section>
 

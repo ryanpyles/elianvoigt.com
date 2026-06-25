@@ -79,7 +79,7 @@ export default function CoastalRecordsThemePage() {
 
           <section className="mb-12 operational-description border-l-2 border-border/50 pl-4 py-2">
             <p>
-              Coastal environments within the Elian Voigt archive act as pressure cookers for geographic and semantic instability. FORMÆTRIX Imprint maintains these records to track how extreme weather anomalies compromise both human memory and municipal containment.
+              Coastal environments within the Elian Voigt archive act as pressure cookers for geographic and semantic instability. The archive maintains these records to track how extreme weather anomalies compromise both human memory and municipal containment.
             </p>
           </section>
 

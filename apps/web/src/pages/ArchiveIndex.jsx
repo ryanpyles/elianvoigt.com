@@ -51,7 +51,7 @@ export default function ArchiveIndex() {
         
         <div className="mb-12 operational-description">
           <p>
-            Welcome to the central node of the Elian Voigt institutional archive, published and maintained by FORMÆTRIX Imprint. The records below are organized by structural failure points: where language breaks down, where institutions sterilize reality, where grief flattens identity, and where contracts rewrite the past.
+            Welcome to the central node of the Elian Voigt institutional archive. The records below are organized by structural failure points: where language breaks down, where institutions sterilize reality, where grief flattens identity, and where contracts rewrite the past.
           </p>
         </div>
 

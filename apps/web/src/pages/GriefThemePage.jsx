@@ -48,7 +48,7 @@ export default function GriefThemePage() {
 
         <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
           <p>
-            The institutional treatment of emotional mass—specifically grief—is a recurring protocol in the literature of Elian Voigt, distributed under FORMÆTRIX Imprint. The archive treats loss not as sentiment, but as a physical pressure that deforms surrounding records.
+            The institutional treatment of emotional mass—specifically grief—is a recurring protocol in the literature of Elian Voigt. The archive treats loss not as sentiment, but as a physical pressure that deforms surrounding records.
           </p>
         </section>
 

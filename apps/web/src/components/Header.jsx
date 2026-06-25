@@ -19,7 +19,6 @@ export default function Header() {
             Elian Voigt
           </span>
           <div className="header-metadata">
-            <div className="metadata-text" style={{ margin: 0 }}>FORMÆTRIX IMPRINT</div>
             <div className="metadata-text opacity-40" style={{ margin: 0, fontSize: '0.6rem' }}>LITERARY IDENTITY RECORD</div>
           </div>
         </Link>

@@ -9,7 +9,7 @@ function AboutPage() {
     <>
       <Helmet>
         <title>Identity Record — Elian Voigt</title>
-        <meta name="description" content="Identity and structural relationships of Elian Voigt, the literary fiction imprint of FORMÆTRIX." />
+        <meta name="description" content="Elian Voigt — the literary identity behind novels of language, memory, bureaucracy, ritual, grief, and the unreal." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -33,7 +33,7 @@ function AboutPage() {
                 
                 <div className="identity-entry">
                   <h3 className="literary-statement-secondary" style={{ padding: 0, margin: '0 0 0.5rem 0', fontSize: '1.5rem' }}>ELIAN VOIGT</h3>
-                  <p className="operational-text">Literary fiction identity published through FORMÆTRIX Imprint.</p>
+                  <p className="operational-text">Literary fiction identity. The name on the books.</p>
                 </div>
                 
                 <div className="identity-entry">
@@ -49,8 +49,8 @@ function AboutPage() {
 
               <div className="prose prose-invert prose-lg md:prose-xl max-w-none font-serif leading-relaxed text-foreground/90 space-y-8 mt-12">
                 <p>
-                  Elian Voigt is the literary fiction imprint identity of FORMÆTRIX, 
-                  a press dedicated to creating books where design and content are inseparable.
+                  Elian Voigt is a literary identity devoted to fiction where design and
+                  content are inseparable — books where the premise is always also the design.
                 </p>
 
                 <p>
@@ -79,31 +79,19 @@ function AboutPage() {
                   want stories that feel like arguments about what fiction can do.
                 </p>
 
-                <div className="my-16 metadata-section pt-16">
-                  <h2 className="literary-statement-secondary" style={{ padding: 0, margin: '0 0 2rem 0', fontSize: '2rem' }}>Institutional Context: FORMÆTRIX</h2>
-
-                  <p className="operational-text">
-                    FORMÆTRIX is an independent press creating books where design is not decoration but 
-                    argument. Every project begins with a premise about what a book can be, and the design 
-                    follows from that premise with absolute precision.
+                <div className="mt-16 pt-10 border-t border-border/20">
+                  <p className="ev-catalog-no italic mb-5">
+                    Elian Voigt is a literary identity within FORMÆTRIX Imprint, an independent press
+                    where design is not decoration but argument.
                   </p>
-
-                  <p className="operational-text">
-                    The press publishes literary fiction, experimental nonfiction, and hybrid works that 
-                    resist genre. All books are designed in-house, printed on demand, and distributed 
-                    independently. The goal is specificity: books that look exactly like what they are about.
-                  </p>
-
-                  <p className="mt-12">
-                    <a
-                      href="https://formatrix.press"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="metadata-text hover:opacity-100 transition-opacity border border-border/30 px-4 py-2 inline-block"
-                    >
-                      ACCESS PARENT SYSTEM (FORMÆTRIX.PRESS)
-                    </a>
-                  </p>
+                  <a
+                    href="https://formatrix.press"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="metadata-text hover:opacity-100 transition-opacity border border-border/30 px-4 py-2 inline-block"
+                  >
+                    Visit FORMÆTRIX →
+                  </a>
                 </div>
               </div>
             </motion.div>

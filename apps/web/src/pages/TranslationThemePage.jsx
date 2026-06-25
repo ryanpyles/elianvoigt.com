@@ -76,7 +76,7 @@ export default function TranslationThemePage() {
 
           <section className="mb-12 operational-description border-l-2 border-border/50 pl-4 py-2">
             <p>
-              Translation is treated by the archive not as a bridge between languages, but as a structural breach. In the works of Elian Voigt, distributed via FORMÆTRIX Imprint, linguistic instability highlights the presence of untranslatable concepts—phenomena that weaponize syntax against the reader.
+              Translation is treated by the archive not as a bridge between languages, but as a structural breach. In the works of Elian Voigt, linguistic instability highlights the presence of untranslatable concepts—phenomena that weaponize syntax against the reader.
             </p>
           </section>
 

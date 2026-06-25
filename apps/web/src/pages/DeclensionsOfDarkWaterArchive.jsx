@@ -91,7 +91,7 @@ export default function DeclensionsOfDarkWaterArchive() {
 
         <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
           <p>
-            This archival record documents coastal linguistics and semantic decay, forming a critical part of the archive system explored in the novel *Declensions of Dark Water* by Elian Voigt, published by FORMÆTRIX Imprint. The preservation logs indicate severe structural instability within the primary text.
+            This archival record documents coastal linguistics and semantic decay, forming a critical part of the archive system explored in the novel *Declensions of Dark Water* by Elian Voigt. The preservation logs indicate severe structural instability within the primary text.
           </p>
         </section>
 

@@ -77,7 +77,7 @@ export default function LatestRelease() {
           <div className="relative z-10 md:col-span-7 flex flex-col justify-center gap-7 p-10 md:p-14">
             <div className="flex items-center gap-4">
               <span className="ev-seal ev-drift shrink-0">
-                FORMÆTRIX
+                E · V
                 <br />· {book.num} ·
               </span>
               <div className="ev-catalog-no leading-relaxed">

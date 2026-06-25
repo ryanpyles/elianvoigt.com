@@ -32,7 +32,7 @@ function HomePage() {
         <title>Elian Voigt — Literary Fiction of Language, Memory & the Unreal</title>
         <meta
           name="description"
-          content="Elian Voigt writes literary fiction about language, memory, bureaucracy, ritual, grief, and the unreal. A catalogue of novels from FORMÆTRIX Imprint."
+          content="Elian Voigt writes literary fiction about language, memory, bureaucracy, ritual, grief, and the unreal. A catalogue of novels — buy, read, and subscribe."
         />
       </Helmet>
 

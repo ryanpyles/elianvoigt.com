@@ -79,7 +79,7 @@ export default function MemoryThemePage() {
 
           <section className="mb-12 operational-description border-l-2 border-border/50 pl-4 py-2">
             <p>
-              Within the Elian Voigt archive structure maintained by FORMÆTRIX Imprint, memory is never treated as a reliable ledger. Memory is an architecture subject to structural erosion. Absence is not treated as a lack of data, but as the primary evidence of systemic extraction.
+              Within the Elian Voigt archive structure, memory is never treated as a reliable ledger. Memory is an architecture subject to structural erosion. Absence is not treated as a lack of data, but as the primary evidence of systemic extraction.
             </p>
           </section>
 

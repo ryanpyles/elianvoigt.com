@@ -48,7 +48,7 @@ export default function LanguageThemePage() {
 
         <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
           <p>
-            This thematic hub aggregates records concerning linguistic instability. It forms the philosophical backbone of works by Elian Voigt, particularly those distributed by FORMÆTRIX Imprint. The archive recognizes that grammar is not descriptive; it is infrastructural.
+            This thematic hub aggregates records concerning linguistic instability. It forms the philosophical backbone of the works of Elian Voigt. The archive recognizes that grammar is not descriptive; it is infrastructural.
           </p>
         </section>
 

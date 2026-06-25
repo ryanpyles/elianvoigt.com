@@ -74,7 +74,7 @@ export default function FieldNotesIndexPage() {
 
           <section className="mb-16 operational-description border-l-2 border-border/50 pl-6 py-4 space-y-4">
             <p>
-              <strong>INSTITUTIONAL SUMMARY:</strong> The Field Notes Aggregation represents recovered institutional observations, primary source fragments, and in-situ documentation. These records form the raw evidentiary basis for the publications of Elian Voigt under FORMÆTRIX Imprint.
+              <strong>INSTITUTIONAL SUMMARY:</strong> The Field Notes Aggregation represents recovered institutional observations, primary source fragments, and in-situ documentation. These records form the raw evidentiary basis for the publications of Elian Voigt.
             </p>
             <p>
               <strong>PROCESSING NOTES:</strong> Records are inherently unstable, subject to environmental degradation, and often exhibit referential drift. Semantic instability is common. Cross-reference validity is frequently disputed.
@@ -113,7 +113,7 @@ export default function FieldNotesIndexPage() {
 
           <section className="pt-8 mt-16 border-t border-border/30 dense-section">
             <p className="metadata-label">PROCEDURAL CLOSING</p>
-            <p className="metadata-footnote">The records contained within this aggregation are subject to continuous custodial review. Access does not imply verification. FORMÆTRIX Imprint assumes no liability for semantic contamination resulting from exposure to these fragments.</p>
+            <p className="metadata-footnote">The records contained within this aggregation are subject to continuous custodial review. Access does not imply verification. The archive assumes no liability for semantic contamination resulting from exposure to these fragments.</p>
           </section>
         </main>
         <Footer />

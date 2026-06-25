@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { publishedWorks } from '@/data/catalogueData.js';
-import { readingOrder, hasPurchaseLinks } from '@/data/siteContent.js';
+import { readingOrder } from '@/data/siteContent.js';
 
 export default function ReadingOrder() {
   const rows = readingOrder
@@ -44,7 +44,7 @@ export default function ReadingOrder() {
                   </span>
                 </span>
                 <span className="ev-catalog-no whitespace-nowrap self-center">
-                  {hasPurchaseLinks(r.id) ? 'In print →' : 'Forthcoming'}
+                  {r.book.status === 'In print' ? 'In print →' : 'Forthcoming'}
                 </span>
               </Link>
             </motion.div>

@@ -69,7 +69,7 @@ export default function TermsOfUnbeingArchive() {
 
         <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
           <p>
-            These legal fragments and procedural notices trace the contractual dissolution of identity, serving as primary evidence for the events depicted in *Terms of Unbeing* by Elian Voigt, distributed under FORMÆTRIX Imprint. The clauses exhibit highly recursive and hostile syntax.
+            These legal fragments and procedural notices trace the contractual dissolution of identity, serving as primary evidence for the events depicted in *Terms of Unbeing* by Elian Voigt. The clauses exhibit highly recursive and hostile syntax.
           </p>
         </section>
 

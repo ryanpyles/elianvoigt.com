@@ -19,7 +19,7 @@ export default function PublishingCataloguePage() {
       <main className="main-content flex-1 pt-24 pb-32">
         <div className="catalogue-wrap">
           <header className="catalogue-header" style={{ animationDelay: '0ms' }}>
-            <div className="catalogue-imprint">FORMÆTRIX · CHICAGO</div>
+            <div className="catalogue-imprint">ELIAN VOIGT · CHICAGO</div>
             <h1 className="catalogue-title">Elian Voigt</h1>
             <div className="catalogue-subtitle">The Collected Works — a publishing catalogue</div>
             <div className="catalogue-rule"></div>
@@ -127,7 +127,7 @@ export default function PublishingCataloguePage() {
           </section>
 
           <footer className="catalogue-footer">
-            <div className="catalogue-footer-mono">FORMÆTRIX IMPRINT</div>
+            <div className="catalogue-footer-mono">ELIAN VOIGT</div>
             <div>Institutional Archival Division</div>
             <div className="mt-4">
               <a href="/">elianvoigt.com</a>

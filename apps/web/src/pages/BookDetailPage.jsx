@@ -253,7 +253,7 @@ export default function BookDetailPage() {
           </nav>
 
           <footer className="book-footer mt-24 text-center opacity-40 font-typewriter text-[0.65rem] uppercase tracking-[0.2em]">
-            <p className="mb-2">FORMÆTRIX IMPRINT · CHICAGO</p>
+            <p className="mb-2">ELIAN VOIGT · CHICAGO</p>
             <p>INSTITUTIONAL ARCHIVAL DIVISION</p>
           </footer>
 

@@ -99,13 +99,6 @@ export const upcomingWorks = [
     genre: "Linguistic Horror / Translation",
     description: "An analysis of untranslatable phenomena that weaponize syntax against the reader, resulting in semantic fracture.",
     status: "Forthcoming"
-  },
-  {
-    num: "·",
-    title: "Guestbook of the North Wind",
-    genre: "Folklore / Institutional Records",
-    description: "A recovered ledger from a remote weather station, containing signatures of entities that do not exist in the municipal database.",
-    status: "Forthcoming"
   }
 ];
 

@@ -52,7 +52,7 @@ export default function InstitutionsThemePage() {
 
           <section className="mb-12 font-serif text-lg leading-relaxed text-muted-foreground border-l-2 border-border/50 pl-4 py-2">
             <p>
-              The examination of bureaucratic horror forms a core pillar of the Elian Voigt canon published by FORMÆTRIX Imprint. The archive does not merely collect documents; it is a mechanism that actively shapes reality through procedure.
+              The examination of bureaucratic horror forms a core pillar of the Elian Voigt canon. The archive does not merely collect documents; it is a mechanism that actively shapes reality through procedure.
             </p>
           </section>
 

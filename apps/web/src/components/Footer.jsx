@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { links, imprintNote, primaryMessage } from '@/data/siteContent.js';
+import { links, primaryMessage } from '@/data/siteContent.js';
 
 export default function Footer() {
   const reviewHref = `mailto:${links.pressEmail}?subject=${encodeURIComponent('Review copy request — Elian Voigt')}`;
@@ -18,7 +18,6 @@ export default function Footer() {
           <p className="font-serif text-sm text-muted-foreground max-w-md leading-relaxed">
             {primaryMessage}
           </p>
-          <p className="ev-catalog-no italic pt-2">{imprintNote}</p>
         </div>
 
         <div className="space-y-4">
@@ -42,17 +41,12 @@ export default function Footer() {
             <li><a href="#subscribe" className="hover:text-foreground transition-colors">Reader list</a></li>
             <li><a href={reviewHref} className="hover:text-foreground transition-colors">Request review copy</a></li>
             <li><a href={contactHref} className="hover:text-foreground transition-colors">Contact</a></li>
-            <li>
-              <a href={links.imprint} target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-                FORMÆTRIX Imprint
-              </a>
-            </li>
           </ul>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 footer-attribution">
-        <div className="metadata-text" style={{ margin: 0 }}>© 2026 ELIAN VOIGT / FORMÆTRIX IMPRINT.</div>
+        <div className="metadata-text" style={{ margin: 0 }}>© 2026 ELIAN VOIGT.</div>
         <div className="metadata-text opacity-40" style={{ margin: 0 }}>CUSTODIAL RECORD: RYAN J. PYLES.</div>
         <div className="metadata-text opacity-40" style={{ margin: 0 }}>ALL RIGHTS RESERVED.</div>
       </div>

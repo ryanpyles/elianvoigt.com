@@ -116,7 +116,7 @@ export default function FieldNoteDetailPage() {
             )}
 
             <div className="operational-description italic opacity-65 mb-6 border-l-2 border-border/50 pl-4 py-2">
-              This archival fragment documents phenomena categorized under {note.classification || 'general anomalies'}, forming part of the broader institutional archive catalogued by Elian Voigt and maintained by FORMÆTRIX Imprint.
+              This archival fragment documents phenomena categorized under {note.classification || 'general anomalies'}, forming part of the broader institutional archive catalogued by Elian Voigt.
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 dense-section">
