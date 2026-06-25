@@ -28,6 +28,24 @@ function AboutPage() {
               </div>
               <h1 className="literary-statement-primary ink-bleed" style={{ padding: 0, margin: '0 0 2rem 0' }}>Identity Record</h1>
 
+              <div className="mb-4 flex flex-wrap items-end gap-8">
+                <img
+                  src="/author/elian-voigt-1.png"
+                  alt="Elian Voigt"
+                  loading="lazy"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  className="w-40 object-contain mix-blend-multiply sm:w-48"
+                />
+                <img
+                  src="/author/elian-voigt-glasses.png"
+                  alt="Elian Voigt"
+                  loading="lazy"
+                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                  className="w-40 object-contain mix-blend-multiply sm:w-48"
+                />
+              </div>
+              <p className="metadata-label mb-12 italic">Likeness, contested · two renderings of a single identity.</p>
+
               <div className="identity-section">
                 <h2 className="metadata-label mb-8">IDENTITY RELATIONSHIP RECORD</h2>
                 
