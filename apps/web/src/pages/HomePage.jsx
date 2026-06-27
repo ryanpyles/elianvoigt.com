@@ -42,7 +42,9 @@ function HomePage() {
 
         <main className="md:ml-[140px]">
           {/* ---------------- Hero ---------------- */}
-          <section className="relative min-h-[100dvh] flex flex-col justify-center px-6 lg:px-12 max-w-[90rem] mx-auto z-20">
+          <section className="relative min-h-[100dvh] flex items-center px-6 lg:px-12 max-w-[90rem] mx-auto z-20">
+            <div className="grid w-full grid-cols-1 items-center gap-10 xl:grid-cols-[1fr_22rem] xl:gap-16">
+              <div className="flex flex-col">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -98,6 +100,19 @@ function HomePage() {
               <a href="#archive" className="ev-buy ev-buy--ghost">The catalogue</a>
               <a href="#subscribe" className="ev-buy ev-buy--ghost">Subscribe</a>
             </motion.div>
+              </div>
+
+              <motion.img
+                src="/author/elian-voigt-1.png"
+                alt="Elian Voigt"
+                loading="eager"
+                onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2.5, delay: 0.6 }}
+                className="hidden w-full max-w-[22rem] justify-self-end object-contain mix-blend-multiply xl:block"
+              />
+            </div>
 
             <motion.div
               initial={{ opacity: 0 }}

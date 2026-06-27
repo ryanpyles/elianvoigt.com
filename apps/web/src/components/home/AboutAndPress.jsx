@@ -61,7 +61,7 @@ export default function AboutAndPress() {
         {/* About */}
         <div className="flex flex-col justify-center">
           <img
-            src="/author/elian-voigt.png"
+            src="/author/elian-voigt-glasses.png"
             alt="Elian Voigt"
             loading="lazy"
             onError={(e) => { e.currentTarget.style.display = 'none'; }}
