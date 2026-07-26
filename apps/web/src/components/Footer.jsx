@@ -45,6 +45,12 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="max-w-7xl mx-auto px-6 mt-16 mb-10 border-t border-border/20 pt-10 text-center">
+        <p className="font-mono text-[0.6rem] uppercase tracking-[0.45em] text-muted-foreground/40">
+          In girum imus nocte et consumimur igne
+        </p>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 footer-attribution">
         <div className="metadata-text" style={{ margin: 0 }}>© 2026 ELIAN VOIGT.</div>
         <div className="metadata-text opacity-40" style={{ margin: 0 }}>CUSTODIAL RECORD: RYAN J. PYLES.</div>

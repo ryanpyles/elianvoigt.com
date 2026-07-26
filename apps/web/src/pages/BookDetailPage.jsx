@@ -85,6 +85,12 @@ export default function BookDetailPage() {
             )}
             
             <div className="catalogue-rule mb-12 h-px bg-[hsla(var(--foreground)/0.15)] w-full"></div>
+
+            {book.id === 'terms-of-unbeing' && (
+              <div className="mb-12">
+                <Link to="/books/terms-of-unbeing" className="ghost-button">Enter the full dossier →</Link>
+              </div>
+            )}
           </header>
 
           <div className="book-cover-section grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-12 lg:gap-16 mb-16">
