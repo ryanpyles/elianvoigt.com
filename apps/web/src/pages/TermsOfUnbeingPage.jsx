@@ -140,6 +140,33 @@ function OptionalImage({ src, alt, className }) {
   return <img src={src} alt={alt} loading="lazy" onError={() => setOk(false)} className={className} />;
 }
 
+// Prefers the local final cover; falls back to the remote cover until it exists.
+function CoverImg({ className, alt }) {
+  const [src, setSrc] = useState('/tou/cover.png');
+  return <img src={src} alt={alt} className={className} onError={() => { if (src !== COVER) setSrc(COVER); }} />;
+}
+
+// Renders the full wraparound jacket only if the asset is present.
+function WraparoundShowcase() {
+  const [ok, setOk] = useState(true);
+  if (!ok) return null;
+  return (
+    <section id="object" className="tou-section">
+      <div className="tou-wrap">
+        <p className="tou-eyebrow tou-brass">The Object</p>
+        <h2 className="tou-h2">Shelter is a contract. Oblivion is the fee.</h2>
+        <img
+          src="/tou/wraparound.png"
+          alt="Full wraparound cover of Terms of Unbeing, showing the front, spine, and back with author biography."
+          loading="lazy"
+          onError={() => setOk(false)}
+          className="tou-wrap-img"
+        />
+      </div>
+    </section>
+  );
+}
+
 export default function TermsOfUnbeingPage() {
   const [equity, setEquity] = useState(43.2);
   const [sent, setSent] = useState(false);
@@ -253,9 +280,24 @@ export default function TermsOfUnbeingPage() {
           </div>
           <div className="tou-cover-wrap">
             <OptionalImage src="/tou/building.png" alt="Faust Luxury Residences, a nine-story white-stone and black-marble building with heavy brass doors and subtly inconsistent architectural angles." className="tou-building" />
-            <img src={COVER} alt="Cover of Terms of Unbeing by Elian Voigt, presented as a Faust Luxury Residences novel." className="tou-cover" />
+            <CoverImg alt="Cover of Terms of Unbeing by Elian Voigt, presented as a Faust Luxury Residences novel." className="tou-cover" />
           </div>
           <Crest className="tou-crest" />
+        </div>
+      </section>
+
+      {/* Trailer */}
+      <section id="trailer" className="tou-section tou-trailer">
+        <div className="tou-wrap tou-center">
+          <p className="tou-eyebrow tou-brass">Broadcast</p>
+          <h2 className="tou-h2 tou-h2--center">An infernal lease.</h2>
+          <p className="tou-muted" style={{ maxWidth: '46ch', margin: '0 auto' }}>“I signed for shelter. They took my soul.”</p>
+          <div className="tou-video-frame">
+            <video className="tou-video" controls playsInline preload="none" poster="/tou/trailer-poster.jpg">
+              <source src="/tou/trailer.mp4" type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+          </div>
         </div>
       </section>
 
@@ -465,6 +507,8 @@ export default function TermsOfUnbeingPage() {
           typeset with LuaLaTeX, and edited, designed, and produced by Formætrix.
         </p>
       </Section>
+
+      <WraparoundShowcase />
 
       {/* Reviewer intake */}
       <section id="reviewers" className="tou-section tou-reviewers">
@@ -811,6 +855,12 @@ const TOU_CSS = `
   background:var(--tou-brass); color:#0B0B0C; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase;
   padding:14px; display:block; }
 @media(min-width:1024px){ .tou-sticky-buy{ display:none; } }
+
+.tou-h2--center{ margin-left:auto; margin-right:auto; }
+.tou-trailer{ background:linear-gradient(180deg, rgba(21,21,23,0.55), transparent); }
+.tou-video-frame{ max-width:400px; margin:2.5rem auto 0; border:1px solid rgba(164,131,69,0.4); box-shadow:0 50px 100px -50px #000; background:#000; }
+.tou-video{ width:100%; display:block; }
+.tou-wrap-img{ width:100%; margin-top:2.25rem; border:1px solid rgba(164,131,69,0.25); box-shadow:0 40px 90px -50px #000; }
 
 @media(min-width:960px){ .tou-hero{ grid-template-columns:1.15fr 0.85fr; } }
 
