@@ -142,7 +142,7 @@ function OptionalImage({ src, alt, className }) {
 
 // Prefers the local final cover; falls back to the remote cover until it exists.
 function CoverImg({ className, alt }) {
-  const [src, setSrc] = useState('/tou/cover.png');
+  const [src, setSrc] = useState('/tou/epub-terms-cover.png');
   return <img src={src} alt={alt} className={className} onError={() => { if (src !== COVER) setSrc(COVER); }} />;
 }
 
