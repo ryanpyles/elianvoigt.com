@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { publishedWorks } from '@/data/catalogueData.js';
-import { buyLinks, links, latestReleaseId, localCover } from '@/data/siteContent.js';
+import { buyLinks, links, latestReleaseId, localCover, featuredCover, dedicatedPages } from '@/data/siteContent.js';
 
 function BuyRow({ id }) {
   const l = buyLinks[id] || {};
@@ -66,10 +66,10 @@ export default function LatestRelease() {
             className="relative z-10 md:col-span-5 flex items-center justify-center border-b border-foreground/10 bg-foreground/[0.03] p-10 md:border-b-0 md:border-r"
           >
             <img
-              src={book.coverImage}
+              src={featuredCover(book.id) || book.coverImage}
               loading="eager"
               alt={`${book.title} — cover`}
-              className="w-auto max-h-[30rem] max-w-full object-contain shadow-[0_30px_70px_-30px_hsl(var(--ev-ink)/0.7)]"
+              className="w-auto max-h-[32rem] max-w-full object-contain shadow-[0_30px_70px_-30px_hsl(var(--ev-ink)/0.7)]"
             />
           </motion.div>
 
@@ -98,9 +98,15 @@ export default function LatestRelease() {
             <div className="space-y-4 pt-2">
               <BuyRow id={book.id} />
               <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-                <Link to={`/catalogue/${book.id}`} className="ev-buy ev-buy--ghost">
-                  Read an excerpt
-                </Link>
+                {dedicatedPages[book.id] ? (
+                  <Link to={dedicatedPages[book.id]} className="ev-buy ev-buy--ghost">
+                    Enter the full dossier →
+                  </Link>
+                ) : (
+                  <Link to={`/catalogue/${book.id}`} className="ev-buy ev-buy--ghost">
+                    Read an excerpt
+                  </Link>
+                )}
                 <a href={reviewHref} className="ev-catalog-no underline-offset-4 hover:text-foreground hover:underline">
                   Request a review copy →
                 </a>

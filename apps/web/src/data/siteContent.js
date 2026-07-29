@@ -36,8 +36,7 @@ export const buyLinks = {
     kindle: 'https://a.co/d/07jt73Z2',
     hardcover: null,
   },
-  // TODO: add links when these list.
-  'terms-of-unbeing': { paperback: null, kindle: null, hardcover: null },
+  'terms-of-unbeing': { paperback: 'https://www.amazon.com/s?k=9798189011627', kindle: null, hardcover: null },
   'feast-of-the-broadcast-saints': { paperback: null, kindle: null, hardcover: null },
   'the-quiet-metric': { paperback: null, kindle: null, hardcover: null },
 };
@@ -51,8 +50,20 @@ export const hasPurchaseLinks = (id) => {
 // archival backdrops behind each book (the actual covers are book.coverImage).
 export const localCover = (id) => `/covers/${id}-ink-cover.png`;
 
+// Updated/final cover art for the homepage spotlight, where it isn't yet the
+// catalogue coverImage. Falls through to book.coverImage when absent.
+export const featuredCovers = {
+  'terms-of-unbeing': '/tou/epub-terms-cover.png',
+};
+export const featuredCover = (id) => featuredCovers[id] || null;
+
+// Books with a dedicated immersive page (linked instead of the catalogue entry).
+export const dedicatedPages = {
+  'terms-of-unbeing': '/books/terms-of-unbeing',
+};
+
 // The book held up as the current release.
-export const latestReleaseId = 'what-survives-is-proof';
+export const latestReleaseId = 'terms-of-unbeing';
 
 // Suggested order of reading. Follows the catalogue numbering, but the site's
 // voice insists the sequence is non-binding ("Sequence disputed. Do not normalize.")
