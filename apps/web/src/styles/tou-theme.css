@@ -1,0 +1,234 @@
+.tou-page {
+  --tou-black:#0B0B0C; --tou-marble:#151517; --tou-white:#F0F0EC; --tou-bone:#E7E0D2;
+  --tou-brass:#A48345; --tou-copper:#8A5A3B; --tou-gray:#999A96; --tou-red:#9a3a3f; --tou-navy:#17202B;
+  background:var(--tou-black); color:var(--tou-white);
+  font-family:'Inter',system-ui,sans-serif; line-height:1.6; font-size:18px;
+  min-height:100vh; overflow-x:hidden;
+}
+.tou-page ::selection{ background:var(--tou-brass); color:#000; }
+.tou-page a{ color:inherit; text-decoration:none; }
+.tou-display{ font-family:'Playfair Display',Georgia,serif; }
+.tou-mono{ font-family:'IBM Plex Mono',ui-monospace,monospace; }
+.tou-red{ color:var(--tou-red); }
+.tou-brass{ color:var(--tou-brass); }
+.tou-muted{ color:var(--tou-gray); }
+.tou-sm{ font-size:0.85rem; line-height:1.55; }
+.tou-center{ text-align:center; }
+
+.tou-wrap{ max-width:1180px; margin:0 auto; padding:0 clamp(20px,5vw,72px); }
+.tou-section{ padding:clamp(72px,11vw,150px) 0; border-top:1px solid rgba(164,131,69,0.12); }
+.tou-prose p{ max-width:70ch; margin:0 0 1.25rem; }
+.tou-eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:0.66rem; letter-spacing:0.32em; text-transform:uppercase; margin:0 0 1.25rem; }
+.tou-h2{ font-family:'Playfair Display',serif; font-weight:500; font-size:clamp(1.9rem,4.2vw,3.1rem); line-height:1.1; margin:0 0 1.75rem; max-width:22ch; }
+
+.tou-announce{ background:var(--tou-marble); color:var(--tou-bone); text-align:center;
+  font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.28em; text-transform:uppercase;
+  padding:9px 16px; border-bottom:1px solid rgba(164,131,69,0.25); }
+
+.tou-nav{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px clamp(20px,5vw,48px); background:rgba(11,11,12,0.82); backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(164,131,69,0.15); }
+.tou-brand{ font-family:'Playfair Display',serif; letter-spacing:0.14em; text-transform:uppercase; font-size:0.95rem; }
+.tou-anchors{ display:none; gap:26px; font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--tou-gray); }
+.tou-anchors a:hover{ color:var(--tou-white); }
+.tou-nav-right{ display:flex; align-items:center; gap:14px; }
+.tou-equity-mini{ font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.14em; color:var(--tou-brass); }
+@media(min-width:1024px){ .tou-anchors{ display:flex; } }
+
+.tou-btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  font-family:'IBM Plex Mono',monospace; font-size:0.72rem; letter-spacing:0.14em; text-transform:uppercase;
+  padding:0.85rem 1.5rem; border:1px solid var(--tou-brass); color:var(--tou-bone); background:transparent;
+  transition:background-color .35s,color .35s,border-color .35s; cursor:pointer; }
+.tou-btn--primary{ background:var(--tou-brass); color:#0B0B0C; border-color:var(--tou-brass); }
+.tou-btn--primary:hover{ background:var(--tou-red); border-color:var(--tou-red); color:var(--tou-white); }
+.tou-btn--ghost:hover{ border-color:var(--tou-white); color:var(--tou-white); }
+.tou-btn--sm{ padding:0.5rem 0.9rem; font-size:0.62rem; }
+.tou-cta-row{ display:flex; flex-wrap:wrap; gap:14px; margin:2rem 0 1rem; }
+.tou-center-row{ justify-content:center; }
+.tou-textlink{ display:inline-block; font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.1em; color:var(--tou-brass); border-bottom:1px solid transparent; }
+.tou-textlink:hover{ border-color:var(--tou-brass); }
+.tou-micro{ font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.1em; color:var(--tou-gray); margin-top:1.5rem; }
+
+.tou-hero{ display:grid; grid-template-columns:1fr; gap:48px; align-items:center;
+  max-width:1180px; margin:0 auto; padding:clamp(56px,9vw,110px) clamp(20px,5vw,72px);
+  background:
+    radial-gradient(120% 80% at 85% 10%, rgba(23,32,43,0.55), transparent 60%),
+    linear-gradient(180deg, rgba(21,21,23,0.6), transparent 40%); }
+.tou-title{ font-family:'Playfair Display',serif; font-weight:600; line-height:0.98;
+  font-size:clamp(2.8rem,8vw,6.2rem); margin:0.6rem 0 1.4rem; letter-spacing:-0.01em; }
+.tou-epigraph{ font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.15rem,2.4vw,1.6rem); color:var(--tou-bone); margin:0 0 1.6rem; }
+.tou-lede{ max-width:56ch; color:#d7d4cc; }
+.tou-hero-art{ position:relative; display:flex; flex-direction:column; align-items:center; gap:20px; }
+.tou-readout{ align-self:stretch; display:grid; grid-template-columns:1fr auto; gap:6px 18px;
+  font-size:0.64rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--tou-gray);
+  border:1px solid rgba(164,131,69,0.25); padding:14px 18px; background:rgba(21,21,23,0.55); }
+.tou-readout span:nth-child(even){ text-align:right; color:var(--tou-bone); }
+.tou-cover-wrap{ position:relative; width:min(340px,80vw); }
+.tou-cover{ width:100%; display:block; border:1px solid rgba(164,131,69,0.35); box-shadow:0 40px 80px -40px #000; }
+.tou-building{ position:absolute; inset:-8% -6% auto; width:112%; opacity:0.14; filter:grayscale(1) contrast(1.1); z-index:0; }
+.tou-cover{ position:relative; z-index:1; }
+.tou-crest{ width:88px; height:88px; color:var(--tou-brass); opacity:0.9; }
+
+.tou-pull{ font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.3rem,3vw,2rem);
+  line-height:1.35; color:var(--tou-bone); border-left:2px solid var(--tou-red); padding:0.4rem 0 0.4rem 1.5rem; margin:2.5rem 0 0; max-width:30ch; }
+
+.tou-grid{ display:grid; gap:22px; margin-top:2.5rem; }
+.tou-grid--2{ grid-template-columns:1fr; }
+.tou-grid--3{ grid-template-columns:1fr; }
+@media(min-width:680px){ .tou-grid--3{ grid-template-columns:1fr 1fr; } }
+@media(min-width:960px){ .tou-grid--2{ grid-template-columns:1fr 1fr; } .tou-grid--3{ grid-template-columns:1fr 1fr 1fr; } }
+.tou-card{ background:var(--tou-marble); border:1px solid rgba(164,131,69,0.16); padding:26px; }
+.tou-card--sm{ padding:20px; }
+.tou-card-title{ font-family:'Playfair Display',serif; font-size:1.5rem; margin:0.3rem 0 0.8rem; }
+.tou-card-subtitle{ font-family:'Playfair Display',serif; font-size:1.15rem; margin:0 0 0.6rem; font-weight:500; }
+.tou-char-img{ width:100%; height:220px; object-fit:cover; margin:-26px -26px 18px; width:calc(100% + 52px); filter:grayscale(1) contrast(1.05); border-bottom:1px solid rgba(164,131,69,0.2); }
+.tou-more{ margin-top:22px; }
+
+.tou-arya .tou-arya-body{ max-width:70ch; }
+.tou-blur{ color:#8f8d87; }
+.tou-sharp{ font-size:1.2rem; letter-spacing:0.2em; color:var(--tou-white); margin:1.4rem 0; }
+
+.tou-props{ list-style:none; padding:0; margin:1.5rem 0; display:flex; flex-direction:column; gap:10px;
+  font-size:0.82rem; letter-spacing:0.06em; }
+.tou-props li{ border-bottom:1px solid rgba(164,131,69,0.16); padding-bottom:8px; color:var(--tou-bone); }
+
+.tou-lease{ background:linear-gradient(180deg, rgba(21,21,23,0.5), transparent); }
+.tou-lease-intro{ max-width:72ch; }
+.tou-clauses{ margin:2.5rem 0; border-top:1px solid rgba(164,131,69,0.16); }
+.tou-clause{ display:grid; grid-template-columns:110px 1fr; gap:18px; padding:20px 0; border-bottom:1px solid rgba(164,131,69,0.16); font-size:0.9rem; }
+.tou-clause-n{ color:var(--tou-brass); font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; }
+.tou-clause p{ margin:0; color:var(--tou-bone); }
+.tou-clause--note p{ color:var(--tou-gray); }
+.tou-concepts{ margin-top:2rem; }
+
+.tou-motif{ border-left:1px solid rgba(164,131,69,0.25); padding-left:16px; }
+.tou-motif-t{ display:block; font-size:0.8rem; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:6px; }
+
+.tou-fourpart{ display:grid; gap:8px; margin:2rem 0; font-size:0.9rem; color:var(--tou-bone); }
+.tou-fourpart span{ padding-left:16px; border-left:2px solid var(--tou-brass); }
+.tou-disclaimer{ color:var(--tou-gray); margin-top:2rem; max-width:74ch; font-style:italic; }
+
+.tou-form{ margin-top:2.5rem; max-width:760px; }
+.tou-form-grid{ display:grid; grid-template-columns:1fr; gap:16px; margin:1.5rem 0; }
+@media(min-width:680px){ .tou-form-grid{ grid-template-columns:1fr 1fr; } .tou-form-full{ grid-column:1 / -1; } }
+.tou-form label{ display:flex; flex-direction:column; gap:6px; font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--tou-gray); }
+.tou-form input, .tou-form select, .tou-form textarea{ font-family:'Inter',sans-serif; font-size:0.95rem; text-transform:none; letter-spacing:0;
+  background:var(--tou-marble); border:1px solid rgba(164,131,69,0.25); color:var(--tou-white); padding:11px 13px; }
+.tou-form input:focus, .tou-form select:focus, .tou-form textarea:focus{ outline:2px solid var(--tou-brass); outline-offset:1px; border-color:var(--tou-brass); }
+.tou-check{ display:flex; align-items:flex-start; gap:10px; font-size:0.8rem; color:var(--tou-gray); margin-bottom:14px; max-width:70ch; text-transform:none; letter-spacing:0; font-family:'Inter',sans-serif; }
+.tou-check input{ margin-top:3px; accent-color:var(--tou-brass); }
+.tou-success{ margin-top:2rem; border:1px solid var(--tou-brass); padding:26px; background:var(--tou-marble); max-width:640px; }
+
+.tou-meta{ display:grid; grid-template-columns:1fr; gap:12px; margin-top:2rem; max-width:520px; }
+@media(min-width:560px){ .tou-meta{ grid-template-columns:1fr 1fr; } }
+.tou-meta div{ border-top:1px solid rgba(164,131,69,0.18); padding-top:8px; }
+.tou-meta dt{ font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--tou-gray); }
+.tou-meta dd{ margin:2px 0 0; font-size:0.85rem; color:var(--tou-bone); }
+
+.tou-alsoby{ margin-top:2.5rem; }
+.tou-alsoby ul{ list-style:none; padding:0; margin:0.8rem 0 0; display:flex; flex-direction:column; gap:8px; }
+.tou-alsoby a{ font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; border-bottom:1px solid transparent; }
+.tou-alsoby a:hover{ border-color:var(--tou-brass); color:var(--tou-brass); }
+.tou-alsoby li{ font-family:'Playfair Display',serif; font-style:italic; font-size:1.05rem; color:var(--tou-bone); }
+
+.tou-faq{ margin-top:2rem; border-top:1px solid rgba(164,131,69,0.16); }
+.tou-faq-item{ border-bottom:1px solid rgba(164,131,69,0.16); }
+.tou-faq-item summary{ cursor:pointer; list-style:none; padding:20px 0; font-family:'Playfair Display',serif; font-size:1.2rem;
+  display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.tou-faq-item summary::-webkit-details-marker{ display:none; }
+.tou-faq-item summary::after{ content:'+'; color:var(--tou-brass); font-family:'IBM Plex Mono',monospace; }
+.tou-faq-item[open] summary::after{ content:'–'; }
+.tou-faq-item p{ padding:0 0 22px; margin:0; max-width:74ch; }
+
+.tou-final{ background:linear-gradient(180deg, transparent, rgba(122,30,34,0.08)); }
+.tou-final-line{ margin-top:2.5rem; font-size:0.7rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--tou-gray); }
+
+.tou-footer{ border-top:1px solid rgba(164,131,69,0.2); padding:64px 0 96px; background:var(--tou-marble); }
+.tou-footer-crest{ width:70px; height:70px; color:var(--tou-brass); opacity:0.7; }
+.tou-footer-mono{ margin-top:20px; font-size:0.68rem; letter-spacing:0.1em; line-height:2; color:var(--tou-gray); }
+.tou-footer-mono a:hover{ color:var(--tou-brass); }
+.tou-footer-line{ margin-top:22px; font-size:0.66rem; letter-spacing:0.18em; text-transform:uppercase; }
+.tou-footer-note{ margin-top:10px; font-size:0.62rem; letter-spacing:0.16em; text-transform:uppercase; color:rgba(153,154,150,0.6); }
+
+.tou-sticky-buy{ position:fixed; left:0; right:0; bottom:0; z-index:60; text-align:center;
+  background:var(--tou-brass); color:#0B0B0C; font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase;
+  padding:14px; display:block; }
+@media(min-width:1024px){ .tou-sticky-buy{ display:none; } }
+
+.tou-h2--center{ margin-left:auto; margin-right:auto; }
+.tou-trailer{ background:linear-gradient(180deg, rgba(21,21,23,0.55), transparent); }
+.tou-video-frame{ max-width:400px; margin:2.5rem auto 0; border:1px solid rgba(164,131,69,0.4); box-shadow:0 50px 100px -50px #000; background:#000; }
+.tou-video{ width:100%; display:block; }
+.tou-wrap-img{ width:100%; margin-top:2.25rem; border:1px solid rgba(164,131,69,0.25); box-shadow:0 40px 90px -50px #000; }
+
+@media(min-width:960px){ .tou-hero{ grid-template-columns:1.15fr 0.85fr; } }
+
+@media(prefers-reduced-motion:reduce){ .tou-page *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }
+
+/* ---------------------------------------------------------------------------
+   Faust Luxury Residences institution site — additions to the shared theme.
+   Reuses all tokens/classes above; adds only what the new pages need.
+--------------------------------------------------------------------------- */
+
+.tou-arrival{ position:fixed; inset:0; z-index:200; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:var(--tou-black); text-align:center; transition:opacity 1.1s ease, visibility 1.1s ease; }
+.tou-arrival[data-open="true"]{ opacity:0; visibility:hidden; pointer-events:none; }
+.tou-arrival-mark{ font-family:'Playfair Display',serif; letter-spacing:0.5em; text-transform:uppercase; font-size:clamp(1.6rem,5vw,2.6rem); margin:0 0 0.5rem; }
+.tou-arrival-sub{ font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--tou-brass); margin:0 0 2.5rem; }
+.tou-arrival-content{ position:relative; z-index:1; display:flex; flex-direction:column; align-items:center; }
+.tou-arrival-doors{ position:absolute; inset:0; z-index:0; display:flex; pointer-events:none; }
+.tou-arrival-door{ flex:1; background:linear-gradient(180deg, var(--tou-marble), var(--tou-black)); border-color:rgba(164,131,69,0.25); transition:transform 1.3s cubic-bezier(.65,0,.35,1); }
+.tou-arrival-door--l{ border-right:1px solid rgba(164,131,69,0.25); }
+.tou-arrival-door--r{ border-left:1px solid rgba(164,131,69,0.25); }
+.tou-arrival[data-open="true"] .tou-arrival-door--l{ transform:translateX(-100%); }
+.tou-arrival[data-open="true"] .tou-arrival-door--r{ transform:translateX(100%); }
+
+.tou-artifact-grid{ display:grid; gap:20px; grid-template-columns:1fr; margin-top:2.5rem; }
+@media(min-width:680px){ .tou-artifact-grid{ grid-template-columns:1fr 1fr; } }
+@media(min-width:960px){ .tou-artifact-grid{ grid-template-columns:repeat(4,1fr); } }
+.tou-artifact-tile{ display:block; background:var(--tou-marble); border:1px solid rgba(164,131,69,0.2); padding:28px 22px;
+  transition:border-color .3s, transform .3s; }
+.tou-artifact-tile:hover{ border-color:var(--tou-brass); transform:translateY(-3px); }
+.tou-artifact-tile .tou-plaque-n{ display:block; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.2em; color:var(--tou-brass); margin-bottom:10px; }
+.tou-artifact-tile h3{ font-family:'Playfair Display',serif; font-size:1.25rem; margin:0 0 8px; }
+
+.tou-subnav{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:2.5rem; }
+.tou-subnav a{ font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase;
+  padding:8px 14px; border:1px solid rgba(164,131,69,0.25); color:var(--tou-gray); }
+.tou-subnav a:hover, .tou-subnav a[aria-current="page"]{ color:var(--tou-brass); border-color:var(--tou-brass); }
+
+.tou-search{ width:100%; max-width:480px; background:var(--tou-marble); border:1px solid rgba(164,131,69,0.3);
+  color:var(--tou-white); font-family:'IBM Plex Mono',monospace; font-size:0.85rem; padding:12px 16px; margin:0 0 2.5rem; }
+.tou-search::placeholder{ color:var(--tou-gray); }
+
+.tou-resident-card{ background:var(--tou-marble); border:1px solid rgba(164,131,69,0.18); padding:24px; }
+.tou-resident-name{ font-family:'Playfair Display',serif; font-size:1.3rem; margin:0 0 4px; }
+.tou-resident-unit{ font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--tou-brass); }
+.tou-resident-tag{ display:inline-block; margin:10px 0 12px; font-family:'IBM Plex Mono',monospace; font-size:0.58rem; letter-spacing:0.12em; text-transform:uppercase;
+  border:1px solid rgba(164,131,69,0.3); color:var(--tou-gray); padding:3px 8px; }
+
+.tou-clause-row{ border-bottom:1px solid rgba(164,131,69,0.16); padding:22px 0; }
+.tou-clause-row .tou-clause-n{ display:block; margin-bottom:8px; }
+.tou-clause-row p{ margin:0; color:var(--tou-bone); max-width:70ch; }
+.tou-clause-rewrite{ animation:tou-flicker 2.4s steps(2,end) infinite; }
+@keyframes tou-flicker{ 0%,100%{opacity:1} 45%{opacity:1} 50%{opacity:.35} 55%{opacity:.85} 60%{opacity:.5} 65%{opacity:1} }
+
+.tou-floor-row{ display:grid; grid-template-columns:1fr; gap:6px; padding:22px 0; border-bottom:1px solid rgba(164,131,69,0.16); }
+@media(min-width:680px){ .tou-floor-row{ grid-template-columns:160px 1fr; gap:20px; } }
+.tou-floor-level{ font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--tou-brass); }
+.tou-floor-row h3{ font-family:'Playfair Display',serif; font-size:1.15rem; margin:2px 0 6px; }
+.tou-floor-row p{ margin:0; color:var(--tou-gray); font-size:0.85rem; max-width:60ch; }
+
+.tou-docket-item{ border-bottom:1px solid rgba(164,131,69,0.16); }
+.tou-docket-item .tou-docket-trigger{ display:flex; justify-content:space-between; align-items:baseline; gap:16px;
+  width:100%; text-align:left; background:transparent; border:none; color:inherit; cursor:pointer; padding:20px 0; font-family:'Playfair Display',serif; font-size:1.1rem; }
+.tou-docket-title{ font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.12em; color:var(--tou-brass); text-transform:uppercase; }
+.tou-docket-body{ padding:0 0 22px; max-width:70ch; color:var(--tou-bone); }
+
+.tou-6a-room{ border:1px solid rgba(164,131,69,0.25); padding:40px clamp(20px,5vw,48px); background:
+  linear-gradient(180deg, rgba(240,240,236,0.03), transparent); margin:2.5rem 0; }
+.tou-6a-beats{ display:flex; flex-direction:column; gap:1.4rem; margin:2rem 0; }
+.tou-6a-beats p{ max-width:64ch; color:var(--tou-bone); }
+
+.tou-crumb{ font-family:'IBM Plex Mono',monospace; font-size:0.58rem; letter-spacing:0.14em; color:rgba(153,154,150,0.45); }
+.tou-crumb:hover{ color:var(--tou-brass); }

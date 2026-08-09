@@ -46,17 +46,39 @@ export default function Header() {
             Taxonomy
           </Link>
 
-          <Link 
+          <Link
             to="/publishing-catalogue"
             className={`transition-opacity duration-150 ease-linear ${
               location.pathname === '/publishing-catalogue'
-                ? 'opacity-90' 
+                ? 'opacity-90'
                 : 'opacity-50 hover:opacity-70'
             }`}
           >
             Catalogue
           </Link>
-          
+
+          <Link
+            to="/faust-luxury-residences"
+            className={`transition-opacity duration-150 ease-linear ${
+              location.pathname.startsWith('/faust-luxury-residences')
+                ? 'opacity-90'
+                : 'opacity-50 hover:opacity-70'
+            }`}
+          >
+            Faust Luxury Residences
+          </Link>
+
+          <Link
+            to="/brynjavik"
+            className={`transition-opacity duration-150 ease-linear ${
+              location.pathname.startsWith('/brynjavik')
+                ? 'opacity-90'
+                : 'opacity-50 hover:opacity-70'
+            }`}
+          >
+            Brynjavík
+          </Link>
+
           <div className="relative group flex flex-col items-center">
             <Link 
               to="/about"
@@ -83,6 +105,8 @@ export default function Header() {
               <Link to="/archive/field-notes" className="opacity-50">Field Notes</Link>
               <Link to="/archive/taxonomy" className="opacity-50">Taxonomy</Link>
               <Link to="/publishing-catalogue" className="opacity-50">Catalogue</Link>
+              <Link to="/faust-luxury-residences" className="opacity-50">Faust Luxury Residences</Link>
+              <Link to="/brynjavik" className="opacity-50">Brynjavík</Link>
               <Link to="/about" className="opacity-50">About</Link>
             </nav>
           </SheetContent>

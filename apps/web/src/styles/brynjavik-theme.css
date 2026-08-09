@@ -1,0 +1,107 @@
+/* Brynjavík institution site — Declensions of Dark Water.
+   Deliberately the opposite register from tou-theme.css: this should read as
+   scholarship (light, precise, academic) rather than luxury horror, until it
+   doesn't. Reuses the site's only loaded webfonts (Playfair Display, IBM
+   Plex Mono, Inter) — no new font requests. */
+
+.brk-page {
+  --brk-paper:#EDE6D4; --brk-paper-dim:#E2DAC5; --brk-ink:#1B1C1A; --brk-volcanic:#17181A;
+  --brk-moss:#4B5D45; --brk-fog:#9AA6A2; --brk-sea:#16333A; --brk-sea-bright:#1F4A54;
+  --brk-rust:#8A5A3B;
+  background:var(--brk-paper); color:var(--brk-ink);
+  font-family:'Inter',system-ui,sans-serif; line-height:1.65; font-size:18px;
+  min-height:100vh; overflow-x:hidden;
+}
+.brk-page ::selection{ background:var(--brk-moss); color:var(--brk-paper); }
+.brk-page a{ color:inherit; text-decoration:none; }
+.brk-display{ font-family:'Playfair Display',Georgia,serif; }
+.brk-mono{ font-family:'IBM Plex Mono',ui-monospace,monospace; }
+.brk-sea-text{ color:var(--brk-sea); }
+.brk-moss-text{ color:var(--brk-moss); }
+.brk-muted{ color:#6B6A5F; }
+.brk-sm{ font-size:0.85rem; line-height:1.55; }
+.brk-center{ text-align:center; }
+
+.brk-wrap{ max-width:1120px; margin:0 auto; padding:0 clamp(20px,5vw,72px); }
+.brk-section{ padding:clamp(64px,10vw,130px) 0; border-top:1px solid rgba(27,28,26,0.1); }
+.brk-prose p{ max-width:70ch; margin:0 0 1.25rem; }
+.brk-eyebrow{ font-family:'IBM Plex Mono',monospace; font-size:0.64rem; letter-spacing:0.3em; text-transform:uppercase; margin:0 0 1.25rem; color:var(--brk-sea); }
+.brk-h2{ font-family:'Playfair Display',serif; font-weight:500; font-size:clamp(1.8rem,4vw,2.9rem); line-height:1.15; margin:0 0 1.6rem; max-width:24ch; }
+
+.brk-nav{ position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:16px;
+  padding:14px clamp(20px,5vw,48px); background:rgba(237,230,212,0.88); backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(27,28,26,0.14); }
+.brk-brand{ font-family:'Playfair Display',serif; letter-spacing:0.08em; font-size:1.05rem; font-style:italic; }
+.brk-btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase;
+  padding:0.8rem 1.4rem; border:1px solid var(--brk-ink); color:var(--brk-ink); background:transparent;
+  transition:background-color .3s,color .3s; cursor:pointer; }
+.brk-btn--primary{ background:var(--brk-sea); color:var(--brk-paper); border-color:var(--brk-sea); }
+.brk-btn--primary:hover{ background:var(--brk-ink); border-color:var(--brk-ink); }
+.brk-btn--ghost:hover{ background:rgba(27,28,26,0.06); }
+.brk-btn--sm{ padding:0.5rem 0.9rem; font-size:0.6rem; }
+.brk-cta-row{ display:flex; flex-wrap:wrap; gap:14px; margin:2rem 0 1rem; }
+.brk-center-row{ justify-content:center; }
+
+.brk-subnav{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom:2.5rem; }
+.brk-subnav a{ font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase;
+  padding:8px 14px; border:1px solid rgba(27,28,26,0.2); color:var(--brk-muted); }
+.brk-subnav a:hover, .brk-subnav a[aria-current="page"]{ color:var(--brk-sea); border-color:var(--brk-sea); }
+
+.brk-hero{ display:grid; grid-template-columns:1fr; gap:44px; align-items:center;
+  max-width:1120px; margin:0 auto; padding:clamp(48px,8vw,96px) clamp(20px,5vw,72px); }
+.brk-title{ font-family:'Playfair Display',serif; font-weight:600; line-height:1.02;
+  font-size:clamp(2.4rem,6.5vw,4.6rem); margin:0.5rem 0 1.2rem; }
+.brk-epigraph{ font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.05rem,2.2vw,1.4rem); color:var(--brk-sea); margin:0 0 1.4rem; }
+.brk-lede{ max-width:56ch; color:#3c3b34; }
+
+.brk-grid{ display:grid; gap:20px; margin-top:2.5rem; }
+.brk-grid--2{ grid-template-columns:1fr; }
+.brk-grid--3{ grid-template-columns:1fr; }
+@media(min-width:680px){ .brk-grid--3{ grid-template-columns:1fr 1fr; } }
+@media(min-width:960px){ .brk-grid--2{ grid-template-columns:1fr 1fr; } .brk-grid--3{ grid-template-columns:1fr 1fr 1fr; } }
+.brk-card{ background:var(--brk-paper-dim); border:1px solid rgba(27,28,26,0.14); padding:24px; }
+.brk-card-title{ font-family:'Playfair Display',serif; font-size:1.2rem; margin:0 0 0.5rem; }
+
+.brk-artifact-grid{ display:grid; gap:18px; grid-template-columns:1fr; margin-top:2.5rem; }
+@media(min-width:680px){ .brk-artifact-grid{ grid-template-columns:1fr 1fr; } }
+@media(min-width:960px){ .brk-artifact-grid{ grid-template-columns:repeat(4,1fr); } }
+.brk-artifact-tile{ display:block; background:var(--brk-paper-dim); border:1px solid rgba(27,28,26,0.16); padding:26px 20px;
+  transition:border-color .3s, transform .3s; }
+.brk-artifact-tile:hover{ border-color:var(--brk-sea); transform:translateY(-3px); }
+.brk-artifact-tile .brk-plaque-n{ display:block; font-family:'IBM Plex Mono',monospace; font-size:0.58rem; letter-spacing:0.18em; color:var(--brk-sea); margin-bottom:10px; }
+.brk-artifact-tile h3{ font-family:'Playfair Display',serif; font-size:1.15rem; margin:0 0 6px; }
+
+/* Grammar case cards */
+.brk-case{ border-bottom:1px solid rgba(27,28,26,0.14); padding:26px 0; }
+.brk-case-head{ display:flex; align-items:baseline; gap:12px; margin-bottom:8px; }
+.brk-case-n{ font-family:'IBM Plex Mono',monospace; font-size:0.9rem; color:var(--brk-sea); }
+.brk-case-name{ font-family:'Playfair Display',serif; font-style:italic; font-size:1.3rem; }
+.brk-case-english{ font-family:'IBM Plex Mono',monospace; font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--brk-muted); margin-bottom:10px; }
+.brk-case-example{ margin-top:12px; padding:14px 16px; background:var(--brk-paper-dim); border-left:2px solid var(--brk-moss); }
+.brk-case-danger{ margin-top:10px; padding:10px 14px; border-left:2px solid var(--brk-rust); color:#6b3a24; font-size:0.85rem; }
+.brk-case-status{ display:inline-block; margin-top:10px; font-family:'IBM Plex Mono',monospace; font-size:0.56rem; letter-spacing:0.1em; text-transform:uppercase;
+  border:1px solid rgba(27,28,26,0.25); color:var(--brk-muted); padding:3px 8px; }
+
+.brk-search{ width:100%; max-width:480px; background:var(--brk-paper-dim); border:1px solid rgba(27,28,26,0.25);
+  color:var(--brk-ink); font-family:'IBM Plex Mono',monospace; font-size:0.85rem; padding:12px 16px; margin:0 0 2.5rem; }
+.brk-search::placeholder{ color:var(--brk-muted); }
+
+/* Coastal Log entries (locations / weather / timeline) */
+.brk-log-row{ display:grid; grid-template-columns:1fr; gap:6px; padding:22px 0; border-bottom:1px solid rgba(27,28,26,0.14); }
+@media(min-width:680px){ .brk-log-row{ grid-template-columns:180px 1fr; gap:20px; } }
+.brk-log-label{ font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--brk-sea); }
+.brk-log-row h3{ font-family:'Playfair Display',serif; font-size:1.1rem; margin:2px 0 6px; }
+.brk-log-row p{ margin:0; color:var(--brk-muted); font-size:0.85rem; max-width:60ch; }
+.brk-log-redacted{ opacity:0.55; font-style:italic; }
+
+.brk-quote-strip{ display:flex; flex-direction:column; gap:1.1rem; margin-top:2rem; }
+.brk-quote-strip p{ font-family:'Playfair Display',serif; font-style:italic; font-size:1.1rem; color:var(--brk-sea); border-left:2px solid var(--brk-moss); padding-left:1rem; max-width:60ch; }
+
+.brk-footer{ border-top:1px solid rgba(27,28,26,0.16); padding:56px 0 80px; background:var(--brk-paper-dim); }
+.brk-footer-mono{ margin-top:16px; font-size:0.66rem; letter-spacing:0.08em; line-height:2; color:var(--brk-muted); }
+.brk-footer-mono a:hover{ color:var(--brk-sea); }
+
+.brk-restricted{ border:1px dashed rgba(27,28,26,0.3); padding:40px clamp(20px,5vw,48px); margin:2.5rem 0; background:var(--brk-paper-dim); }
+
+@media(prefers-reduced-motion:reduce){ .brk-page *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }

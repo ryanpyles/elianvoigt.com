@@ -42,6 +42,23 @@ import LanguageThemePage from './pages/LanguageThemePage.jsx';
 import GriefThemePage from './pages/GriefThemePage.jsx';
 import InstitutionsThemePage from './pages/InstitutionsThemePage.jsx';
 
+// Faust Luxury Residences — immersive Terms of Unbeing institution site.
+// Not linked from Header.jsx or any index page; reachable by URL only, same
+// convention as VikamalArchivePage and the FieldNote004_* pages above.
+import FaustResidencesHub from './pages/faust/FaustResidencesHub.jsx';
+import ResidentDirectoryPage from './pages/faust/ResidentDirectoryPage.jsx';
+import LeaseExplorerPage from './pages/faust/LeaseExplorerPage.jsx';
+import BuildingBlueprintPage from './pages/faust/BuildingBlueprintPage.jsx';
+import TribunalArchivePage from './pages/faust/TribunalArchivePage.jsx';
+import Apartment6APage from './pages/faust/Apartment6APage.jsx';
+
+// Brynjavík Field Station Archive — immersive Declensions of Dark Water
+// institution site. Same pattern as pages/faust/*.
+import BrynjavikHub from './pages/brynjavik/BrynjavikHub.jsx';
+import GrammarArchivePage from './pages/brynjavik/GrammarArchivePage.jsx';
+import CoastalLogPage from './pages/brynjavik/CoastalLogPage.jsx';
+import EighthDeclensionPage from './pages/brynjavik/EighthDeclensionPage.jsx';
+
 function AnimatedRoutes() {
   const location = useLocation();
   
@@ -81,6 +98,20 @@ function AnimatedRoutes() {
         <Route path="/archive/themes/language" element={<LanguageThemePage />} />
         <Route path="/archive/themes/grief" element={<GriefThemePage />} />
         <Route path="/archive/themes/institutions" element={<InstitutionsThemePage />} />
+
+        {/* Faust Luxury Residences — immersive institution site (unlinked) */}
+        <Route path="/faust-luxury-residences" element={<FaustResidencesHub />} />
+        <Route path="/faust-luxury-residences/residents" element={<ResidentDirectoryPage />} />
+        <Route path="/faust-luxury-residences/lease" element={<LeaseExplorerPage />} />
+        <Route path="/faust-luxury-residences/building" element={<BuildingBlueprintPage />} />
+        <Route path="/faust-luxury-residences/tribunal" element={<TribunalArchivePage />} />
+        <Route path="/faust-luxury-residences/6a" element={<Apartment6APage />} />
+
+        {/* Brynjavík Field Station Archive — immersive institution site */}
+        <Route path="/brynjavik" element={<BrynjavikHub />} />
+        <Route path="/brynjavik/grammar" element={<GrammarArchivePage />} />
+        <Route path="/brynjavik/log" element={<CoastalLogPage />} />
+        <Route path="/brynjavik/eighth-declension" element={<EighthDeclensionPage />} />
 
         {/* General Pages */}
         <Route path="/publishing-catalogue" element={<PublishingCataloguePage />} />
