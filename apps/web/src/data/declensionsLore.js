@@ -20,6 +20,8 @@ export const BOOK = {
   // From the published cover jacket.
   tagline: 'A linguist travels to a village where the words have started to disappear.',
   taglineSub: 'What remains is not silence, but a grammar.',
+  cover: '/covers/DeclensionsEpubCover.png',
+  wraparound: '/covers/DeclensionsOfDarkWater_cover.png',
 };
 
 export const CHARACTERS = [

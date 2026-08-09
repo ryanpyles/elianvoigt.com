@@ -55,6 +55,11 @@ export default function BrynjavikHub() {
             <Link to="/catalogue/declensions-of-dark-water" className="brk-btn brk-btn--ghost">Read the full listing</Link>
           </div>
         </div>
+        <div className="brk-hero-art">
+          <div className="brk-cover-wrap">
+            <img src={BOOK.cover} alt="Cover of Declensions of Dark Water by Elian Voigt." className="brk-cover" loading="lazy" />
+          </div>
+        </div>
       </section>
 
       {/* Immersion */}
@@ -129,6 +134,16 @@ export default function BrynjavikHub() {
         <p className="brk-mono brk-sm brk-muted" style={{ marginTop: '2rem' }}>
           <Link to="/brynjavik/eighth-declension">Field note index references a Declension VIII. Record restricted.</Link>
         </p>
+      </BrynjavikSection>
+
+      {/* The Object */}
+      <BrynjavikSection eyebrow="The Object" heading="What remains is not silence, but a grammar.">
+        <img
+          src={BOOK.wraparound}
+          alt="Full wraparound cover of Declensions of Dark Water, showing the front, spine, and back with author biography."
+          loading="lazy"
+          className="brk-wrap-img"
+        />
       </BrynjavikSection>
 
       {/* Acquire */}
