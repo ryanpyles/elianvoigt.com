@@ -102,7 +102,7 @@ function Spine({ book, index, isActive, onSelect }) {
               </div>
               <h3 className="ink-bleed font-serif text-3xl leading-tight md:text-4xl lg:text-5xl">{book.title}</h3>
               <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{book.genre}</p>
-              <p className="max-w-prose font-serif text-base italic leading-relaxed text-foreground/75">{book.description}</p>
+              <p className="max-w-prose font-prose text-lg italic leading-relaxed text-foreground/75">{book.description}</p>
               <Link to={`/catalogue/${book.id}`} className="ghost-button mt-2 w-fit">Examine Record →</Link>
             </div>
           </motion.div>
@@ -194,7 +194,7 @@ function MobileCard({ book, accent, onClose }) {
           </div>
           <h3 className="ink-bleed mt-4 font-serif text-3xl leading-tight">{book.title}</h3>
           <p className="mt-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">{book.genre}</p>
-          <p className="mt-4 font-serif text-base italic leading-relaxed text-foreground/75">{book.description}</p>
+          <p className="mt-4 font-prose text-lg italic leading-relaxed text-foreground/75">{book.description}</p>
           <Link to={`/catalogue/${book.id}`} className="ghost-button mt-6 inline-block">Examine Record →</Link>
           <p className="mt-8 text-center font-mono text-[0.6rem] uppercase tracking-[0.25em] text-muted-foreground/50">
             Swipe down to close

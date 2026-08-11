@@ -76,7 +76,7 @@ export default function Dispatches() {
                   {post.title}
                 </h3>
                 {post.excerpt && (
-                  <p className="font-serif text-sm italic leading-relaxed text-foreground/65 line-clamp-4">
+                  <p className="font-prose text-base italic leading-relaxed text-foreground/65 line-clamp-4">
                     {post.excerpt}
                   </p>
                 )}
@@ -88,7 +88,7 @@ export default function Dispatches() {
 
         {state.status === 'empty' && (
           <div className="ev-card flex flex-col items-center gap-5 p-12 text-center">
-            <p className="font-serif text-xl italic text-foreground/70">
+            <p className="font-prose text-2xl italic text-foreground/70">
               New dispatches from the imprint will appear here as they are published.
             </p>
             <a href={links.substack} target="_blank" rel="noopener noreferrer" className="ev-buy">

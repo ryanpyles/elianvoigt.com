@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { links, primaryMessage } from '@/data/siteContent.js';
+import BrandMark from '@/components/BrandMark.jsx';
 
 export default function Footer() {
   const reviewHref = `mailto:${links.pressEmail}?subject=${encodeURIComponent('Review copy request — Elian Voigt')}`;
   const contactHref = `mailto:${links.contactEmail}?subject=${encodeURIComponent('A note for Elian Voigt')}`;
 
   return (
-    <footer className="bg-background pt-12">
+    <footer className="voigt-brand bg-background pt-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-border/30 pt-12">
         <div className="md:col-span-2 space-y-4">
-          <Link to="/" className="inline-block group">
+          <Link to="/" className="inline-flex items-center gap-3 group">
+            <BrandMark size={30} />
             <span className="font-serif text-2xl tracking-widest uppercase group-hover:text-muted-foreground transition-colors">
               Elian Voigt
             </span>
           </Link>
-          <p className="font-serif text-sm text-muted-foreground max-w-md leading-relaxed">
+          <p className="font-prose text-base text-muted-foreground max-w-md leading-relaxed">
             {primaryMessage}
           </p>
         </div>

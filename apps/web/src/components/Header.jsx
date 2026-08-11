@@ -3,24 +3,28 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import BrandMark from '@/components/BrandMark.jsx';
 
 export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md md:ml-[140px]">
+    <header className="voigt-brand fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-md md:ml-[140px]">
       <div className="absolute top-2 right-6 metadata-footnote pointer-events-none">
         ARCHIVE STATUS: PARTIAL RELEASE
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
-        <Link to="/" className="flex flex-col group">
-          <span className="font-serif text-2xl tracking-[0.08em] uppercase group-hover:opacity-80 transition-opacity">
-            Elian Voigt
+        <Link to="/" className="flex items-center gap-3 group">
+          <BrandMark size={34} />
+          <span className="flex flex-col">
+            <span className="voigt-mark-text font-serif text-2xl tracking-[0.14em] uppercase group-hover:opacity-80 transition-opacity">
+              Elian Voigt
+            </span>
+            <span className="header-metadata">
+              <span className="metadata-text opacity-40" style={{ margin: 0, fontSize: '0.6rem' }}>LITERARY IDENTITY RECORD</span>
+            </span>
           </span>
-          <div className="header-metadata">
-            <div className="metadata-text opacity-40" style={{ margin: 0, fontSize: '0.6rem' }}>LITERARY IDENTITY RECORD</div>
-          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 metadata-text">
@@ -100,7 +104,7 @@ export default function Header() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background border-l border-border/30">
+          <SheetContent side="right" className="voigt-brand w-[300px] sm:w-[400px] bg-background border-l border-border/30">
             <nav className="flex flex-col gap-8 mt-16 metadata-text">
               <Link to="/archive/field-notes" className="opacity-50">Field Notes</Link>
               <Link to="/archive/taxonomy" className="opacity-50">Taxonomy</Link>

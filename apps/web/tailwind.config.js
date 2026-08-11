@@ -16,6 +16,15 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        // Route Tailwind's own font-serif/font-mono utilities through the
+        // same CSS-var indirection the custom .font-serif/.font-mono rules
+        // use, so a scope like .voigt-brand can swap the typeface — without
+        // this, Tailwind's generated utilities (in the higher-priority
+        // `utilities` layer) silently win over the same-named custom rules.
+        serif: ["var(--font-display)", "serif"],
+        mono: ["var(--mono-text)", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

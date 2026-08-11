@@ -36,7 +36,7 @@ function HomePage() {
         />
       </Helmet>
 
-      <div className="min-h-screen relative z-10 bg-background">
+      <div className="voigt-brand min-h-screen relative z-10 bg-background">
         <div className="ev-grain" aria-hidden="true" />
         <div className="ev-vignette" aria-hidden="true" />
         <RetrievalPanel />
@@ -107,7 +107,7 @@ function HomePage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 2, delay: 1 }}
-              className="mt-10 max-w-xl font-serif text-lg italic text-foreground/60"
+              className="mt-10 max-w-xl font-prose text-xl italic text-foreground/60"
             >
               A catalogue of novels recovered from institutions that have forgotten
               why they keep records — and cannot stop.
@@ -164,7 +164,7 @@ function HomePage() {
                 </Link>
               </div>
               <BookSpines />
-              <p className="mt-6 font-serif italic text-foreground/50">
+              <p className="mt-6 font-prose italic text-lg text-foreground/50">
                 Six records in print. Select a spine to open it.
               </p>
             </div>

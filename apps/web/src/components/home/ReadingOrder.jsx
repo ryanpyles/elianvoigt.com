@@ -22,7 +22,7 @@ export default function ReadingOrder() {
           <span className="ev-catalog-no">Sequence disputed · do not normalize</span>
         </div>
         <h2 className="mb-2 font-serif text-3xl md:text-4xl">Where to begin reading</h2>
-        <p className="mb-10 max-w-2xl font-serif italic text-foreground/60">
+        <p className="mb-10 max-w-2xl font-prose text-xl italic text-foreground/60">
           A suggested path through the record. The books stand alone; the order is a courtesy, not a rule.
         </p>
 
@@ -55,7 +55,7 @@ export default function ReadingOrder() {
                   <span className="block font-serif text-xl leading-tight md:text-2xl">
                     {r.book.title}
                   </span>
-                  <span className="mt-1 block font-serif italic text-foreground/55">
+                  <span className="mt-1 block font-prose italic text-foreground/55">
                     {r.note}
                   </span>
                 </span>

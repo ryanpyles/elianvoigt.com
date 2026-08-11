@@ -91,7 +91,7 @@ export default function LatestRelease() {
               {book.title}
             </h2>
 
-            <p className="max-w-xl font-serif text-lg italic leading-relaxed text-foreground/75">
+            <p className="max-w-xl font-prose text-xl italic leading-relaxed text-foreground/75">
               {book.description}
             </p>
 

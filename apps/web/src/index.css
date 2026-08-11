@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -45,6 +45,18 @@
     --ev-blood-bright: 0 50% 42%;
     --ev-gold: 41 42% 41%;      /* tarnished / antique gold */
     --ev-gold-bright: 43 48% 52%;
+
+    /* Elian Voigt brand refresh — dark palette from elian_voigt_site_assets */
+    --brand-ink: 240 3% 6%;        /* #0F0F10 */
+    --brand-charcoal: 240 3% 17%;  /* #2A2A2D */
+    --brand-slate: 212 11% 38%;    /* #56606B */
+    --brand-ivory: 40 20% 88%;     /* #E7E3DB */
+    --brand-rust: 18 59% 40%;      /* #A44E2A */
+
+    /* Font-role indirection so a scope (e.g. .voigt-brand) can swap the
+       typeface without every h1-h6/.font-serif usage needing new classNames. */
+    --font-display: 'Playfair Display', serif;
+    --font-prose: 'Playfair Display', serif;
 
     --radius: 0rem;
 
@@ -142,9 +154,13 @@
   }
 
   h1, h2, h3, h4, h5, h6, .font-serif {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-display);
     font-weight: 400;
     text-wrap: balance;
+  }
+
+  .font-prose {
+    font-family: var(--font-prose);
   }
 
   .font-mono {
@@ -1436,7 +1452,7 @@
 
   /* Fragment / epigraph quote */
   .ev-fragment {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-prose);
     font-style: italic;
     line-height: 1.5;
     color: hsl(var(--foreground) / 0.82);
@@ -1506,5 +1522,67 @@
     pointer-events: none;
     opacity: 0.05;
     mix-blend-mode: multiply;
+  }
+
+  /* ============================================================
+     VOIGT BRAND REFRESH — dark scope, from elian_voigt_site_assets.
+     Wrap a subtree (Header, Footer, HomePage root) in .voigt-brand to
+     repaint it with the new palette/type without touching every
+     className: the existing bg-background/text-foreground/.ev-*
+     component classes read these same custom properties already.
+     ============================================================ */
+  .voigt-brand {
+    --background: var(--brand-ink);
+    --foreground: var(--brand-ivory);
+    --card: var(--brand-charcoal);
+    --card-foreground: var(--brand-ivory);
+    --popover: var(--brand-charcoal);
+    --popover-foreground: var(--brand-ivory);
+    --secondary: var(--brand-charcoal);
+    --input: var(--brand-charcoal);
+    --border: 240 3% 24%;
+    --muted-foreground: 40 10% 60%;
+    --ring: var(--brand-rust);
+    --ev-gold: var(--brand-rust);
+    --ev-gold-bright: 22 62% 50%;
+    --font-display: 'Cinzel', serif;
+    --font-prose: 'Cormorant Garamond', serif;
+    --mono-text: 'Space Grotesk', sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+  .voigt-brand .ev-buy {
+    background: hsl(var(--brand-ivory));
+    color: hsl(var(--brand-ink));
+    border-color: hsl(var(--brand-ivory));
+  }
+  .voigt-brand .ev-buy:hover {
+    background: hsl(var(--brand-rust));
+    border-color: hsl(var(--brand-rust));
+    color: hsl(var(--brand-ivory));
+  }
+  .voigt-brand .ev-buy--ghost {
+    background: transparent;
+    color: hsl(var(--brand-ivory));
+    border-color: hsl(var(--brand-ivory) / 0.35);
+  }
+  .voigt-brand .ev-buy--ghost:hover {
+    background: transparent;
+    border-color: hsl(var(--brand-rust));
+    color: hsl(var(--brand-rust));
+  }
+  .voigt-brand .ev-watermark {
+    mix-blend-mode: normal;
+    filter: invert(1);
+  }
+
+  /* Æ brand mark */
+  .voigt-mark {
+    color: hsl(var(--brand-rust));
+    font-family: 'Cinzel', serif;
+  }
+  .voigt-mark-rule {
+    border: 1px solid hsl(var(--brand-rust) / 0.4);
+    border-radius: 9999px;
   }
 }

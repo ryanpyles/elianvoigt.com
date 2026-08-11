@@ -15,7 +15,7 @@ function PressKit() {
         <span className="ev-catalog-no">DOSSIER 04</span>
       </div>
 
-      <p className="font-serif text-xl italic leading-relaxed text-foreground/80">
+      <p className="font-prose text-2xl italic leading-relaxed text-foreground/80">
         {pressKit.oneLine}
       </p>
 
@@ -74,7 +74,7 @@ export default function AboutAndPress() {
           />
           <span className="ev-eyebrow">The Author Identity</span>
           <h2 className="mt-6 font-serif text-4xl md:text-5xl ink-bleed">About Elian Voigt</h2>
-          <div className="mt-7 space-y-5 max-w-xl font-serif text-lg leading-relaxed text-foreground/80">
+          <div className="mt-7 space-y-5 max-w-xl font-prose text-xl leading-relaxed text-foreground/80">
             {aboutShort.map((p, i) => (
               <p key={i}>{p}</p>
             ))}

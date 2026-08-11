@@ -39,7 +39,7 @@ export default function Fragments() {
             <p className="ev-catalog-no mb-6">Advance praise</p>
             <div className="flex flex-col gap-5">
               {praise.map((p, i) => (
-                <p key={i} className="font-serif italic text-foreground/70">
+                <p key={i} className="font-prose italic text-lg text-foreground/70">
                   “{p.quote}” <span className="ev-catalog-no not-italic">— {p.source}</span>
                 </p>
               ))}

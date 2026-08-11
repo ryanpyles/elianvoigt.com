@@ -15,7 +15,7 @@ export default function NewsletterSection() {
         <h2 className="mt-6 font-serif text-4xl md:text-5xl ink-bleed">
           Join the reader list
         </h2>
-        <p className="mx-auto mt-5 max-w-xl font-serif italic text-lg text-foreground/70">
+        <p className="mx-auto mt-5 max-w-xl font-prose italic text-xl text-foreground/70">
           New books, recovered fragments, and field notes from the imprint — sent
           rarely, never forwarded, never sold. A quiet correspondence.
         </p>
