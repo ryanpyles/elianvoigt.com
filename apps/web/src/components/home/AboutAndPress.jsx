@@ -56,8 +56,13 @@ function PressKit() {
 
 export default function AboutAndPress() {
   return (
-    <section id="about" className="scroll-mt-24 relative z-20 py-24">
-      <div className="max-w-[90rem] mx-auto px-6 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-stretch">
+    <section id="about" className="scroll-mt-24 relative z-20 overflow-hidden py-24">
+      <div
+        className="ev-glow"
+        aria-hidden="true"
+        style={{ '--glow-x': '15%', '--glow-y': '30%', '--glow-size': '36rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.1' }}
+      />
+      <div className="relative z-10 max-w-[90rem] mx-auto px-6 lg:px-12 grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-stretch">
         {/* About */}
         <div className="flex flex-col justify-center">
           <img

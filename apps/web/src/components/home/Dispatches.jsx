@@ -27,8 +27,13 @@ export default function Dispatches() {
   }, []);
 
   return (
-    <section id="dispatches" className="scroll-mt-24 relative z-20 py-24">
-      <div className="max-w-[90rem] mx-auto px-6 lg:px-12">
+    <section id="dispatches" className="scroll-mt-24 relative z-20 overflow-hidden py-24">
+      <div
+        className="ev-glow"
+        aria-hidden="true"
+        style={{ '--glow-x': '4%', '--glow-y': '100%', '--glow-size': '34rem', '--glow-color': 'var(--ev-blood)', '--glow-strength': '0.08' }}
+      />
+      <div className="relative z-10 max-w-[90rem] mx-auto px-6 lg:px-12">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4 border-b border-foreground/15 pb-6">
           <div>
             <span className="ev-eyebrow">From the Newsletter</span>

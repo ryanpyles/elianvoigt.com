@@ -4,8 +4,13 @@ import { fragments, praise } from '@/data/siteContent.js';
 
 export default function Fragments() {
   return (
-    <section id="fragments" className="scroll-mt-24 relative z-20 py-28 bg-foreground/[0.02] border-y border-foreground/10">
-      <div className="max-w-[90rem] mx-auto px-6 lg:px-12">
+    <section id="fragments" className="scroll-mt-24 relative z-20 overflow-hidden py-28 bg-foreground/[0.02] border-y border-foreground/10">
+      <div
+        className="ev-glow"
+        aria-hidden="true"
+        style={{ '--glow-x': '50%', '--glow-y': '0%', '--glow-size': '50rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.12' }}
+      />
+      <div className="relative z-10 max-w-[90rem] mx-auto px-6 lg:px-12">
         <div className="mb-14 text-center">
           <span className="ev-eyebrow justify-center">Fragments from the Record</span>
         </div>
@@ -20,8 +25,8 @@ export default function Fragments() {
               transition={{ duration: 1, delay: i * 0.08 }}
               className="relative pl-8"
             >
-              <span className="ev-gold absolute left-0 top-0 font-serif text-4xl leading-none">“</span>
-              <blockquote className="ev-fragment text-2xl md:text-[1.7rem]">
+              <span className="ev-gold absolute -left-1 -top-3 font-serif text-7xl leading-none opacity-30">“</span>
+              <blockquote className="ev-fragment relative text-2xl md:text-[1.7rem]">
                 {f.quote}
               </blockquote>
               <figcaption className="ev-catalog-no mt-4">— {f.source}</figcaption>

@@ -37,12 +37,35 @@ function HomePage() {
       </Helmet>
 
       <div className="min-h-screen relative z-10 bg-background">
+        <div className="ev-grain" aria-hidden="true" />
+        <div className="ev-vignette" aria-hidden="true" />
         <RetrievalPanel />
         <Header />
 
         <main className="md:ml-[140px]">
           {/* ---------------- Hero ---------------- */}
-          <section className="relative min-h-[100dvh] flex items-center px-6 lg:px-12 max-w-[90rem] mx-auto z-20">
+          <section className="relative min-h-[100dvh] flex items-center px-6 lg:px-12 max-w-[90rem] mx-auto z-20 overflow-hidden">
+            <div
+              className="ev-glow"
+              aria-hidden="true"
+              style={{ '--glow-x': '78%', '--glow-y': '18%', '--glow-size': '54rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.22' }}
+            />
+            <div
+              className="ev-glow"
+              aria-hidden="true"
+              style={{ '--glow-x': '8%', '--glow-y': '92%', '--glow-size': '38rem', '--glow-color': 'var(--ev-blood)', '--glow-strength': '0.1' }}
+            />
+            <img
+              src="/covers/terms-of-unbeing-ink-cover.png"
+              alt=""
+              aria-hidden="true"
+              loading="eager"
+              className="ev-watermark pointer-events-none absolute -right-24 -top-16 z-0 hidden w-[42rem] max-w-none select-none md:block"
+              style={{
+                WebkitMaskImage: 'radial-gradient(closest-side, black 30%, transparent 75%)',
+                maskImage: 'radial-gradient(closest-side, black 30%, transparent 75%)',
+              }}
+            />
             <div className="grid w-full grid-cols-1 items-center gap-10 xl:grid-cols-[1fr_22rem] xl:gap-16">
               <div className="flex flex-col">
             <motion.div

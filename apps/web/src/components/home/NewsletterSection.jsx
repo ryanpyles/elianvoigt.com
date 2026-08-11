@@ -4,8 +4,13 @@ import { links } from '@/data/siteContent.js';
 
 export default function NewsletterSection() {
   return (
-    <section id="subscribe" className="scroll-mt-24 relative z-20 py-28">
-      <div className="max-w-3xl mx-auto px-6 lg:px-12 text-center">
+    <section id="subscribe" className="scroll-mt-24 relative z-20 overflow-hidden py-28">
+      <div
+        className="ev-glow"
+        aria-hidden="true"
+        style={{ '--glow-x': '50%', '--glow-y': '50%', '--glow-size': '44rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.14' }}
+      />
+      <div className="relative z-10 max-w-3xl mx-auto px-6 lg:px-12 text-center">
         <span className="ev-eyebrow justify-center">Standing Subscription</span>
         <h2 className="mt-6 font-serif text-4xl md:text-5xl ink-bleed">
           Join the reader list

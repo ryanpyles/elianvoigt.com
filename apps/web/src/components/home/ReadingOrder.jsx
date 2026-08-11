@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { publishedWorks } from '@/data/catalogueData.js';
-import { readingOrder } from '@/data/siteContent.js';
+import { readingOrder, localCover } from '@/data/siteContent.js';
 
 export default function ReadingOrder() {
   const rows = readingOrder
@@ -10,8 +10,13 @@ export default function ReadingOrder() {
     .filter((r) => r.book);
 
   return (
-    <section id="reading-order" className="scroll-mt-24 relative z-20 py-24">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12">
+    <section id="reading-order" className="scroll-mt-24 relative z-20 overflow-hidden py-24">
+      <div
+        className="ev-glow"
+        aria-hidden="true"
+        style={{ '--glow-x': '95%', '--glow-y': '50%', '--glow-size': '36rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.1' }}
+      />
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
         <div className="mb-3 flex items-end justify-between">
           <span className="ev-eyebrow">Order of Retrieval</span>
           <span className="ev-catalog-no">Sequence disputed · do not normalize</span>
@@ -31,7 +36,18 @@ export default function ReadingOrder() {
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.7, delay: i * 0.05 }}
             >
-              <Link to={`/catalogue/${r.id}`} className="ev-ledger-row group block md:grid">
+              <Link to={`/catalogue/${r.id}`} className="ev-ledger-row group relative block overflow-hidden md:grid">
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-y-0 right-0 w-40 opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-[0.08]"
+                  style={{
+                    backgroundImage: `url(${localCover(r.book.id)})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    WebkitMaskImage: 'linear-gradient(to left, black, transparent)',
+                    maskImage: 'linear-gradient(to left, black, transparent)',
+                  }}
+                />
                 <span className="font-serif text-2xl text-foreground/40 transition-colors group-hover:text-[hsl(var(--ev-gold))]">
                   {r.book.num}
                 </span>

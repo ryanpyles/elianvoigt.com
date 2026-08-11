@@ -1456,4 +1456,55 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
   }
+
+  /* ============================================================
+     ELIAN VOIGT — ATMOSPHERE
+     Page-wide grain/vignette, radial glows, ambient watermark art.
+     Scoped to the homepage wrapper (.ev-atmosphere-root) so other
+     pages keep their own established look.
+     ============================================================ */
+
+  /* Fine film grain + edge vignette, fixed over the full viewport */
+  .ev-grain {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='evNoise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23evNoise)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+  .ev-vignette {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+      radial-gradient(120% 90% at 50% 0%, transparent 55%, hsl(var(--ev-ink) / 0.10) 100%),
+      radial-gradient(140% 100% at 50% 100%, transparent 55%, hsl(var(--ev-ink) / 0.14) 100%);
+  }
+
+  /* Soft radial glow — position/color/size via CSS custom properties */
+  .ev-glow {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 9999px;
+    width: var(--glow-size, 42rem);
+    height: var(--glow-size, 42rem);
+    left: var(--glow-x, 50%);
+    top: var(--glow-y, 0%);
+    transform: translate(-50%, -50%);
+    background: radial-gradient(closest-side, hsl(var(--glow-color, var(--ev-gold)) / var(--glow-strength, 0.16)), transparent 70%);
+    filter: blur(2px);
+  }
+
+  /* Oversized faint watermark art sitting behind section content */
+  .ev-watermark {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    mix-blend-mode: multiply;
+  }
 }
