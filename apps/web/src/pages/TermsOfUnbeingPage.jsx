@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { links } from '@/data/siteContent.js';
 import '@/styles/tou-theme.css';
 import {
-  COVER, ISBN, PAPERBACK_URL, REVIEW_EMAIL,
+  COVER, WRAPAROUND, ISBN, PAPERBACK_URL, REVIEW_EMAIL,
   CLAUSES, LEASE_CONCEPTS, SYSTEMS, MOTIFS, COMPS,
   CHARACTERS_MAIN, CHARACTERS_MORE, FAQ, ALSO_BY,
 } from '@/data/termsOfUnbeingLore.js';
@@ -46,10 +46,8 @@ function OptionalImage({ src, alt, className }) {
   return <img src={src} alt={alt} loading="lazy" onError={() => setOk(false)} className={className} />;
 }
 
-// Prefers the local final cover; falls back to the remote cover until it exists.
 function CoverImg({ className, alt }) {
-  const [src, setSrc] = useState('/covers/terms-newest-epub.png');
-  return <img src={src} alt={alt} className={className} onError={() => { if (src !== COVER) setSrc(COVER); }} />;
+  return <img src={COVER} alt={alt} className={className} />;
 }
 
 // Renders the full wraparound jacket only if the asset is present.
@@ -62,7 +60,7 @@ function WraparoundShowcase() {
         <p className="tou-eyebrow tou-brass">The Object</p>
         <h2 className="tou-h2">Shelter is a contract. Oblivion is the fee.</h2>
         <img
-          src="/tou/wraparound.png"
+          src={WRAPAROUND}
           alt="Full wraparound cover of Terms of Unbeing, showing the front, spine, and back with author biography."
           loading="lazy"
           onError={() => setOk(false)}

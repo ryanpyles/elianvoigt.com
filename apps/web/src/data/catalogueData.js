@@ -47,7 +47,7 @@ export const publishedWorks = [
     title: "Terms of Unbeing",
     genre: "Bureaucratic Horror / Contract Law",
     description: "A too-good-to-be-true lease lands a burned-out ex-corpsman at the Faust, where the contract rewrites itself as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty.",
-    coverImage: "/covers/terms-newest-epub.png",
+    coverImage: "/covers/Termscroppedcover.png",
     formats: [
       { key: "ISBN", value: "9798196275180" },
       { key: "FORMAT", value: "Paperback, 176pp" },
@@ -350,7 +350,7 @@ export const bookPages = [
     subtitle: "A Lease Against the Self",
     positioningLine: "A too-good-to-be-true lease at the Faust, where the rent is collected in memory and loyalty.",
     genre: "Bureaucratic Horror / Contract Law",
-    coverImage: "/covers/terms-newest-epub.png",
+    coverImage: "/covers/Termscroppedcover.png",
     shortDescription: "A below-market lease lands burned-out ex-corpsman Gideon Cross at the Faust, where the contract mutates as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty. His only anchor is Arya, a dog who remembers him even when he can't.",
     expandedSynopsis: "When a too-good-to-be-true rental lands Gideon Cross a residence at the Faust, the quiet is the first thing to go. The concierge smiles in charcoal and silk, the lease mutates while he signs, and the building's HOA convenes a tribunal for \"Unauthorized Spiritual Leakage.\" Gideon doesn't only lose possessions — rooms empty, names blur, and the invoices arrive written in the color of memory. His anchor is Arya, a dog who remembers him even when he can't. When Management explains \"Existential Equity\" — a monthly tax on the weight of sorrow and the reach of loyalty — his fight becomes a ledger: barter identity, trade memory, or be erased. A propulsive, unnerving novel about leases that outlive their signatures, and a man learning what he will die to keep.",
     thematicKeywords: [

@@ -68,7 +68,7 @@ export const booksData = [
     excerpt: 'Each choice has a fee; each refusal risks foreclosure of the self.',
     themes: ['identity', 'bureaucracy', 'memory', 'loss', 'existential erasure', 'loyalty', 'contracts', 'dissolution'],
     subjects: ['BUREAUCRACY', 'IDENTITY', 'MEMORY', 'EXISTENTIAL SYSTEMS', 'CONTRACTS'],
-    coverImage: '/covers/terms-newest-epub.png',
+    coverImage: '/covers/Termscroppedcover.png',
     links: { paperback: null, kindle: null, hardcover: null },
     relatedFieldNotes: ['architecture-of-forgetting', 'syntax-of-the-unreal'],
     relatedBooks: ['summer-of-the-glass-bees', 'declensions-of-dark-water'],

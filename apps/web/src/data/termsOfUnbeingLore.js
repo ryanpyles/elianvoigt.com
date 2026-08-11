@@ -9,7 +9,8 @@
 // tribunal hearing or the book's ending.
 // ---------------------------------------------------------------------------
 
-export const COVER = '/covers/terms-newest-epub.png';
+export const COVER = '/covers/Termscroppedcover.png';
+export const WRAPAROUND = '/covers/TermsofUnbeingCover_full.png';
 export const ISBN = '9798189011627';
 // Non-fabricated, functional link: an Amazon search by ISBN. Replace with the
 // direct product URL once the listing URL is known.
