@@ -33,7 +33,7 @@ export const publishedWorks = [
     title: "Declensions of Dark Water",
     genre: "Coastal Horror / Linguistics",
     description: "A Cambridge linguist arrives to record a dying dialect in an isolated Icelandic village and finds a grammar of avoidance — where a misdeclension can summon a storm and an unfinished sentence can crack the coast.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/3b5c85b9d9419bef7dbb379abd5df9a9.png",
+    coverImage: "/covers/DeclensionsEpubCover.png",
     formats: [
       { key: "ISBN", value: "979-8245377353" },
       { key: "FORMAT", value: "Hardcover, 288pp" },
@@ -47,7 +47,7 @@ export const publishedWorks = [
     title: "Terms of Unbeing",
     genre: "Bureaucratic Horror / Contract Law",
     description: "A too-good-to-be-true lease lands a burned-out ex-corpsman at the Faust, where the contract rewrites itself as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/79bae30f343a1b0ee8d13a09ec9b159f.png",
+    coverImage: "/covers/terms-newest-epub.png",
     formats: [
       { key: "ISBN", value: "9798196275180" },
       { key: "FORMAT", value: "Paperback, 176pp" },
@@ -277,7 +277,7 @@ export const bookPages = [
     subtitle: "A Folk Horror of Language and the Sea",
     positioningLine: "In a village that survives by refusing to name the sea, a misdeclension can summon a storm.",
     genre: "Literary Folk Horror / Linguistics",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/3b5c85b9d9419bef7dbb379abd5df9a9.png",
+    coverImage: "/covers/DeclensionsEpubCover.png",
     shortDescription: "A Cambridge linguist arrives in the isolated Icelandic village of Brynjavík to document a disappearing dialect — and finds a grammar of avoidance in which errors carry physical consequences, and the sea listens not to meaning but to form.",
     expandedSynopsis: "When linguist Rowan Hale comes to Brynjavík to record a dying dialect, he finds a language governed by avoidance, silence, and restraint: words are weighed, sentences are left unfinished, and certain nouns are never spoken aloud. As he documents funeral rites, coastal repairs, and everyday speech, a pattern emerges — grammatical errors coincide with physical consequences. Storms arrive after misdeclensions. Buildings fail where sentences fracture. The sea listens not to meaning, but to form. A literary folk horror novel about language as infrastructure and grief as syntax, and what happens when grammar stops describing the world and begins to enforce it.",
     thematicKeywords: [
@@ -350,7 +350,7 @@ export const bookPages = [
     subtitle: "A Lease Against the Self",
     positioningLine: "A too-good-to-be-true lease at the Faust, where the rent is collected in memory and loyalty.",
     genre: "Bureaucratic Horror / Contract Law",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/79bae30f343a1b0ee8d13a09ec9b159f.png",
+    coverImage: "/covers/terms-newest-epub.png",
     shortDescription: "A below-market lease lands burned-out ex-corpsman Gideon Cross at the Faust, where the contract mutates as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty. His only anchor is Arya, a dog who remembers him even when he can't.",
     expandedSynopsis: "When a too-good-to-be-true rental lands Gideon Cross a residence at the Faust, the quiet is the first thing to go. The concierge smiles in charcoal and silk, the lease mutates while he signs, and the building's HOA convenes a tribunal for \"Unauthorized Spiritual Leakage.\" Gideon doesn't only lose possessions — rooms empty, names blur, and the invoices arrive written in the color of memory. His anchor is Arya, a dog who remembers him even when he can't. When Management explains \"Existential Equity\" — a monthly tax on the weight of sorrow and the reach of loyalty — his fight becomes a ledger: barter identity, trade memory, or be erased. A propulsive, unnerving novel about leases that outlive their signatures, and a man learning what he will die to keep.",
     thematicKeywords: [
