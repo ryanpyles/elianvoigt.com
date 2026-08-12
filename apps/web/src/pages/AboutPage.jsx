@@ -12,7 +12,7 @@ function AboutPage() {
         <meta name="description" content="Elian Voigt — the literary identity behind novels of language, memory, bureaucracy, ritual, grief, and the unreal." />
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="voigt-brand min-h-screen bg-background">
         <Header />
 
         <main className="pt-32 pb-24">

@@ -51,7 +51,7 @@ export default function DeclensionsOfDarkWaterArchive() {
   };
 
   return (
-    <div className="min-h-screen bg-[hsl(var(--coastal-damp))] text-foreground">
+    <div className="voigt-brand min-h-screen bg-[hsl(var(--coastal-damp))] text-foreground">
       <Helmet>
         <title>Archive: Declensions of Dark Water | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>

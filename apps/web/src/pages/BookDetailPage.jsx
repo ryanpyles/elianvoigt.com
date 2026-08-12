@@ -20,7 +20,7 @@ export default function BookDetailPage() {
 
   if (!book) {
     return (
-      <div className="archive-page flex min-h-screen">
+      <div className="voigt-brand archive-page flex min-h-screen">
         <Header />
         <RetrievalTerminal />
         <main className="main-content flex-1 pt-24 pb-32 flex items-center justify-center">
@@ -36,7 +36,7 @@ export default function BookDetailPage() {
   }
 
   return (
-    <div className={`archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
+    <div className={`voigt-brand archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
       <Helmet>
         <title>{`${book.title} — Elian Voigt Catalogue`}</title>
         <meta name="description" content={book.shortDescription || `Details for ${book.title}`} />

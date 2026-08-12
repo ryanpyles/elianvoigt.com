@@ -11,7 +11,7 @@ export default function WhatSurvivesIsProofPage() {
   if (!book) return null;
 
   return (
-    <div className={`archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
+    <div className={`voigt-brand archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
       <Helmet>
         <title>{`${book.title} — Elian Voigt Catalogue`}</title>
         <meta name="description" content={book.shortDescription || `Details for ${book.title}`} />

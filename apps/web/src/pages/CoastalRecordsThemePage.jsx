@@ -35,7 +35,7 @@ export default function CoastalRecordsThemePage() {
   };
 
   return (
-    <div className="archive-page min-h-screen bg-[hsl(var(--coastal-damp))] text-foreground">
+    <div className="voigt-brand archive-page min-h-screen bg-[hsl(var(--coastal-damp))] text-foreground">
       <Helmet>
         <title>Coastal Records — Thematic Hub | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

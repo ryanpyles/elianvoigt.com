@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.jsx';
 
 export default function FieldNote004_17Page() {
   return (
-    <div className="min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
+    <div className="voigt-brand min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
       <Helmet><title>ARCHIVE 004.17 - NOMINATIVE AVOIDANCE</title></Helmet>
       <Header />
       <main className="pt-32 pb-24 max-w-3xl mx-auto px-6 relative z-20">

@@ -30,7 +30,7 @@ export default function WhatSurvivesIsProofArchive() {
   };
 
   return (
-    <div className="min-h-screen bg-[hsl(var(--forensic-sparse))] text-foreground">
+    <div className="voigt-brand min-h-screen bg-[hsl(var(--forensic-sparse))] text-foreground">
       <Helmet>
         <title>Archive: What Survives Is Proof | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>

@@ -21,7 +21,7 @@ export default function ArchiveEntryPage() {
 
   if (!book) {
     return (
-      <div className="min-h-screen bg-background flex flex-col justify-center items-center">
+      <div className="voigt-brand min-h-screen bg-background flex flex-col justify-center items-center">
         <Helmet><title>Entry Not Found — Elian Voigt</title></Helmet>
         <Header />
         <div className="text-center font-mono">
@@ -33,7 +33,7 @@ export default function ArchiveEntryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="voigt-brand min-h-screen bg-background">
       <Helmet>
         <title>{`${book.title} — Archive Entry ${book.archiveEntry}`}</title>
       </Helmet>

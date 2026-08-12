@@ -10,7 +10,7 @@ export default function FieldNote004_26Page() {
   const pageMarginalia = getByDocument('field-note-004-26');
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
+    <div className="voigt-brand min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
       <Helmet><title>ARCHIVE 004.26 - STRUCTURAL FEATURES</title></Helmet>
       
       {/* Ghost text / Metadata overlay logic */}

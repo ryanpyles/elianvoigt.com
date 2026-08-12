@@ -12,7 +12,7 @@ function PrivacyPolicyPage() {
         <meta name="description" content="Privacy policy for Elian Voigt." />
       </Helmet>
 
-      <div className="min-h-screen bg-background">
+      <div className="voigt-brand min-h-screen bg-background">
         <Header />
 
         <main className="pt-32 pb-24">

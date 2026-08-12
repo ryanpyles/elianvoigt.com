@@ -6,7 +6,7 @@ import Footer from '@/components/Footer.jsx';
 
 export default function FieldNote004_20Page() {
   return (
-    <div className="min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
+    <div className="voigt-brand min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative">
       <Helmet><title>ARCHIVE 004.20 - GENITIVE CASE</title></Helmet>
       <Header />
       <main className="pt-32 pb-24 max-w-3xl mx-auto px-6 relative z-20">

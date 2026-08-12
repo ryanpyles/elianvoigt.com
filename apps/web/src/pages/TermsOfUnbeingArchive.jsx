@@ -30,7 +30,7 @@ export default function TermsOfUnbeingArchive() {
   };
 
   return (
-    <div className="min-h-screen bg-[hsl(var(--contractual-dense))] text-foreground">
+    <div className="voigt-brand min-h-screen bg-[hsl(var(--contractual-dense))] text-foreground">
       <Helmet>
         <title>Archive: Terms of Unbeing | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(collectionSchema)}</script>

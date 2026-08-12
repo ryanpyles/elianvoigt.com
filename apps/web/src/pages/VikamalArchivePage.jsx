@@ -33,7 +33,7 @@ export default function VikamalArchivePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative overflow-hidden">
+    <div className="voigt-brand min-h-screen bg-background text-foreground bg-ledger paper-grain fold-shadow relative overflow-hidden">
       <Helmet><title>VIKAMÁL LINGUISTIC ARCHIVE — Elian Voigt</title></Helmet>
       
       {/* Texture overlays */}

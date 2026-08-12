@@ -41,7 +41,7 @@ export default function FieldNoteDetailPage() {
 
   if (loading) {
     return (
-      <div className="archive-page min-h-screen bg-background text-foreground flex justify-center items-center metadata-text">
+      <div className="voigt-brand archive-page min-h-screen bg-background text-foreground flex justify-center items-center metadata-text">
         <RetrievalTerminal />
         <div className="main-content flex flex-col justify-center items-center h-full">
           <Header />
@@ -53,7 +53,7 @@ export default function FieldNoteDetailPage() {
 
   if (!note) {
     return (
-      <div className="archive-page min-h-screen bg-background text-foreground">
+      <div className="voigt-brand archive-page min-h-screen bg-background text-foreground">
         <Helmet><title>Document Not Found — Elian Voigt</title></Helmet>
         <RetrievalTerminal />
         <div className="main-content flex flex-col justify-center items-center min-h-screen">
@@ -70,7 +70,7 @@ export default function FieldNoteDetailPage() {
   const tier = getTierForNote(note);
 
   return (
-    <div className="archive-page min-h-screen bg-background text-foreground">
+    <div className="voigt-brand archive-page min-h-screen bg-background text-foreground">
       <Helmet>
         <title>{`${note.fieldNoteNumber || 'Archival Fragment'} — Elian Voigt`}</title>
       </Helmet>

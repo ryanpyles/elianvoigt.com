@@ -69,7 +69,7 @@ export default function TaxonomyPage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="voigt-brand min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Archive Taxonomy — Elian Voigt | FORMÆTRIX Imprint</title>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

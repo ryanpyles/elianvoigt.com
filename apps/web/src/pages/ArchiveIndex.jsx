@@ -34,7 +34,7 @@ export default function ArchiveIndex() {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="voigt-brand min-h-screen bg-background text-foreground">
       <Helmet><title>Institutional Archive — Elian Voigt | FORMÆTRIX Imprint</title></Helmet>
 
       <BreadcrumbSchema items={[

@@ -17,7 +17,7 @@ export default function LanguageThemePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="voigt-brand min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Language as System — Thematic Hub | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>

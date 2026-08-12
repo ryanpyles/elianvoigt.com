@@ -7,7 +7,7 @@ import RetrievalTerminal from '@/components/RetrievalTerminal.jsx';
 
 export default function PublishingCataloguePage() {
   return (
-    <div className="archive-page flex min-h-screen">
+    <div className="voigt-brand archive-page flex min-h-screen">
       <Helmet>
         <title>Publishing Catalogue — Elian Voigt</title>
         <meta name="description" content="The collected works and publishing catalogue of Elian Voigt, maintained by FORMÆTRIX Imprint." />

@@ -56,7 +56,7 @@ export default function FieldNotesArchivePage() {
   const unrecoverable = shadowRecords.length - withheld;
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="voigt-brand min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Field Notes Archive — Elian Voigt</title>
       </Helmet>

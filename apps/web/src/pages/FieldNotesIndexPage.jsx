@@ -44,7 +44,7 @@ export default function FieldNotesIndexPage() {
   };
 
   return (
-    <div className="archive-page min-h-screen bg-background text-foreground">
+    <div className="voigt-brand archive-page min-h-screen bg-background text-foreground">
       <Helmet>
         <title>Field Notes Aggregation | Elian Voigt</title>
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
