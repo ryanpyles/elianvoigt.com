@@ -88,16 +88,16 @@ export const publishedWorks = [
 export const upcomingWorks = [
   {
     num: "·",
-    title: "Liminal 6:17",
-    genre: "Temporal Anomalies / Transit",
-    description: "A collection of field notes detailing the specific minute where public transit systems overlap with non-euclidean spaces.",
+    title: "Liminal 06:17",
+    genre: "Technological Horror / Digital Mysticism",
+    description: "Three friends build a daemon to synchronize their minds. It works. Each day the loop tightens toward 6:17, and only a dog's heartbeat holds the three of them apart.",
     status: "Forthcoming"
   },
   {
     num: "·",
-    title: "Babel Threshold: A Palimpsest of Tongues",
-    genre: "Linguistic Horror / Translation",
-    description: "An analysis of untranslatable phenomena that weaponize syntax against the reader, resulting in semantic fracture.",
+    title: "Babel Threshold: Palimpsest of Tongues",
+    genre: "Linguistic Horror / Experimental Literary",
+    description: "A linguist immerses in a new language every month for a year, refusing to code-switch, logging each lost word as a wound. By the fourth month, he can no longer say which of him is the writer and which is the page.",
     status: "Forthcoming"
   }
 ];
