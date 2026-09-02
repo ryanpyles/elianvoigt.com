@@ -67,12 +67,12 @@ export const latestReleaseId = 'declensions-of-dark-water';
 // Suggested order of reading. Follows the catalogue numbering, but the site's
 // voice insists the sequence is non-binding ("Sequence disputed. Do not normalize.")
 export const readingOrder = [
-  { id: 'what-survives-is-proof', note: 'Begin here. Grief as evidence; a ledger that will not close.' },
-  { id: 'summer-of-the-glass-bees', note: 'A novella. Memory archived without being kept.' },
+  { id: 'terms-of-unbeing', note: 'Begin here. A lease that outlives its signature. Identity, itemized.' },
   { id: 'declensions-of-dark-water', note: 'Language as infrastructure on an eroding coast.' },
-  { id: 'terms-of-unbeing', note: 'A lease that outlives its signature. Identity, itemized.' },
-  { id: 'feast-of-the-broadcast-saints', note: 'A burned-out producer, a livestreamed miracle, and a Network that monetizes belief.' },
   { id: 'the-quiet-metric', note: 'Attention as intimacy, then as control — the quietest menace in the catalogue.' },
+  { id: 'what-survives-is-proof', note: 'Grief as evidence; a ledger that will not close.' },
+  { id: 'summer-of-the-glass-bees', note: 'A novella. Memory archived without being kept.' },
+  { id: 'feast-of-the-broadcast-saints', note: 'A burned-out producer, a livestreamed miracle, and a Network that monetizes belief.' },
 ];
 
 // Fragments — actual lines drawn from the records. Honest, in lieu of
