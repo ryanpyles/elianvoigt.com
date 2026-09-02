@@ -54,6 +54,21 @@ export default function GrammarArchivePage() {
         <ol className="brk-prose" style={{ paddingLeft: '1.2rem' }}>
           {TABOO_RULES.map((r) => <li key={r} style={{ marginBottom: '0.9rem', maxWidth: '68ch' }}>{r}</li>)}
         </ol>
+
+        <div className="brk-erosion">
+          <span className="brk-erosion-caption">Recovered fragment — grammatical erosion in progress</span>
+          <p className="brk-erosion-sentence">
+            Never{' '}
+            <span className="brk-erosion-word" style={{ '--erode-delay': '0s' }}>speak</span>{' '}
+            <span className="brk-erosion-word" style={{ '--erode-delay': '2.4s' }}>the</span>{' '}
+            sea in{' '}
+            <span className="brk-erosion-word" style={{ '--erode-delay': '4.8s' }}>the</span>{' '}
+            nominative.
+          </p>
+          <p className="brk-muted brk-sm" style={{ marginTop: '1rem' }}>
+            The nouns hold. The case system keeps taking the rest.
+          </p>
+        </div>
       </BrynjavikSection>
 
       <BrynjavikSection eyebrow="Silence as Syntax" heading="What a pause means.">

@@ -109,4 +109,15 @@
 
 .brk-restricted{ border:1px dashed rgba(27,28,26,0.3); padding:40px clamp(20px,5vw,48px); margin:2.5rem 0; background:var(--brk-paper-dim); }
 
+/* Grammatical erosion — nouns hold their place while verbs, articles, and
+   pronouns slowly fade, leaving a dotted gap. The sentence keeps its shape;
+   the case system keeps taking words out of it. */
+.brk-erosion{ border:1px dashed rgba(27,28,26,0.25); background:rgba(27,28,26,0.02); padding:1.5rem 1.7rem; margin-top:2rem; }
+.brk-erosion-caption{ display:block; font-family:'IBM Plex Mono',monospace; font-size:0.6rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--brk-muted); margin-bottom:0.9rem; }
+.brk-erosion-sentence{ font-family:'Playfair Display',serif; font-size:1.35rem; line-height:1.7; color:var(--brk-ink); }
+.brk-erosion-word{ position:relative; display:inline-block; animation:brk-erode 12s ease-in-out infinite; animation-delay:var(--erode-delay,0s); }
+.brk-erosion-word::after{ content:''; position:absolute; left:2px; right:2px; bottom:0.1em; border-bottom:1px dotted var(--brk-rust); opacity:0; animation:brk-erode-line 12s ease-in-out infinite; animation-delay:var(--erode-delay,0s); }
+@keyframes brk-erode{ 0%,32%{ opacity:1; filter:blur(0); } 48%,68%{ opacity:0.05; filter:blur(0.5px); } 84%,100%{ opacity:1; filter:blur(0); } }
+@keyframes brk-erode-line{ 0%,32%{ opacity:0; } 48%,68%{ opacity:0.5; } 84%,100%{ opacity:0; } }
+
 @media(prefers-reduced-motion:reduce){ .brk-page *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; } }

@@ -2,6 +2,33 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fragments, praise } from '@/data/siteContent.js';
 
+// Ink memory: a word the record no longer keeps, left as a stain behind the
+// first word of each fragment — decorative archival texture, not a claim
+// about manuscript content (same category as the site's other invented
+// archive chrome, e.g. "ARCHIVE STATUS: PARTIAL RELEASE").
+const ERASED_WORDS = {
+  'Feast of the Broadcast Saints': 'witness',
+  'What Survives Is Proof': 'her',
+  'Declensions of Dark Water': 'name',
+  'Terms of Unbeing': 'self',
+  'Summer of the Glass Bees': 'grief',
+  'The Quiet Metric': 'silence',
+};
+
+function QuoteWithMemory({ quote, source }) {
+  const erased = ERASED_WORDS[source];
+  const spaceIndex = quote.indexOf(' ');
+  if (!erased || spaceIndex === -1) return quote;
+  const firstWord = quote.slice(0, spaceIndex);
+  const rest = quote.slice(spaceIndex);
+  return (
+    <>
+      <span className="ev-ink-memory" data-erased={erased}><span>{firstWord}</span></span>
+      {rest}
+    </>
+  );
+}
+
 export default function Fragments() {
   return (
     <section id="fragments" className="scroll-mt-24 relative z-20 overflow-hidden py-28 bg-foreground/[0.02] border-y border-foreground/10">
@@ -27,7 +54,7 @@ export default function Fragments() {
             >
               <span className="ev-gold absolute -left-1 -top-3 font-serif text-7xl leading-none opacity-30">“</span>
               <blockquote className="ev-fragment relative text-2xl md:text-[1.7rem]">
-                {f.quote}
+                <QuoteWithMemory quote={f.quote} source={f.source} />
               </blockquote>
               <figcaption className="ev-catalog-no mt-4">— {f.source}</figcaption>
             </motion.figure>

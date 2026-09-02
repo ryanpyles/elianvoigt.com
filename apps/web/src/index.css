@@ -1593,4 +1593,53 @@
     border: 1px solid hsl(var(--brand-rust) / 0.4);
     border-radius: 9999px;
   }
+
+  /* Ink memory — a deleted word leaves a stain. The visible word sits inside
+     the ghost of whatever used to occupy that space. */
+  .ev-ink-memory {
+    position: relative;
+    display: inline-block;
+  }
+  .ev-ink-memory::before {
+    content: attr(data-erased);
+    position: absolute;
+    left: 0.05em;
+    top: -0.2em;
+    color: transparent;
+    -webkit-text-stroke: 0.6px hsl(var(--foreground) / 0.22);
+    font-style: italic;
+    filter: blur(1.3px);
+    transform: scale(1.2) rotate(-3deg);
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .ev-ink-memory > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Palimpsest reveal — hover/focus scrapes the current sentence away
+     left-to-right, exposing an older layer underneath. */
+  .tou-palimpsest {
+    position: relative;
+    cursor: help;
+  }
+  .tou-palimpsest-under {
+    position: absolute;
+    inset: 0;
+    color: hsl(var(--tou-brass));
+    font-style: italic;
+    opacity: 0.9;
+  }
+  .tou-palimpsest-current {
+    position: relative;
+    background: hsl(var(--tou-black));
+    transition: clip-path 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+    clip-path: inset(0 0 0 0);
+  }
+  .tou-palimpsest:hover .tou-palimpsest-current,
+  .tou-palimpsest:focus-within .tou-palimpsest-current {
+    clip-path: inset(0 0 0 100%);
+  }
 }
