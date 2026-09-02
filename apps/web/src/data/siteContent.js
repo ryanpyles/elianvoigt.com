@@ -52,9 +52,8 @@ export const localCover = (id) => `/covers/${id}-ink-cover.png`;
 
 // Updated/final cover art for the homepage spotlight, where it isn't yet the
 // catalogue coverImage. Falls through to book.coverImage when absent.
-export const featuredCovers = {
-  'terms-of-unbeing': '/tou/epub-terms-cover.png',
-};
+// Covers now live in the catalogue data directly; no per-book override needed.
+export const featuredCovers = {};
 export const featuredCover = (id) => featuredCovers[id] || null;
 
 // Books with a dedicated immersive page (linked instead of the catalogue entry).
@@ -63,7 +62,7 @@ export const dedicatedPages = {
 };
 
 // The book held up as the current release.
-export const latestReleaseId = 'terms-of-unbeing';
+export const latestReleaseId = 'declensions-of-dark-water';
 
 // Suggested order of reading. Follows the catalogue numbering, but the site's
 // voice insists the sequence is non-binding ("Sequence disputed. Do not normalize.")
