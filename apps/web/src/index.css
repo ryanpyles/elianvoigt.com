@@ -1594,6 +1594,22 @@
     border-radius: 9999px;
   }
 
+  /* Signature loader — the "Elian Voigt" ink signature drawing itself in on
+     boot, before the requested page fades in beneath it. */
+  .ev-signature-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .ev-signature-loader-svg {
+    width: min(70vw, 460px);
+    height: auto;
+  }
+
   /* Ink memory — a deleted word leaves a stain. The visible word sits inside
      the ghost of whatever used to occupy that space. */
   .ev-ink-memory {

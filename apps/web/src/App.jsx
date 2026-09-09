@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from '@/components/ui/sonner.jsx';
 import { Helmet } from 'react-helmet';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import SignatureLoader from './components/SignatureLoader.jsx';
 
 import HomePage from './pages/HomePage.jsx';
 import ArchiveEntryPage from './pages/ArchiveEntryPage.jsx';
@@ -126,9 +127,12 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  const [booting, setBooting] = useState(true);
+
   return (
     <Router>
       <ScrollToTop />
+      {booting && <SignatureLoader onComplete={() => setBooting(false)} />}
       <AnimatedRoutes />
       <Toaster />
     </Router>
