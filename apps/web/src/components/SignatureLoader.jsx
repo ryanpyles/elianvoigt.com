@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Ink strokes of the "Elian Voigt" signature mark, in writing order — the
@@ -12,39 +12,65 @@ const SIGNATURE_STROKES = [
   'M 926.53,331.38 C 927.35 332.52, 928.75 333.01, 930.20 333.23 C 931.65 333.45, 932.54 333.10, 933.78 332.47 C 935.01 331.83, 935.92 331.21, 936.37 330.04 C 936.83 328.87, 936.72 327.68, 936.03 326.63 C 935.34 325.58, 934.27 325.12, 932.91 324.78 C 931.54 324.43, 930.58 324.35, 929.22 324.91 C 927.85 325.46, 926.63 326.24, 926.09 327.53 C 925.55 328.83, 925.71 330.24, 926.53 331.38',
 ];
 
-const DRAW_DURATION = 0.9;
-const STAGGER = 0.15;
-const FILL_DURATION = 0.4;
-const FILL_LEAD = 0.25;
+// Real handwriting doesn't move at one constant speed — a long cursive
+// flourish takes longer than a quick dot. Stroke durations are measured
+// from each path's actual ink length and scaled between these bounds,
+// rather than a single fixed duration for every stroke.
+const MIN_DURATION = 0.42;
+const MAX_DURATION = 1.35;
+const OVERLAP = 0.55; // next stroke starts partway through the previous one
+const FILL_START_FRACTION = 0.62; // ink starts soaking in before the outline finishes
+const FILL_DURATION_FRACTION = 0.55;
 const HOLD_MS = 450;
 const FADE_MS = 500;
 
-const ANIMATE_PHASE_MS =
-  (SIGNATURE_STROKES.length - 1) * STAGGER * 1000 +
-  DRAW_DURATION * 1000 -
-  FILL_LEAD * 1000 +
-  FILL_DURATION * 1000;
+function computeTimings(lengths) {
+  const maxLen = Math.max(...lengths, 1);
+  const durations = lengths.map((len) => MIN_DURATION + (len / maxLen) * (MAX_DURATION - MIN_DURATION));
+  const delays = [];
+  durations.forEach((d, i) => {
+    delays.push(i === 0 ? 0 : delays[i - 1] + durations[i - 1] * OVERLAP);
+  });
+  const totalMs = Math.max(...delays.map((delay, i) => delay + durations[i])) * 1000;
+  return { durations, delays, totalMs };
+}
 
 export default function SignatureLoader({ onComplete }) {
   const [visible, setVisible] = useState(true);
   const [reduced, setReduced] = useState(false);
+  const [timings, setTimings] = useState(null);
+  const measureRefs = useRef([]);
 
+  // Measure each stroke's real ink length once, off the invisible reference
+  // copy below, then compute proportional draw timings from it. The visible,
+  // animated paths are only mounted once this is ready, so they never have
+  // to re-target an in-flight animation.
   useEffect(() => {
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setReduced(true);
+      return;
     }
+    const lengths = measureRefs.current.map((el) => (el ? el.getTotalLength() : 0));
+    setTimings(computeTimings(lengths));
   }, []);
 
   useEffect(() => {
-    const t = setTimeout(() => setVisible(false), reduced ? 500 : ANIMATE_PHASE_MS + HOLD_MS);
+    if (reduced) {
+      const t = setTimeout(() => setVisible(false), 500);
+      return () => clearTimeout(t);
+    }
+    if (!timings) return;
+    const t = setTimeout(() => setVisible(false), timings.totalMs + HOLD_MS);
     return () => clearTimeout(t);
-  }, [reduced]);
+  }, [reduced, timings]);
 
   useEffect(() => {
     if (visible) return;
     const t = setTimeout(() => onComplete?.(), FADE_MS);
     return () => clearTimeout(t);
   }, [visible, onComplete]);
+
+  const ready = timings || reduced;
 
   return (
     <AnimatePresence>
@@ -60,35 +86,57 @@ export default function SignatureLoader({ onComplete }) {
         >
           <svg
             className="ev-signature-loader-svg"
-            viewBox="171.424 246.207 768.224 158.675"
+            viewBox="156.424 231.207 798.224 188.675"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
-            {SIGNATURE_STROKES.map((d, i) => (
-              <motion.path
-                key={i}
-                d={d}
-                fill="currentColor"
-                stroke="hsl(var(--ev-gold-bright))"
-                strokeWidth={1.25}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                initial={{ pathLength: 0, fillOpacity: 0 }}
-                animate={{ pathLength: 1, fillOpacity: 1 }}
-                transition={
-                  reduced
-                    ? { duration: 0.3 }
-                    : {
-                        pathLength: { duration: DRAW_DURATION, delay: i * STAGGER, ease: 'easeInOut' },
-                        fillOpacity: {
-                          duration: FILL_DURATION,
-                          delay: i * STAGGER + DRAW_DURATION - FILL_LEAD,
-                          ease: 'easeIn',
-                        },
-                      }
-                }
-              />
-            ))}
+            {/* Invisible reference copy, measured once for real per-stroke
+                ink length so draw speed isn't uniform across strokes. */}
+            <g style={{ opacity: 0 }}>
+              {SIGNATURE_STROKES.map((d, i) => (
+                <path key={i} ref={(el) => (measureRefs.current[i] = el)} d={d} />
+              ))}
+            </g>
+
+            {ready && (
+              <>
+                <defs>
+                  {/* Slight, static hand-tremor: wobbles the vector outline
+                      just enough that it reads as drawn, not printed. */}
+                  <filter id="ev-sig-rough" x="-20%" y="-20%" width="140%" height="140%">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.055 0.85" numOctaves="2" seed="7" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.6" xChannelSelector="R" yChannelSelector="G" />
+                  </filter>
+                </defs>
+                <g style={{ filter: 'url(#ev-sig-rough)' }}>
+                  {SIGNATURE_STROKES.map((d, i) => {
+                    const duration = reduced ? 0.3 : timings.durations[i];
+                    const delay = reduced ? 0 : timings.delays[i];
+                    return (
+                      <motion.path
+                        key={i}
+                        d={d}
+                        fill="currentColor"
+                        stroke="hsl(var(--ev-gold-bright))"
+                        strokeWidth={1.35}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        initial={{ pathLength: 0, fillOpacity: 0 }}
+                        animate={{ pathLength: 1, fillOpacity: 1 }}
+                        transition={{
+                          pathLength: { duration, delay, ease: 'easeInOut' },
+                          fillOpacity: {
+                            duration: duration * FILL_DURATION_FRACTION,
+                            delay: delay + duration * FILL_START_FRACTION,
+                            ease: 'easeIn',
+                          },
+                        }}
+                      />
+                    );
+                  })}
+                </g>
+              </>
+            )}
           </svg>
         </motion.div>
       )}
