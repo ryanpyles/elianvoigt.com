@@ -1595,7 +1595,9 @@
   }
 
   /* Signature loader — the "Elian Voigt" ink signature drawing itself in on
-     boot, before the requested page fades in beneath it. */
+     boot, before the requested page fades in beneath it. Purely decorative:
+     pointer-events is off so it never swallows a click on the page beneath
+     it (e.g. someone clicking a nav link while it's still playing). */
   .ev-signature-loader {
     position: fixed;
     inset: 0;
@@ -1604,6 +1606,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    pointer-events: none;
   }
   .ev-signature-loader-svg {
     width: min(70vw, 460px);
