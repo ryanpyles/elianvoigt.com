@@ -28,28 +28,6 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8 metadata-text">
-          <Link 
-            to="/archive/field-notes"
-            className={`transition-opacity duration-150 ease-linear ${
-              location.pathname.startsWith('/archive/field-notes')
-                ? 'opacity-90' 
-                : 'opacity-50 hover:opacity-70'
-            }`}
-          >
-            Field Notes
-          </Link>
-          
-          <Link 
-            to="/archive/taxonomy"
-            className={`transition-opacity duration-150 ease-linear ${
-              location.pathname.startsWith('/archive/taxonomy')
-                ? 'opacity-90' 
-                : 'opacity-50 hover:opacity-70'
-            }`}
-          >
-            Taxonomy
-          </Link>
-
           <Link
             to="/publishing-catalogue"
             className={`transition-opacity duration-150 ease-linear ${
@@ -62,25 +40,25 @@ export default function Header() {
           </Link>
 
           <Link
-            to="/faust-luxury-residences"
+            to="/catalogue/declensions-of-dark-water"
             className={`transition-opacity duration-150 ease-linear ${
-              location.pathname.startsWith('/faust-luxury-residences')
+              location.pathname === '/catalogue/declensions-of-dark-water'
                 ? 'opacity-90'
                 : 'opacity-50 hover:opacity-70'
             }`}
           >
-            Faust Luxury Residences
+            Declensions of Dark Water
           </Link>
 
           <Link
-            to="/brynjavik"
+            to="/archive/field-notes"
             className={`transition-opacity duration-150 ease-linear ${
-              location.pathname.startsWith('/brynjavik')
+              location.pathname.startsWith('/archive/field-notes')
                 ? 'opacity-90'
                 : 'opacity-50 hover:opacity-70'
             }`}
           >
-            Brynjavík
+            Field notes
           </Link>
 
           <div className="relative group flex flex-col items-center">
@@ -106,11 +84,9 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="voigt-brand w-[300px] sm:w-[400px] bg-background border-l border-border/30">
             <nav className="flex flex-col gap-8 mt-16 metadata-text">
-              <Link to="/archive/field-notes" className="opacity-50">Field Notes</Link>
-              <Link to="/archive/taxonomy" className="opacity-50">Taxonomy</Link>
               <Link to="/publishing-catalogue" className="opacity-50">Catalogue</Link>
-              <Link to="/faust-luxury-residences" className="opacity-50">Faust Luxury Residences</Link>
-              <Link to="/brynjavik" className="opacity-50">Brynjavík</Link>
+              <Link to="/catalogue/declensions-of-dark-water" className="opacity-50">Declensions of Dark Water</Link>
+              <Link to="/archive/field-notes" className="opacity-50">Field notes</Link>
               <Link to="/about" className="opacity-50">About</Link>
             </nav>
           </SheetContent>

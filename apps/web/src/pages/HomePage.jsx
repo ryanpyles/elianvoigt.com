@@ -143,8 +143,7 @@ function HomePage() {
               transition={{ duration: 3, delay: 2 }}
               className="absolute right-6 lg:right-12 bottom-12 hidden text-right ev-catalog-no sm:block"
             >
-              Classification retained after third review.<br />
-              Sequence disputed. Do not normalize.
+              Classification retained after third review.
             </motion.div>
           </section>
 

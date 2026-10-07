@@ -77,16 +77,6 @@ export default function RetrievalTerminal() {
             <span className="leader-value">04</span>
           </div>
           <div className="leader-container">
-            <span className="leader-label">RELEASED</span>
-            <span className="leader-dots"></span>
-            <span className="leader-value">2026</span>
-          </div>
-          <div className="leader-container">
-            <span className="leader-label">VERIFIED</span>
-            <span className="leader-dots"></span>
-            <span className="leader-value">2024</span>
-          </div>
-          <div className="leader-container">
             <span className="leader-label">CLASS</span>
             <span className="leader-dots"></span>
             <span className="leader-value">RETAINED</span>

@@ -1,5 +1,4 @@
 import React from 'react';
-import NewsletterForm from '@/components/NewsletterForm.jsx';
 import { links } from '@/data/siteContent.js';
 
 export default function NewsletterSection() {
@@ -29,11 +28,6 @@ export default function NewsletterSection() {
           >
             Subscribe on Substack →
           </a>
-          <span className="ev-catalog-no">or leave your details directly</span>
-        </div>
-
-        <div className="mt-8 border-t border-foreground/10 pt-10">
-          <NewsletterForm />
         </div>
       </div>
     </section>

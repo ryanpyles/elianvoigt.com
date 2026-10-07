@@ -17,9 +17,8 @@ export default function ReadingOrder() {
         style={{ '--glow-x': '95%', '--glow-y': '50%', '--glow-size': '36rem', '--glow-color': 'var(--ev-gold)', '--glow-strength': '0.1' }}
       />
       <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
-        <div className="mb-3 flex items-end justify-between">
+        <div className="mb-3">
           <span className="ev-eyebrow">Order of Retrieval</span>
-          <span className="ev-catalog-no">Sequence disputed · do not normalize</span>
         </div>
         <h2 className="mb-2 font-serif text-3xl md:text-4xl">Where to begin reading</h2>
         <p className="mb-10 max-w-2xl font-prose text-xl italic text-foreground/60">

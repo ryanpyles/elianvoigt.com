@@ -304,6 +304,9 @@ export default function TermsOfUnbeingPage() {
           — each demolished and rebuilt on the same footprint without fully replacing what came before.
         </p>
         <Pull>A tenant does not relocate. A tenant is redistributed.</Pull>
+        <p>
+          <Link to="/faust-luxury-residences" className="tou-btn tou-btn--ghost">Faust Luxury Residences →</Link>
+        </p>
       </Section>
 
       {/* Lease module */}

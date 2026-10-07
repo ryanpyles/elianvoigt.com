@@ -64,8 +64,12 @@ export const dedicatedPages = {
 // The book held up as the current release.
 export const latestReleaseId = 'declensions-of-dark-water';
 
-// Suggested order of reading. Follows the catalogue numbering, but the site's
-// voice insists the sequence is non-binding ("Sequence disputed. Do not normalize.")
+// Books that have a readable excerpt page (used for the "Read an excerpt" button).
+export const excerptPages = {
+  'declensions-of-dark-water': '/archive/declensions-of-dark-water',
+};
+
+// Suggested order of reading. The books stand alone; the order is a courtesy.
 export const readingOrder = [
   { id: 'terms-of-unbeing', note: 'Begin here. A lease that outlives its signature. Identity, itemized.' },
   { id: 'declensions-of-dark-water', note: 'Language as infrastructure on an eroding coast.' },
@@ -97,7 +101,7 @@ export const aboutShort = [
   'They concern language under pressure and memory under management: what a town forgets on purpose, what a grammar will enforce, what a contract can repossess.',
 ];
 
-export const imprintNote = 'Elian Voigt is a literary identity within FORMÆTRIX Imprint.';
+export const imprintNote = 'Elian Voigt is the name the fiction is published under. The imprint is FORMÆTRIX.';
 
 // Press kit -------------------------------------------------------------------
 export const pressKit = {

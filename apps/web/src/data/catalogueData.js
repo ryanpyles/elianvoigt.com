@@ -162,8 +162,7 @@ export const bookPages = [
     formats: [
       { key: "ISBN", value: "979-8-25179-236-2" },
       { key: "FORMAT", value: "Hardcover, 312pp" },
-      { key: "IDENTIFIER", value: "EV-FBS-01" },
-      { key: "YEAR", value: "2018" }
+      { key: "IDENTIFIER", value: "EV-FBS-01" }
     ],
     status: "AVAILABLE",
     metadataLabels: {
@@ -274,10 +273,14 @@ export const bookPages = [
     id: "declensions-of-dark-water",
     num: "III",
     title: "Declensions of Dark Water",
-    subtitle: "A Folk Horror of Language and the Sea",
+    subtitle: "A folk horror of language and the sea",
     positioningLine: "In a village that survives by refusing to name the sea, a misdeclension can summon a storm.",
     genre: "Literary Folk Horror / Linguistics",
     coverImage: "/covers/DeclensionsEpubCover.png",
+    leanRecord: true,
+    blurb: "A Cambridge linguist records a dying dialect in Brynjavík. A misdeclension can call a storm. An unfinished sentence can crack the coast.",
+    publicationLine: "ISBN 979-8245377353 · hardcover, 288 pp · FORMÆTRIX, 2026",
+    recordLine: "Record III · coastal horror / linguistics",
     shortDescription: "A Cambridge linguist arrives in the isolated Icelandic village of Brynjavík to document a disappearing dialect — and finds a grammar of avoidance in which errors carry physical consequences, and the sea listens not to meaning but to form.",
     expandedSynopsis: "When linguist Rowan Hale comes to Brynjavík to record a dying dialect, he finds a language governed by avoidance, silence, and restraint: words are weighed, sentences are left unfinished, and certain nouns are never spoken aloud. As he documents funeral rites, coastal repairs, and everyday speech, a pattern emerges — grammatical errors coincide with physical consequences. Storms arrive after misdeclensions. Buildings fail where sentences fracture. The sea listens not to meaning, but to form. A literary folk horror novel about language as infrastructure and grief as syntax, and what happens when grammar stops describing the world and begins to enforce it.",
     thematicKeywords: [
@@ -319,26 +322,9 @@ export const bookPages = [
     formats: [
       { key: "ISBN", value: "979-8245377353" },
       { key: "FORMAT", value: "Hardcover, 288pp" },
-      { key: "IDENTIFIER", value: "EV-DDW-03" },
-      { key: "YEAR", value: "2021" }
+      { key: "IDENTIFIER", value: "EV-DDW-03" }
     ],
     status: "AVAILABLE",
-    metadataLabels: {
-      "Reference Code": "EV-DDW-03",
-      "Classification": "Quarantined",
-      "Custodial Entity": "Formætrix Imprint",
-      "Retrieval Confidence": "Unstable",
-      "Contagion Risk": "High",
-      "Dialect": "Vikamál"
-    },
-    metadataValues: {
-      "Reference Code": "14-GAMMA",
-      "Classification": "LEVEL 3",
-      "Custodial Entity": "LINGUISTIC DIV.",
-      "Retrieval Confidence": "41.2%",
-      "Contagion Risk": "87.5%",
-      "Dialect": "DECAYING"
-    },
     styleClass: "book-linguistic",
     nextBook: { id: "terms-of-unbeing", title: "Terms of Unbeing" },
     prevBook: { id: "what-survives-is-proof", title: "What Survives Is Proof" }
@@ -384,8 +370,7 @@ export const bookPages = [
     formats: [
       { key: "KINDLE", value: "ASIN: B09X8Y7Z6W" },
       { key: "PAPERBACK", value: "ISBN: 9798196275180" },
-      { key: "IDENTIFIER", value: "EV-TOU-04" },
-      { key: "YEAR", value: "2022" }
+      { key: "IDENTIFIER", value: "EV-TOU-04" }
     ],
     status: "AVAILABLE",
     metadataLabels: {
@@ -467,7 +452,7 @@ export const bookPages = [
       "Retrieval Confidence": "Retrieval Confidence",
       "Sterilization Level": "Sterilization Level",
       "Contagion Vector": "Contagion Vector",
-      "Incident Date": "Incident Date"
+      "Setting": "Setting"
     },
     metadataValues: {
       "Reference Code": "31-EPSILON",
@@ -476,7 +461,7 @@ export const bookPages = [
       "Retrieval Confidence": "68.9%",
       "Sterilization Level": "MAXIMUM",
       "Contagion Vector": "ACOUSTIC",
-      "Incident Date": "SUMMER 1994"
+      "Setting": "SUMMER 1994"
     },
     styleClass: "book-specimen",
     nextBook: { id: "the-quiet-metric", title: "The Quiet Metric" },
@@ -533,8 +518,7 @@ export const bookPages = [
     formats: [
       { key: "ISBN", value: "9798197296160" },
       { key: "FORMAT", value: "Paperback, 192pp" },
-      { key: "IDENTIFIER", value: "EV-TQM-06" },
-      { key: "YEAR", value: "2025" }
+      { key: "IDENTIFIER", value: "EV-TQM-06" }
     ],
     status: "AVAILABLE",
     metadataLabels: {

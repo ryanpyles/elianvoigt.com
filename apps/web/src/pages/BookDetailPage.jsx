@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Header from '@/components/Header.jsx';
 import RetrievalTerminal from '@/components/RetrievalTerminal.jsx';
 import { bookPages } from '@/data/catalogueData.js';
+import { buyLinks, excerptPages } from '@/data/siteContent.js';
 
 const FRAGMENT_LABELS = {
   'book-broadcast': 'Broadcast Fragments',
@@ -13,6 +14,84 @@ const FRAGMENT_LABELS = {
   'book-specimen': 'Field Tags',
   'book-quiet': 'Observations',
 };
+
+
+function LeanRecord({ book }) {
+  const l = buyLinks[book.id] || {};
+  const formats = [['Paperback', l.paperback], ['Kindle', l.kindle], ['Hardcover', l.hardcover]].filter(([, url]) => url);
+
+  return (
+    <div className={`voigt-brand archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
+      <Helmet>
+        <title>{`${book.title} — Elian Voigt`}</title>
+        <meta name="description" content={book.blurb} />
+      </Helmet>
+
+      <Header />
+
+      <main className="main-content flex-1 pt-24 pb-32" style={{ paddingLeft: 0 }}>
+        <div className="catalogue-wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bk-accent-bar" aria-hidden="true"></div>
+
+          <nav className="book-breadcrumb mb-12 font-typewriter text-xs uppercase tracking-widest opacity-60">
+            <Link to="/publishing-catalogue" className="hover:opacity-100 transition-opacity">Catalogue</Link>
+            <span className="mx-2">/</span>
+            <span className="current opacity-100">{book.title}</span>
+          </nav>
+
+          <header className="grid grid-cols-1 gap-12 md:grid-cols-[280px_1fr] md:gap-16 mb-20">
+            <img
+              src={book.coverImage}
+              alt={`Cover art for ${book.title}`}
+              className="w-full max-w-[280px] aspect-[9/13.5] object-cover border border-[hsla(var(--foreground)/0.15)] shadow-lg rounded-sm"
+            />
+            <div className="flex flex-col justify-center">
+              <h1 className="font-serif font-medium leading-tight mb-3" style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', letterSpacing: '-0.02em' }}>
+                {book.title}
+              </h1>
+              <p className="font-serif italic text-xl md:text-2xl opacity-70 mb-8">{book.subtitle}</p>
+              <p className="font-prose text-xl md:text-2xl leading-relaxed max-w-2xl mb-10">{book.blurb}</p>
+              <div className="flex flex-wrap items-center gap-3 mb-8">
+                {formats.map(([label, url]) => (
+                  <a key={label} href={url} target="_blank" rel="noopener noreferrer" className="ev-buy">{label}</a>
+                ))}
+                <Link to={excerptPages[book.id] || '#'} className="ev-buy ev-buy--ghost">Read an excerpt</Link>
+              </div>
+              <p className="font-typewriter text-xs tracking-wider opacity-60">{book.publicationLine}</p>
+            </div>
+          </header>
+
+          <section className="max-w-prose mb-16">
+            <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-4 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Synopsis</div>
+            <p className="font-serif text-base md:text-lg leading-relaxed opacity-85">{book.expandedSynopsis}</p>
+          </section>
+
+          <section className="mb-24">
+            <div className="section-label text-[0.65rem] font-typewriter uppercase tracking-widest opacity-50 mb-6 border-b border-[hsla(var(--foreground)/0.1)] pb-2">Comparable titles</div>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              {book.comparableTitles.map((item) => (
+                <div key={item.title} className="space-y-1">
+                  <div className="font-serif text-base">
+                    <span className="italic font-medium">{item.title}</span>
+                    <span className="opacity-60 text-sm"> by {item.author}</span>
+                  </div>
+                  <div className="text-sm opacity-70 leading-relaxed">{item.comparison}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <footer className="book-footer mt-24 pt-8 border-t border-[hsla(var(--foreground)/0.15)] text-center opacity-50 font-typewriter text-[0.65rem] uppercase tracking-[0.2em] space-y-3">
+            <p>{book.recordLine}</p>
+            <p>
+              <Link to="/brynjavik" className="hover:opacity-100 transition-opacity underline underline-offset-4">Brynjavík field station archive →</Link>
+            </p>
+          </footer>
+        </div>
+      </main>
+    </div>
+  );
+}
 
 export default function BookDetailPage() {
   const { bookId } = useParams();
@@ -34,6 +113,8 @@ export default function BookDetailPage() {
       </div>
     );
   }
+
+  if (book.leanRecord) return <LeanRecord book={book} />;
 
   return (
     <div className={`voigt-brand archive-page flex min-h-screen book-detail ${book.styleClass || ''}`}>
@@ -89,6 +170,7 @@ export default function BookDetailPage() {
             {book.id === 'terms-of-unbeing' && (
               <div className="mb-12">
                 <Link to="/books/terms-of-unbeing" className="ghost-button">Enter the full dossier →</Link>
+                <Link to="/faust-luxury-residences" className="ghost-button ml-4">Faust Luxury Residences →</Link>
               </div>
             )}
           </header>

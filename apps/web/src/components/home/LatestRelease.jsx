@@ -2,29 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { publishedWorks } from '@/data/catalogueData.js';
-import { buyLinks, links, latestReleaseId, localCover, featuredCover, dedicatedPages } from '@/data/siteContent.js';
+import { buyLinks, links, latestReleaseId, localCover, featuredCover, dedicatedPages, excerptPages } from '@/data/siteContent.js';
 
-function BuyRow({ id }) {
+function BuyRow({ id, children }) {
   const l = buyLinks[id] || {};
   const formats = [
-    ['Hardcover', l.hardcover],
     ['Paperback', l.paperback],
     ['Kindle', l.kindle],
+    ['Hardcover', l.hardcover],
   ].filter(([, url]) => url);
 
-  if (formats.length === 0) {
-    return (
-      <p className="ev-catalog-no">Not yet circulating — listing forthcoming.</p>
-    );
-  }
-
   return (
-    <div className="flex flex-wrap gap-3">
+    <div className="flex flex-wrap items-center gap-3">
       {formats.map(([label, url]) => (
         <a key={label} href={url} target="_blank" rel="noopener noreferrer" className="ev-buy">
           {label}
         </a>
       ))}
+      {children}
     </div>
   );
 }
@@ -96,21 +91,20 @@ export default function LatestRelease() {
             </p>
 
             <div className="space-y-4 pt-2">
-              <BuyRow id={book.id} />
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <BuyRow id={book.id}>
                 {dedicatedPages[book.id] ? (
                   <Link to={dedicatedPages[book.id]} className="ev-buy ev-buy--ghost">
                     Enter the full dossier →
                   </Link>
                 ) : (
-                  <Link to={`/catalogue/${book.id}`} className="ev-buy ev-buy--ghost">
+                  <Link to={excerptPages[book.id] || `/catalogue/${book.id}`} className="ev-buy ev-buy--ghost">
                     Read an excerpt
                   </Link>
                 )}
-                <a href={reviewHref} className="ev-catalog-no underline-offset-4 hover:text-foreground hover:underline">
-                  Request a review copy →
-                </a>
-              </div>
+              </BuyRow>
+              <a href={reviewHref} className="ev-catalog-no block underline-offset-4 hover:text-foreground hover:underline">
+                Request a review copy →
+              </a>
             </div>
           </div>
         </div>

@@ -92,8 +92,7 @@ function AboutPage() {
 
                 <div className="mt-16 pt-10 border-t border-border/20">
                   <p className="ev-catalog-no italic mb-5">
-                    Elian Voigt is a literary identity within FORMÆTRIX Imprint, an independent press
-                    where design is not decoration but argument.
+                    Elian Voigt is the name the fiction is published under. The imprint is FORMÆTRIX.
                   </p>
                   <a
                     href="https://formatrix.press"
