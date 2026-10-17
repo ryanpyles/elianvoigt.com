@@ -18,7 +18,7 @@ export const liminal = {
   price: null, // number or string, e.g. '17.99'; USD
   buyUrl: null, // preorder / buy link; the primary button only appears when this is set
   availability: 'PreOrder', // schema.org ItemAvailability: 'PreOrder' | 'InStock'
-  cover: null, // site path, e.g. '/covers/liminal-18-17.png'; used for the page, Open Graph and JSON-LD
+  cover: '/covers/liminal-18-17.jpg', // site path; used for the page, Open Graph and JSON-LD
 
   path: '/books/liminal-18-17',
   siteUrl: 'https://elianvoigt.com',
