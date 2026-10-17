@@ -1,0 +1,241 @@
+/* LIMINAL 18:17 announcement page. Scoped under .lm-page (inside .voigt-brand). */
+
+.lm-page {
+  --lm-accent: hsl(var(--ev-gold-bright));
+  --lm-gray: hsl(var(--muted-foreground));
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
+
+.lm-wrap {
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.lm-main {
+  padding-top: 8.5rem;
+  padding-bottom: 4rem;
+}
+
+/* Small-caps sans for labels and timestamps */
+.lm-label {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.16em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--lm-gray);
+}
+
+/* Timestamp set between thin rules */
+.lm-stamp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  white-space: nowrap;
+}
+.lm-stamp::before,
+.lm-stamp::after {
+  content: '';
+  flex: 1 1 0;
+  height: 1px;
+  background: hsl(var(--foreground) / 0.18);
+}
+.lm-stamp > span {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-variant-caps: all-small-caps;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.16em;
+  font-size: 0.9rem;
+  color: var(--lm-gray);
+}
+
+.lm-stamp-block {
+  margin: 4.5rem 0 2.5rem;
+}
+
+/* Header */
+.lm-head {
+  text-align: center;
+}
+.lm-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(2rem, 8.5vw, 4.5rem);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  margin: 2.25rem 0 1rem;
+  overflow-wrap: anywhere;
+}
+.lm-head .lm-label {
+  margin: 0;
+  line-height: 1.8;
+}
+.lm-author {
+  font-family: var(--font-prose);
+  font-size: 1.6rem;
+  margin: 0.25rem 0 0;
+}
+
+/* Serif body */
+.lm-prose {
+  font-family: var(--font-prose);
+  font-size: 1.35rem;
+  line-height: 1.6;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lm-prose p {
+  margin: 0 0 1.35rem;
+}
+
+.lm-opening {
+  font-family: var(--font-prose);
+  font-size: clamp(1.7rem, 4.4vw, 2.7rem);
+  line-height: 1.3;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+/* Three channels: gutter only, no rules */
+.lm-channels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 3.5rem;
+  row-gap: 2rem;
+  margin: 5rem 0 0;
+}
+.lm-channel-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 0.5rem;
+}
+.lm-letter {
+  font-variant-caps: normal;
+  font-weight: 700;
+  color: var(--lm-accent);
+}
+.lm-channel p {
+  font-family: var(--font-prose);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.lm-excerpt-title {
+  margin: 0 0 1.5rem;
+}
+
+/* Details: two-column definition list */
+.lm-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 2.5rem;
+  row-gap: 0.7rem;
+  max-width: 24rem;
+  margin: 1.5rem auto 0;
+}
+.lm-details dt {
+  margin: 0;
+}
+.lm-details dd {
+  margin: 0;
+  font-family: var(--font-prose);
+  font-size: 1.2rem;
+}
+
+/* Content notes (collapsed) */
+.lm-notes {
+  max-width: 38rem;
+  margin: 3.5rem auto 0;
+}
+.lm-notes summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+}
+.lm-notes summary::-webkit-details-marker {
+  display: none;
+}
+.lm-notes summary:hover,
+.lm-notes summary:focus-visible {
+  color: hsl(var(--foreground));
+}
+.lm-notes p {
+  font-family: var(--font-prose);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--lm-gray);
+  margin: 0.75rem 0 0;
+}
+
+/* Call to action */
+.lm-cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+.lm-cta .ev-buy {
+  display: inline-flex;
+  justify-content: center;
+}
+.lm-essays {
+  display: block;
+  margin-top: 1.5rem;
+  font-family: var(--font-prose);
+  font-size: 1.15rem;
+  color: hsl(var(--foreground) / 0.85);
+  text-decoration: underline;
+  text-decoration-color: hsl(var(--foreground) / 0.3);
+  text-underline-offset: 0.25em;
+}
+.lm-essays:hover,
+.lm-essays:focus-visible {
+  text-decoration-color: var(--lm-accent);
+}
+
+.lm-colophon {
+  margin: 5rem auto 0;
+  text-align: center;
+  font-family: var(--font-prose);
+  font-size: 1rem;
+  color: var(--lm-gray);
+  max-width: 32rem;
+}
+
+.lm-cover {
+  display: block;
+  width: min(100%, 18rem);
+  height: auto;
+  margin: 3rem auto 0;
+}
+
+.lm-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .lm-main {
+    padding-top: 7rem;
+  }
+  .lm-channels {
+    grid-template-columns: 1fr;
+    margin-top: 3.5rem;
+  }
+  .lm-stamp-block {
+    margin: 3.5rem 0 2rem;
+  }
+  .lm-details {
+    column-gap: 1.5rem;
+  }
+}

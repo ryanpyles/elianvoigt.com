@@ -88,9 +88,10 @@ export const publishedWorks = [
 export const upcomingWorks = [
   {
     num: "·",
-    title: "Liminal 06:17",
-    genre: "Technological Horror / Digital Mysticism",
-    description: "Three friends build a daemon to synchronize their minds. It works. Each day the loop tightens toward 6:17, and only a dog's heartbeat holds the three of them apart.",
+    title: "Liminal 18:17",
+    href: "/books/liminal-18-17",
+    genre: "Literary Fiction",
+    description: "At 18:17, three heartbeats sync on one axis and one stops. A novel about consent after the fact.",
     status: "Forthcoming"
   },
   {

@@ -15,6 +15,7 @@ import FieldNoteDetailPage from './pages/FieldNoteDetailPage.jsx';
 import PublishingCataloguePage from './pages/PublishingCataloguePage.jsx';
 import BookDetailPage from './pages/BookDetailPage.jsx';
 import TermsOfUnbeingPage from './pages/TermsOfUnbeingPage.jsx';
+import LiminalPage from './pages/LiminalPage.jsx';
 
 // Vikamal Archive System
 import VikamalArchivePage from './pages/VikamalArchivePage.jsx';
@@ -117,6 +118,7 @@ function AnimatedRoutes() {
         {/* General Pages */}
         <Route path="/publishing-catalogue" element={<PublishingCataloguePage />} />
         <Route path="/books/terms-of-unbeing" element={<TermsOfUnbeingPage />} />
+        <Route path="/books/liminal-18-17" element={<LiminalPage />} />
         <Route path="/terms-of-unbeing" element={<TermsOfUnbeingPage />} />
         <Route path="/catalogue/:bookId" element={<BookDetailPage />} />
         <Route path="/about" element={<AboutPage />} />

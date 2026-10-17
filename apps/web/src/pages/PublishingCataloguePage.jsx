@@ -117,7 +117,7 @@ export default function PublishingCataloguePage() {
               >
                 <div className="catalogue-entry-top">
                   <span className="catalogue-entry-num">{work.num}</span>
-                  <h2 className="catalogue-entry-title">{work.title}</h2>
+                  <h2 className="catalogue-entry-title">{work.href ? <Link to={work.href} className="pointer-events-auto underline underline-offset-4">{work.title}</Link> : work.title}</h2>
                   <span className="catalogue-status upcoming">{work.status}</span>
                 </div>
                 <div className="catalogue-entry-genre">{work.genre}</div>

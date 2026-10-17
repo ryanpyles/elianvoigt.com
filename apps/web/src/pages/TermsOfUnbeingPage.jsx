@@ -511,7 +511,7 @@ export default function TermsOfUnbeingPage() {
           </ul>
           <p className="tou-eyebrow tou-brass" style={{ marginTop: '1.5rem' }}>Forthcoming</p>
           <ul>
-            <li>Liminal 06:17</li>
+            <li><Link to="/books/liminal-18-17">Liminal 18:17</Link></li>
             <li>Babel Threshold: Palimpsest of Tongues</li>
           </ul>
         </div>
