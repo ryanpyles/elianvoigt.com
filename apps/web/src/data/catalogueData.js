@@ -18,8 +18,8 @@ export const publishedWorks = [
     num: "II",
     title: "What Survives Is Proof",
     genre: "Archival Fiction / Memory Studies",
-    description: "When Evan Hale dies in his sleep, his widow Nora follows his cryptic \"Before 40\" list into a medical foundation's record of erased patients — and a second, handwritten ledger built to restore the names it took.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/c0f73239c59da890e0c6050218ceb4ee.png",
+    description: "After her physician husband dies unexpectedly, Nora Halloran discovers a handwritten list bearing another person's initials. Her search for the truth reveals a hidden relationship, missing medical records, and a powerful hospital foundation determined to discredit the dead. The final instruction on the list bears Nora's name.",
+    coverImage: "/covers/what-survives-is-proof-front.jpg",
     formats: [
       { key: "ISBN", value: "9798254853268" },
       { key: "FORMAT", value: "Paperback, 204pp" },
@@ -46,8 +46,8 @@ export const publishedWorks = [
     num: "IV",
     title: "Terms of Unbeing",
     genre: "Bureaucratic Horror / Contract Law",
-    description: "A too-good-to-be-true lease lands a burned-out ex-corpsman at the Faust, where the contract rewrites itself as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty.",
-    coverImage: "/covers/Termscroppedcover.png",
+    description: "Desperate for affordable housing, former Navy corpsman Gideon Cross signs a lease at Faust Luxury Residences, where tenants pay rent with memories, emotions, and pieces of their identity. As the building slowly consumes him, Gideon and his dog Arya confront an infernal bureaucracy whose contracts cannot be broken—unless there is no one left to bind.",
+    coverImage: "/covers/terms-of-unbeing-front.webp",
     formats: [
       { key: "ISBN", value: "9798196275180" },
       { key: "FORMAT", value: "Paperback, 176pp" },
@@ -74,8 +74,8 @@ export const publishedWorks = [
     num: "VI",
     title: "The Quiet Metric",
     genre: "Psychological Literary Fiction",
-    description: "A narrator who has always survived by reading other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — until being perfectly understood becomes a cage.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/5f75ce2eeb8b796747d89fd1f2b1b3d3.png",
+    description: "A meticulous, emotionally composed man believes he has perfected the art of understanding his partner. Through careful observation, therapeutic language, and increasingly elaborate systems of measurement, he begins to regulate every aspect of their relationship. As one man gradually loses his sense of self, the other documents the remarkable progress they are making.",
+    coverImage: "/covers/the-quiet-metric-front.jpg",
     formats: [
       { key: "ISBN", value: "9798197296160" },
       { key: "FORMAT", value: "Paperback, 192pp" },
@@ -196,10 +196,10 @@ export const bookPages = [
     title: "What Survives Is Proof",
     subtitle: "Documentation of an Absence",
     genre: "Archival Fiction / Memory Studies",
-    positioningLine: "The paperwork knew before anyone else did.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/c0f73239c59da890e0c6050218ceb4ee.png",
-    shortDescription: "When Evan Hale dies in his sleep, his widow Nora finds the cryptic \"Before 40\" list he left behind — and a trail of receipts, initials, and a second handwritten ledger that restores the names a medical foundation worked to erase.",
-    expandedSynopsis: "Nora Hale wakes to the sound of nothing: her methodical husband Evan, still warm, already gone. What he leaves is not grief in the ordinary sense but a trail — receipts that don't align, a list written for a future he won't see, initials carved where no one should have been waiting. Following it, Nora uncovers a system of denials inside a medical foundation, patients reduced to numbers and then erased, and a second, handwritten ledger where someone insisted on restoring the names that had been taken. Evan was building a relay before he died, and Nora is now part of it. A quiet, methodical unraveling of marriage, memory, and the architecture of truth — where evidence doesn't announce itself, and the most dangerous thing isn't what's hidden but what's been carefully left behind.",
+    positioningLine: "The official record says one thing. The receipts say another.",
+    coverImage: "/covers/what-survives-is-proof-front.jpg",
+    shortDescription: "After her physician husband dies unexpectedly, Nora Halloran discovers a handwritten list bearing another person's initials. Her search for the truth reveals a hidden relationship, missing medical records, and a powerful hospital foundation determined to discredit the dead. The final instruction on the list bears Nora's name.",
+    expandedSynopsis: "At 6:42 a.m., Dr. Evan Halloran is pronounced dead.\n\nHis wife, Nora, knows exactly how long she tried to save him. She knows what the paramedics said, where his hospital badge lay on the nightstand, and how the house sounded after they carried him away.\n\nWhat she doesn't know is why her husband left behind a handwritten list of places they had never visited together.\n\nOr why someone else's initials appear beside almost every entry.\n\nA receipt from a late-night diner. Unexplained bank withdrawals. A lipstick purchase. A photograph of a stranger at Evan's funeral. Each discovery points toward a private life Nora never suspected.\n\nBut the deeper she investigates, the less the evidence resembles an ordinary affair.\n\nHidden among Evan's papers is a record of patients denied medical care, financial transactions that do not reconcile, and a charitable foundation with an extraordinary interest in controlling what survives on paper.\n\nAs Nora retraces Evan's last unfinished plans, the hospital begins investigating his conduct. Witnesses become difficult to reach. Records disappear. And the people who know what happened are increasingly reluctant to speak.\n\nThe last item on Evan's list is addressed to her.\n\nTell Nora the truth.\n\nWhat Survives Is Proof is a literary suspense novel in which a husband's secret life becomes the evidence of a much larger betrayal. Told through a widow's intimate investigation, it follows the receipts, medical files, private correspondence, and vanished names that institutions leave behind when they expect nobody to look.",
     thematicKeywords: [
       "Grief", "Evidence", "The \"Before 40\" List", "A Medical Foundation",
       "Erased Patients", "The Second Ledger", "Marriage and Memory", "Institutional Denial",
@@ -228,18 +228,21 @@ export const bookPages = [
       }
     ],
     promotionalQuotes: [
-      { quote: "What Evan leaves behind is not grief in any ordinary sense. It's a trail.", purpose: "Premise" },
-      { quote: "Evidence doesn't announce itself.", purpose: "Theme" },
-      { quote: "A second ledger, handwritten, where someone insisted on restoring names.", purpose: "Atmosphere" },
-      { quote: "He was building something before he died. Not a case. Not a confession. A relay.", purpose: "Premise" },
-      { quote: "The most dangerous thing isn't what's hidden, but what's been carefully left behind.", purpose: "Line" }
+      { quote: "The absence shapes the space between us.", purpose: "Grief · p. 1" },
+      { quote: "L.E.—not me, never me.", purpose: "Discovery · p. 22" },
+      { quote: "People in love—always want to outlast the weather, don’t they?", purpose: "Love · p. 31" },
+      { quote: "The heart is romantic. The numbers under it are not.", purpose: "The Investigation · p. 80" },
+      { quote: "If they wanted us to stop, they chose the wrong widow.", purpose: "Defiance · p. 84" },
+      { quote: "Just not the story all at once.", purpose: "Truth · p. 96" },
+      { quote: "He only told the truth on paper.", purpose: "Secrets · p. 209" },
+      { quote: "Make a life not made of receipts.", purpose: "The Aftermath · p. 210" },
+      { quote: "It should feel better to have an empty list. Instead, it’s just honest. Harder, actually.", purpose: "Final page · p. 213" }
     ],
     taglines: [
-      "What survives is proof.",
-      "Before 40.",
-      "Evidence doesn't announce itself.",
-      "Some names were meant to be restored.",
-      "The paperwork knew first."
+      "The official record says one thing. The receipts say another.",
+      "He kept his secrets in plain sight. His evidence, everywhere else.",
+      "A dead man’s unfinished list. A widow who was never meant to find it.",
+      "There were ten things left to do. The last one was telling her."
     ],
     formats: [
       { key: "KINDLE", value: "ASIN: B0C9X8Y7Z6" },
@@ -335,11 +338,11 @@ export const bookPages = [
     num: "IV",
     title: "Terms of Unbeing",
     subtitle: "A Lease Against the Self",
-    positioningLine: "A too-good-to-be-true lease at the Faust, where the rent is collected in memory and loyalty.",
+    positioningLine: "The rent is affordable. The cost is existential.",
     genre: "Bureaucratic Horror / Contract Law",
-    coverImage: "/covers/Termscroppedcover.png",
-    shortDescription: "A below-market lease lands burned-out ex-corpsman Gideon Cross at the Faust, where the contract mutates as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty. His only anchor is Arya, a dog who remembers him even when he can't.",
-    expandedSynopsis: "When a too-good-to-be-true rental lands Gideon Cross a residence at the Faust, the quiet is the first thing to go. The concierge smiles in charcoal and silk, the lease mutates while he signs, and the building's HOA convenes a tribunal for \"Unauthorized Spiritual Leakage.\" Gideon doesn't only lose possessions — rooms empty, names blur, and the invoices arrive written in the color of memory. His anchor is Arya, a dog who remembers him even when he can't. When Management explains \"Existential Equity\" — a monthly tax on the weight of sorrow and the reach of loyalty — his fight becomes a ledger: barter identity, trade memory, or be erased. A propulsive, unnerving novel about leases that outlive their signatures, and a man learning what he will die to keep.",
+    coverImage: "/covers/terms-of-unbeing-front.webp",
+    shortDescription: "Desperate for affordable housing, former Navy corpsman Gideon Cross signs a lease at Faust Luxury Residences, where tenants pay rent with memories, emotions, and pieces of their identity. As the building slowly consumes him, Gideon and his dog Arya confront an infernal bureaucracy whose contracts cannot be broken—unless there is no one left to bind.",
+    expandedSynopsis: "Welcome to Faust Luxury Residences. Your existence is our most valuable amenity.\n\nGideon Cross needs an apartment.\n\nA former Navy corpsman with an unresolved benefits claim, overdue rent, and a lifetime of memories he'd rather forget, Gideon has reached the point where an impossibly affordable luxury rental seems less suspicious than necessary.\n\nThe listing promises everything: impeccable interiors, exceptional service, complete soundproofing, and rent far below market value.\n\nAll he has to do is sign.\n\nBut at Faust Luxury Residences, the lease is a living document. Its clauses rewrite themselves. Consent can be applied retroactively. And the landlord, the unnervingly courteous Azrael Faust, has a peculiar definition of what constitutes payment.\n\nEvery day at 6:17 p.m., the building collects a portion of its tenants' Existential Equity.\n\nA forgotten birthday. A diminished attachment. The memory of someone once loved. A little less anger, a little less joy, a name that no longer sounds familiar.\n\nThe building takes everything eventually.\n\nAs Gideon navigates an infernal bureaucracy of housing tribunals, identity optimization programs, impossible corridors, and tenants who have forgotten what freedom felt like, he begins to uncover the machinery beneath the marble.\n\nHis only reliable witness is Arya, the dog who recognizes him even when he can no longer recognize himself.\n\nBut loyalty has a price too.\n\nAnd the building has begun calculating hers.\n\nTerms of Unbeing, the opening novel in the Faust Luxury Residences world, combines supernatural horror, legal absurdity, and razor-edged dark humor in a nightmare where every memory is collateral and every escape requires a signature.\n\nPlease read the terms carefully. Management reserves the right to revise them after you've finished.",
     thematicKeywords: [
       "The Faust Residences", "A Mutating Lease", "Existential Equity",
       "Identity as Currency", "Memory and Loyalty", "Foreclosure of the Self",
@@ -357,16 +360,27 @@ export const bookPages = [
       { title: "The Master and Margarita", author: "Mikhail Bulgakov", comparison: "A devil's-bargain bureaucracy that collects on the soul." }
     ],
     promotionalQuotes: [
-      { quote: "Each choice has a fee; each refusal risks foreclosure of the self.", purpose: "Premise" },
-      { quote: "The lease mutates while he signs.", purpose: "Atmosphere" },
-      { quote: "A monthly tax on the weight of sorrow and the reach of loyalty.", purpose: "Theme" },
-      { quote: "Arya remembers him even when he can't.", purpose: "Line" }
+      { quote: "Marketing is just the terms with the lights turned on.", purpose: "The Fine Print · p. 9" },
+      { quote: "The comfortable have nothing to pay with.", purpose: "The Tenants · p. 9" },
+      { quote: "The unit does not change. The tenant does.", purpose: "The Property · p. 11" },
+      { quote: "The first payment is never the money.", purpose: "The First Transaction · p. 21" },
+      { quote: "I’ve always suspected it’s paperwork that has stopped pretending to help.", purpose: "Bureaucratic Hell · p. 28" },
+      { quote: "We do not forgive debt. We rename it.", purpose: "The Master Lease · p. 67" },
+      { quote: "Maintenance is just another word for resistance.", purpose: "Resistance · p. 120" },
+      { quote: "You cannot foreclose on an empty account.", purpose: "The Final Account · p. 180" },
+      { quote: "Reading is the exit.", purpose: "The Way Out · p. 182" },
+      { quote: "“You remember me,” I say.", purpose: "Arya · p. 184" },
+      { quote: "The Lease attempted to revise this finding. The revision failed to attach.", purpose: "Final Administrative Notice · p. 187" }
     ],
     taglines: [
-      "Each refusal risks foreclosure of the self.",
-      "The lease outlives its signature.",
-      "Existential Equity is due.",
-      "Read the fine print."
+      "The rent is affordable. The cost is existential.",
+      "A luxury apartment. An eternal lease. A landlord with excellent lawyers.",
+      "You can check out whenever you like. Vacating is subject to approval.",
+      "At 6:17, the building collects.",
+      "No one reads the fine print until the fine print starts reading them.",
+      "You are not the tenant. You are the security deposit.",
+      "Your memories are transferable. Your consent is retroactive.",
+      "All leases are final. Especially yours."
     ],
     formats: [
       { key: "KINDLE", value: "ASIN: B09X8Y7Z6W" },
@@ -474,10 +488,10 @@ export const bookPages = [
     title: "The Quiet Metric",
     subtitle: "An Anatomy of Attention",
     genre: "Psychological Literary Fiction",
-    positioningLine: "A narrator who survives by reading other people meets a man whose attention matches their own.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/5f75ce2eeb8b796747d89fd1f2b1b3d3.png",
-    shortDescription: "A narrator who has always survived by interpreting other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — a cool, exact study of how understanding becomes a form of ownership.",
-    expandedSynopsis: "The narrator of The Quiet Metric has always lived by interpretation — entering a room before deciding how to be seen, reading bodies the way other people read print. At a bookstore reading they notice a man who listens the way they do, and recognition arrives without the usual labor. What follows is an intimacy built almost entirely of attention: commitment, calibration, agreement, revision. Told in cool, precise prose, the novel measures how being perfectly understood can become a cage — and how the one doing the understanding quietly revises what they claim to love. A literary novel about attention as the rarest generosity, and the most discreet form of control.",
+    positioningLine: "He never shouted. He only corrected the record.",
+    coverImage: "/covers/the-quiet-metric-front.jpg",
+    shortDescription: "A meticulous, emotionally composed man believes he has perfected the art of understanding his partner. Through careful observation, therapeutic language, and increasingly elaborate systems of measurement, he begins to regulate every aspect of their relationship. As one man gradually loses his sense of self, the other documents the remarkable progress they are making.",
+    expandedSynopsis: "There are people who hurt you by losing control.\n\nAnd there are people who never lose it.\n\nWhen two men meet after a bookstore reading, their connection seems almost improbably natural. They share an appreciation for precise language, a suspicion of easy explanations, and an understanding of how emotional intimacy can become a form of control.\n\nFor one of them, being understood so completely feels like an extraordinary kindness.\n\nFor the other, understanding is a matter of observation.\n\nHe notices everything: the way his partner's hands move when anxious, the slight acceleration of his speech during disagreement, the number of seconds between a difficult question and its answer. He believes that careful attention is the purest expression of love.\n\nSoon, their relationship develops a system. Conflicts are recorded. Emotional responses are measured. Boundaries are refined. Unproductive conversations are postponed until both parties can participate rationally.\n\nIt is an extraordinarily reasonable arrangement.\n\nAnd one of them is slowly disappearing inside it.\n\nAs friends begin questioning the changes they see, the narrator becomes increasingly certain that his methods are working. The evidence is meticulously documented. Every objection can be explained. Every troubling incident has a context.\n\nWhat he cannot account for is the growing distance between the person he believes he is helping and the person that man remembers being.\n\nThe Quiet Metric is a literary psychological horror novel about coercive control, unreliable memory, and the language of care turned into an instrument of domination.\n\nThere are two versions of every relationship.\n\nOnly one of these men is keeping the official record.",
     thematicKeywords: [
       "Attention", "Recognition", "Interpretation", "Coercive Intimacy",
       "Observation", "Memory and Revision", "Control", "Reading People"
@@ -505,16 +519,24 @@ export const bookPages = [
       }
     ],
     promotionalQuotes: [
-      { quote: "Attention is the rarest and purest form of generosity.", purpose: "Epigraph — Simone Weil" },
-      { quote: "A cage went in search of a bird.", purpose: "Epigraph — Franz Kafka" },
-      { quote: "What begins as recognition becomes calibration, then revision.", purpose: "Theme" },
-      { quote: "Being perfectly understood can be a cage.", purpose: "Line" }
+      { quote: "The insistence becomes evidence.", purpose: "Memory · p. 7" },
+      { quote: "They lower the temperature of the room and call that relief.", purpose: "Control · p. 13" },
+      { quote: "He always had a category.", purpose: "The Language of Abuse · p. 28" },
+      { quote: "The unmanageable made manageable through metrics.", purpose: "Measurement · p. 53" },
+      { quote: "You’ve charted us.", purpose: "The Relationship · p. 111" },
+      { quote: "I’m scared I’ll rehearse instead of feeling.", purpose: "Loss of Self · p. 115" },
+      { quote: "I don’t recognize myself anymore.", purpose: "Erasure · p. 190" },
+      { quote: "I can’t keep explaining myself in a language where I always lose.", purpose: "The Departure · p. 204" },
+      { quote: "He would have written it differently.", purpose: "The Record · p. 256" },
+      { quote: "His would have had immediacy. Mine had precision.", purpose: "The Final Account · p. 257" },
+      { quote: "Thursday would be good. I was looking forward to it.", purpose: "Final lines · p. 258" }
     ],
     taglines: [
-      "Recognition becomes calibration.",
-      "A cage went in search of a bird.",
-      "Being understood is not the same as being safe.",
-      "Attention is the quietest form of control."
+      "He never shouted. He only corrected the record.",
+      "Nothing was wrong. He had the notes to prove it.",
+      "He called it understanding. His partner called it something else.",
+      "Every feeling had a measurement. Every objection had an explanation.",
+      "The most dangerous person in the room is the one who sounds reasonable."
     ],
     formats: [
       { key: "ISBN", value: "9798197296160" },

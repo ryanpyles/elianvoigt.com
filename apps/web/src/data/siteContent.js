@@ -83,11 +83,11 @@ export const readingOrder = [
 // fabricated press quotes. Attribution is the book itself.
 export const fragments = [
   { quote: 'The audience arrives before the event.', source: 'Feast of the Broadcast Saints' },
-  { quote: 'What Evan leaves behind is not grief in any ordinary sense. It is a trail.', source: 'What Survives Is Proof' },
+  { quote: 'The heart is romantic. The numbers under it are not.', source: 'What Survives Is Proof' },
   { quote: 'Storms arrive after misdeclensions.', source: 'Declensions of Dark Water' },
-  { quote: 'Each choice has a fee; each refusal risks foreclosure of the self.', source: 'Terms of Unbeing' },
+  { quote: 'Marketing is just the terms with the lights turned on.', source: 'Terms of Unbeing' },
   { quote: 'Memory can be archived without being kept. The data survives. The texture does not.', source: 'Summer of the Glass Bees' },
-  { quote: 'Most audiences prefer the idea of attention to its practice.', source: 'The Quiet Metric' },
+  { quote: 'They lower the temperature of the room and call that relief.', source: 'The Quiet Metric' },
 ];
 
 // Advance praise. Empty = the praise rail is hidden. Add real, attributable
