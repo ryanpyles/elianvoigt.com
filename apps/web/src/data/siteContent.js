@@ -83,7 +83,7 @@ export const readingOrder = [
 // fabricated press quotes. Attribution is the book itself.
 export const fragments = [
   { quote: 'The audience arrives before the event.', source: 'Feast of the Broadcast Saints' },
-  { quote: 'What Evan leaves behind is not grief in any ordinary sense. It is a trail.', source: 'What Survives Is Proof' },
+  { quote: 'The heart is romantic. The numbers under it are not.', source: 'What Survives Is Proof' },
   { quote: 'Storms arrive after misdeclensions.', source: 'Declensions of Dark Water' },
   { quote: 'Each choice has a fee; each refusal risks foreclosure of the self.', source: 'Terms of Unbeing' },
   { quote: 'Memory can be archived without being kept. The data survives. The texture does not.', source: 'Summer of the Glass Bees' },

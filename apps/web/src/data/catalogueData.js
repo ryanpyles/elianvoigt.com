@@ -18,7 +18,7 @@ export const publishedWorks = [
     num: "II",
     title: "What Survives Is Proof",
     genre: "Archival Fiction / Memory Studies",
-    description: "When Evan Hale dies in his sleep, his widow Nora follows his cryptic \"Before 40\" list into a medical foundation's record of erased patients — and a second, handwritten ledger built to restore the names it took.",
+    description: "After her physician husband dies unexpectedly, Nora Halloran discovers a handwritten list bearing another person's initials. Her search for the truth reveals a hidden relationship, missing medical records, and a powerful hospital foundation determined to discredit the dead. The final instruction on the list bears Nora's name.",
     coverImage: "/covers/what-survives-is-proof-front.jpg",
     formats: [
       { key: "ISBN", value: "9798254853268" },
@@ -196,10 +196,10 @@ export const bookPages = [
     title: "What Survives Is Proof",
     subtitle: "Documentation of an Absence",
     genre: "Archival Fiction / Memory Studies",
-    positioningLine: "The paperwork knew before anyone else did.",
+    positioningLine: "The official record says one thing. The receipts say another.",
     coverImage: "/covers/what-survives-is-proof-front.jpg",
-    shortDescription: "When Evan Hale dies in his sleep, his widow Nora finds the cryptic \"Before 40\" list he left behind — and a trail of receipts, initials, and a second handwritten ledger that restores the names a medical foundation worked to erase.",
-    expandedSynopsis: "Evan Halloran's last message to his wife was about milk.\n\nSix days later, Nora is still finding him everywhere. A diner receipt in a funeral home folder. A lanyard with no badge on it. A casserole in the fridge with instructions taped to the lid in her sister's handwriting. And behind the office door she cannot bring herself to open, a list in Evan's hand. Ten items. No explanation.\n\nThe hospital calls him exemplary. The hospital calls him a valued member of our family. The hospital gets the year he started wrong by two.\n\nNora is not an investigator. She is a woman who keeps receipts, and in the first weeks that is the only thing she can still do. What she assembles over the months that follow, from a man at the funeral who never signed the guestbook, from the one detective who returns a call, from a recording that should not exist, is not a secret so much as a procedure. Something Evan was doing carefully, for a long time, with people whose names she is only beginning to learn.\n\nProving it will take everything she has left. It will also cost her the version of him she would rather keep.\n\nWhat Survives Is Proof is a quiet, exacting novel about a widow who treats her grief the way she was taught to treat everything else: as a problem of evidence. It is a book about what the dead owe us, what we are willing to verify, and the particular loneliness of being the last person who still wants an answer.",
+    shortDescription: "After her physician husband dies unexpectedly, Nora Halloran discovers a handwritten list bearing another person's initials. Her search for the truth reveals a hidden relationship, missing medical records, and a powerful hospital foundation determined to discredit the dead. The final instruction on the list bears Nora's name.",
+    expandedSynopsis: "At 6:42 a.m., Dr. Evan Halloran is pronounced dead.\n\nHis wife, Nora, knows exactly how long she tried to save him. She knows what the paramedics said, where his hospital badge lay on the nightstand, and how the house sounded after they carried him away.\n\nWhat she doesn't know is why her husband left behind a handwritten list of places they had never visited together.\n\nOr why someone else's initials appear beside almost every entry.\n\nA receipt from a late-night diner. Unexplained bank withdrawals. A lipstick purchase. A photograph of a stranger at Evan's funeral. Each discovery points toward a private life Nora never suspected.\n\nBut the deeper she investigates, the less the evidence resembles an ordinary affair.\n\nHidden among Evan's papers is a record of patients denied medical care, financial transactions that do not reconcile, and a charitable foundation with an extraordinary interest in controlling what survives on paper.\n\nAs Nora retraces Evan's last unfinished plans, the hospital begins investigating his conduct. Witnesses become difficult to reach. Records disappear. And the people who know what happened are increasingly reluctant to speak.\n\nThe last item on Evan's list is addressed to her.\n\nTell Nora the truth.\n\nWhat Survives Is Proof is a literary suspense novel in which a husband's secret life becomes the evidence of a much larger betrayal. Told through a widow's intimate investigation, it follows the receipts, medical files, private correspondence, and vanished names that institutions leave behind when they expect nobody to look.",
     thematicKeywords: [
       "Grief", "Evidence", "The \"Before 40\" List", "A Medical Foundation",
       "Erased Patients", "The Second Ledger", "Marriage and Memory", "Institutional Denial",
@@ -228,18 +228,21 @@ export const bookPages = [
       }
     ],
     promotionalQuotes: [
-      { quote: "What Evan leaves behind is not grief in any ordinary sense. It's a trail.", purpose: "Premise" },
-      { quote: "Evidence doesn't announce itself.", purpose: "Theme" },
-      { quote: "A second ledger, handwritten, where someone insisted on restoring names.", purpose: "Atmosphere" },
-      { quote: "He was building something before he died. Not a case. Not a confession. A relay.", purpose: "Premise" },
-      { quote: "The most dangerous thing isn't what's hidden, but what's been carefully left behind.", purpose: "Line" }
+      { quote: "The absence shapes the space between us.", purpose: "Grief · p. 1" },
+      { quote: "L.E.—not me, never me.", purpose: "Discovery · p. 22" },
+      { quote: "People in love—always want to outlast the weather, don’t they?", purpose: "Love · p. 31" },
+      { quote: "The heart is romantic. The numbers under it are not.", purpose: "The Investigation · p. 80" },
+      { quote: "If they wanted us to stop, they chose the wrong widow.", purpose: "Defiance · p. 84" },
+      { quote: "Just not the story all at once.", purpose: "Truth · p. 96" },
+      { quote: "He only told the truth on paper.", purpose: "Secrets · p. 209" },
+      { quote: "Make a life not made of receipts.", purpose: "The Aftermath · p. 210" },
+      { quote: "It should feel better to have an empty list. Instead, it’s just honest. Harder, actually.", purpose: "Final page · p. 213" }
     ],
     taglines: [
-      "What survives is proof.",
-      "Before 40.",
-      "Evidence doesn't announce itself.",
-      "Some names were meant to be restored.",
-      "The paperwork knew first."
+      "The official record says one thing. The receipts say another.",
+      "He kept his secrets in plain sight. His evidence, everywhere else.",
+      "A dead man’s unfinished list. A widow who was never meant to find it.",
+      "There were ten things left to do. The last one was telling her."
     ],
     formats: [
       { key: "KINDLE", value: "ASIN: B0C9X8Y7Z6" },
