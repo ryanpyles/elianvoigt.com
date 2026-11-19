@@ -74,7 +74,7 @@ export const publishedWorks = [
     num: "VI",
     title: "The Quiet Metric",
     genre: "Psychological Literary Fiction",
-    description: "A narrator who has always survived by reading other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — until being perfectly understood becomes a cage.",
+    description: "A meticulous, emotionally composed man believes he has perfected the art of understanding his partner. Through careful observation, therapeutic language, and increasingly elaborate systems of measurement, he begins to regulate every aspect of their relationship. As one man gradually loses his sense of self, the other documents the remarkable progress they are making.",
     coverImage: "/covers/the-quiet-metric-front.jpg",
     formats: [
       { key: "ISBN", value: "9798197296160" },
@@ -477,10 +477,10 @@ export const bookPages = [
     title: "The Quiet Metric",
     subtitle: "An Anatomy of Attention",
     genre: "Psychological Literary Fiction",
-    positioningLine: "A narrator who survives by reading other people meets a man whose attention matches their own.",
+    positioningLine: "He never shouted. He only corrected the record.",
     coverImage: "/covers/the-quiet-metric-front.jpg",
-    shortDescription: "A narrator who has always survived by interpreting other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — a cool, exact study of how understanding becomes a form of ownership.",
-    expandedSynopsis: "The narrator of The Quiet Metric has always lived by interpretation — entering a room before deciding how to be seen, reading bodies the way other people read print. At a bookstore reading they notice a man who listens the way they do, and recognition arrives without the usual labor. What follows is an intimacy built almost entirely of attention: commitment, calibration, agreement, revision. Told in cool, precise prose, the novel measures how being perfectly understood can become a cage — and how the one doing the understanding quietly revises what they claim to love. A literary novel about attention as the rarest generosity, and the most discreet form of control.",
+    shortDescription: "A meticulous, emotionally composed man believes he has perfected the art of understanding his partner. Through careful observation, therapeutic language, and increasingly elaborate systems of measurement, he begins to regulate every aspect of their relationship. As one man gradually loses his sense of self, the other documents the remarkable progress they are making.",
+    expandedSynopsis: "There are people who hurt you by losing control.\n\nAnd there are people who never lose it.\n\nWhen two men meet after a bookstore reading, their connection seems almost improbably natural. They share an appreciation for precise language, a suspicion of easy explanations, and an understanding of how emotional intimacy can become a form of control.\n\nFor one of them, being understood so completely feels like an extraordinary kindness.\n\nFor the other, understanding is a matter of observation.\n\nHe notices everything: the way his partner's hands move when anxious, the slight acceleration of his speech during disagreement, the number of seconds between a difficult question and its answer. He believes that careful attention is the purest expression of love.\n\nSoon, their relationship develops a system. Conflicts are recorded. Emotional responses are measured. Boundaries are refined. Unproductive conversations are postponed until both parties can participate rationally.\n\nIt is an extraordinarily reasonable arrangement.\n\nAnd one of them is slowly disappearing inside it.\n\nAs friends begin questioning the changes they see, the narrator becomes increasingly certain that his methods are working. The evidence is meticulously documented. Every objection can be explained. Every troubling incident has a context.\n\nWhat he cannot account for is the growing distance between the person he believes he is helping and the person that man remembers being.\n\nThe Quiet Metric is a literary psychological horror novel about coercive control, unreliable memory, and the language of care turned into an instrument of domination.\n\nThere are two versions of every relationship.\n\nOnly one of these men is keeping the official record.",
     thematicKeywords: [
       "Attention", "Recognition", "Interpretation", "Coercive Intimacy",
       "Observation", "Memory and Revision", "Control", "Reading People"
@@ -508,16 +508,24 @@ export const bookPages = [
       }
     ],
     promotionalQuotes: [
-      { quote: "Attention is the rarest and purest form of generosity.", purpose: "Epigraph — Simone Weil" },
-      { quote: "A cage went in search of a bird.", purpose: "Epigraph — Franz Kafka" },
-      { quote: "What begins as recognition becomes calibration, then revision.", purpose: "Theme" },
-      { quote: "Being perfectly understood can be a cage.", purpose: "Line" }
+      { quote: "The insistence becomes evidence.", purpose: "Memory · p. 7" },
+      { quote: "They lower the temperature of the room and call that relief.", purpose: "Control · p. 13" },
+      { quote: "He always had a category.", purpose: "The Language of Abuse · p. 28" },
+      { quote: "The unmanageable made manageable through metrics.", purpose: "Measurement · p. 53" },
+      { quote: "You’ve charted us.", purpose: "The Relationship · p. 111" },
+      { quote: "I’m scared I’ll rehearse instead of feeling.", purpose: "Loss of Self · p. 115" },
+      { quote: "I don’t recognize myself anymore.", purpose: "Erasure · p. 190" },
+      { quote: "I can’t keep explaining myself in a language where I always lose.", purpose: "The Departure · p. 204" },
+      { quote: "He would have written it differently.", purpose: "The Record · p. 256" },
+      { quote: "His would have had immediacy. Mine had precision.", purpose: "The Final Account · p. 257" },
+      { quote: "Thursday would be good. I was looking forward to it.", purpose: "Final lines · p. 258" }
     ],
     taglines: [
-      "Recognition becomes calibration.",
-      "A cage went in search of a bird.",
-      "Being understood is not the same as being safe.",
-      "Attention is the quietest form of control."
+      "He never shouted. He only corrected the record.",
+      "Nothing was wrong. He had the notes to prove it.",
+      "He called it understanding. His partner called it something else.",
+      "Every feeling had a measurement. Every objection had an explanation.",
+      "The most dangerous person in the room is the one who sounds reasonable."
     ],
     formats: [
       { key: "ISBN", value: "9798197296160" },
