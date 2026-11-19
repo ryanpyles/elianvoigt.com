@@ -129,7 +129,7 @@ export default function TermsOfUnbeingPage() {
           inLanguage: 'en',
           genre: ['Literary Horror', 'Supernatural Horror', 'Psychological Horror', 'Weird Fiction'],
           isPartOf: { '@type': 'CreativeWorkSeries', name: 'Faust Luxury Residences' },
-          description: 'Gideon Cross signs an impossibly affordable luxury-apartment lease that collects rent in memory, grief, identity, and emotional attachment.',
+          description: 'Desperate for affordable housing, former Navy corpsman Gideon Cross signs a lease at Faust Luxury Residences, where tenants pay rent with memories, emotions, and pieces of their identity. As the building slowly consumes him, Gideon and his dog Arya confront an infernal bureaucracy whose contracts cannot be broken—unless there is no one left to bind.',
         })}</script>
       </Helmet>
 

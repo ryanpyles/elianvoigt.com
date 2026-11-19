@@ -46,7 +46,7 @@ export const publishedWorks = [
     num: "IV",
     title: "Terms of Unbeing",
     genre: "Bureaucratic Horror / Contract Law",
-    description: "A too-good-to-be-true lease lands a burned-out ex-corpsman at the Faust, where the contract rewrites itself as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty.",
+    description: "Desperate for affordable housing, former Navy corpsman Gideon Cross signs a lease at Faust Luxury Residences, where tenants pay rent with memories, emotions, and pieces of their identity. As the building slowly consumes him, Gideon and his dog Arya confront an infernal bureaucracy whose contracts cannot be broken—unless there is no one left to bind.",
     coverImage: "/covers/terms-of-unbeing-front.webp",
     formats: [
       { key: "ISBN", value: "9798196275180" },
@@ -338,11 +338,11 @@ export const bookPages = [
     num: "IV",
     title: "Terms of Unbeing",
     subtitle: "A Lease Against the Self",
-    positioningLine: "A too-good-to-be-true lease at the Faust, where the rent is collected in memory and loyalty.",
+    positioningLine: "The rent is affordable. The cost is existential.",
     genre: "Bureaucratic Horror / Contract Law",
     coverImage: "/covers/terms-of-unbeing-front.webp",
-    shortDescription: "A below-market lease lands burned-out ex-corpsman Gideon Cross at the Faust, where the contract mutates as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty. His only anchor is Arya, a dog who remembers him even when he can't.",
-    expandedSynopsis: "When a too-good-to-be-true rental lands Gideon Cross a residence at the Faust, the quiet is the first thing to go. The concierge smiles in charcoal and silk, the lease mutates while he signs, and the building's HOA convenes a tribunal for \"Unauthorized Spiritual Leakage.\" Gideon doesn't only lose possessions — rooms empty, names blur, and the invoices arrive written in the color of memory. His anchor is Arya, a dog who remembers him even when he can't. When Management explains \"Existential Equity\" — a monthly tax on the weight of sorrow and the reach of loyalty — his fight becomes a ledger: barter identity, trade memory, or be erased. A propulsive, unnerving novel about leases that outlive their signatures, and a man learning what he will die to keep.",
+    shortDescription: "Desperate for affordable housing, former Navy corpsman Gideon Cross signs a lease at Faust Luxury Residences, where tenants pay rent with memories, emotions, and pieces of their identity. As the building slowly consumes him, Gideon and his dog Arya confront an infernal bureaucracy whose contracts cannot be broken—unless there is no one left to bind.",
+    expandedSynopsis: "Welcome to Faust Luxury Residences. Your existence is our most valuable amenity.\n\nGideon Cross needs an apartment.\n\nA former Navy corpsman with an unresolved benefits claim, overdue rent, and a lifetime of memories he'd rather forget, Gideon has reached the point where an impossibly affordable luxury rental seems less suspicious than necessary.\n\nThe listing promises everything: impeccable interiors, exceptional service, complete soundproofing, and rent far below market value.\n\nAll he has to do is sign.\n\nBut at Faust Luxury Residences, the lease is a living document. Its clauses rewrite themselves. Consent can be applied retroactively. And the landlord, the unnervingly courteous Azrael Faust, has a peculiar definition of what constitutes payment.\n\nEvery day at 6:17 p.m., the building collects a portion of its tenants' Existential Equity.\n\nA forgotten birthday. A diminished attachment. The memory of someone once loved. A little less anger, a little less joy, a name that no longer sounds familiar.\n\nThe building takes everything eventually.\n\nAs Gideon navigates an infernal bureaucracy of housing tribunals, identity optimization programs, impossible corridors, and tenants who have forgotten what freedom felt like, he begins to uncover the machinery beneath the marble.\n\nHis only reliable witness is Arya, the dog who recognizes him even when he can no longer recognize himself.\n\nBut loyalty has a price too.\n\nAnd the building has begun calculating hers.\n\nTerms of Unbeing, the opening novel in the Faust Luxury Residences world, combines supernatural horror, legal absurdity, and razor-edged dark humor in a nightmare where every memory is collateral and every escape requires a signature.\n\nPlease read the terms carefully. Management reserves the right to revise them after you've finished.",
     thematicKeywords: [
       "The Faust Residences", "A Mutating Lease", "Existential Equity",
       "Identity as Currency", "Memory and Loyalty", "Foreclosure of the Self",
@@ -360,16 +360,27 @@ export const bookPages = [
       { title: "The Master and Margarita", author: "Mikhail Bulgakov", comparison: "A devil's-bargain bureaucracy that collects on the soul." }
     ],
     promotionalQuotes: [
-      { quote: "Each choice has a fee; each refusal risks foreclosure of the self.", purpose: "Premise" },
-      { quote: "The lease mutates while he signs.", purpose: "Atmosphere" },
-      { quote: "A monthly tax on the weight of sorrow and the reach of loyalty.", purpose: "Theme" },
-      { quote: "Arya remembers him even when he can't.", purpose: "Line" }
+      { quote: "Marketing is just the terms with the lights turned on.", purpose: "The Fine Print · p. 9" },
+      { quote: "The comfortable have nothing to pay with.", purpose: "The Tenants · p. 9" },
+      { quote: "The unit does not change. The tenant does.", purpose: "The Property · p. 11" },
+      { quote: "The first payment is never the money.", purpose: "The First Transaction · p. 21" },
+      { quote: "I’ve always suspected it’s paperwork that has stopped pretending to help.", purpose: "Bureaucratic Hell · p. 28" },
+      { quote: "We do not forgive debt. We rename it.", purpose: "The Master Lease · p. 67" },
+      { quote: "Maintenance is just another word for resistance.", purpose: "Resistance · p. 120" },
+      { quote: "You cannot foreclose on an empty account.", purpose: "The Final Account · p. 180" },
+      { quote: "Reading is the exit.", purpose: "The Way Out · p. 182" },
+      { quote: "“You remember me,” I say.", purpose: "Arya · p. 184" },
+      { quote: "The Lease attempted to revise this finding. The revision failed to attach.", purpose: "Final Administrative Notice · p. 187" }
     ],
     taglines: [
-      "Each refusal risks foreclosure of the self.",
-      "The lease outlives its signature.",
-      "Existential Equity is due.",
-      "Read the fine print."
+      "The rent is affordable. The cost is existential.",
+      "A luxury apartment. An eternal lease. A landlord with excellent lawyers.",
+      "You can check out whenever you like. Vacating is subject to approval.",
+      "At 6:17, the building collects.",
+      "No one reads the fine print until the fine print starts reading them.",
+      "You are not the tenant. You are the security deposit.",
+      "Your memories are transferable. Your consent is retroactive.",
+      "All leases are final. Especially yours."
     ],
     formats: [
       { key: "KINDLE", value: "ASIN: B09X8Y7Z6W" },
