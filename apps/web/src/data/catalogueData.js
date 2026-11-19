@@ -19,7 +19,7 @@ export const publishedWorks = [
     title: "What Survives Is Proof",
     genre: "Archival Fiction / Memory Studies",
     description: "When Evan Hale dies in his sleep, his widow Nora follows his cryptic \"Before 40\" list into a medical foundation's record of erased patients — and a second, handwritten ledger built to restore the names it took.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/c0f73239c59da890e0c6050218ceb4ee.png",
+    coverImage: "/covers/what-survives-is-proof-front.jpg",
     formats: [
       { key: "ISBN", value: "9798254853268" },
       { key: "FORMAT", value: "Paperback, 204pp" },
@@ -47,7 +47,7 @@ export const publishedWorks = [
     title: "Terms of Unbeing",
     genre: "Bureaucratic Horror / Contract Law",
     description: "A too-good-to-be-true lease lands a burned-out ex-corpsman at the Faust, where the contract rewrites itself as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty.",
-    coverImage: "/covers/Termscroppedcover.png",
+    coverImage: "/covers/terms-of-unbeing-front.webp",
     formats: [
       { key: "ISBN", value: "9798196275180" },
       { key: "FORMAT", value: "Paperback, 176pp" },
@@ -197,7 +197,7 @@ export const bookPages = [
     subtitle: "Documentation of an Absence",
     genre: "Archival Fiction / Memory Studies",
     positioningLine: "The paperwork knew before anyone else did.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/c0f73239c59da890e0c6050218ceb4ee.png",
+    coverImage: "/covers/what-survives-is-proof-front.jpg",
     shortDescription: "When Evan Hale dies in his sleep, his widow Nora finds the cryptic \"Before 40\" list he left behind — and a trail of receipts, initials, and a second handwritten ledger that restores the names a medical foundation worked to erase.",
     expandedSynopsis: "Nora Hale wakes to the sound of nothing: her methodical husband Evan, still warm, already gone. What he leaves is not grief in the ordinary sense but a trail — receipts that don't align, a list written for a future he won't see, initials carved where no one should have been waiting. Following it, Nora uncovers a system of denials inside a medical foundation, patients reduced to numbers and then erased, and a second, handwritten ledger where someone insisted on restoring the names that had been taken. Evan was building a relay before he died, and Nora is now part of it. A quiet, methodical unraveling of marriage, memory, and the architecture of truth — where evidence doesn't announce itself, and the most dangerous thing isn't what's hidden but what's been carefully left behind.",
     thematicKeywords: [
@@ -337,7 +337,7 @@ export const bookPages = [
     subtitle: "A Lease Against the Self",
     positioningLine: "A too-good-to-be-true lease at the Faust, where the rent is collected in memory and loyalty.",
     genre: "Bureaucratic Horror / Contract Law",
-    coverImage: "/covers/Termscroppedcover.png",
+    coverImage: "/covers/terms-of-unbeing-front.webp",
     shortDescription: "A below-market lease lands burned-out ex-corpsman Gideon Cross at the Faust, where the contract mutates as he signs and Management bills him in \"Existential Equity\" — a monthly tax on sorrow and loyalty. His only anchor is Arya, a dog who remembers him even when he can't.",
     expandedSynopsis: "When a too-good-to-be-true rental lands Gideon Cross a residence at the Faust, the quiet is the first thing to go. The concierge smiles in charcoal and silk, the lease mutates while he signs, and the building's HOA convenes a tribunal for \"Unauthorized Spiritual Leakage.\" Gideon doesn't only lose possessions — rooms empty, names blur, and the invoices arrive written in the color of memory. His anchor is Arya, a dog who remembers him even when he can't. When Management explains \"Existential Equity\" — a monthly tax on the weight of sorrow and the reach of loyalty — his fight becomes a ledger: barter identity, trade memory, or be erased. A propulsive, unnerving novel about leases that outlive their signatures, and a man learning what he will die to keep.",
     thematicKeywords: [

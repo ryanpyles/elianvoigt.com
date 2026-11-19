@@ -9,8 +9,8 @@
 // tribunal hearing or the book's ending.
 // ---------------------------------------------------------------------------
 
-export const COVER = '/covers/Termscroppedcover.png';
-export const WRAPAROUND = '/covers/TermsofUnbeingCover_full.png';
+export const COVER = '/covers/terms-of-unbeing-front.webp';
+export const WRAPAROUND = '/covers/terms-of-unbeing-wraparound.webp';
 export const ISBN = '9798189011627';
 // Non-fabricated, functional link: an Amazon search by ISBN. Replace with the
 // direct product URL once the listing URL is known.
