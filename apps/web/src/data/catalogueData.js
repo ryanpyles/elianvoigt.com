@@ -75,7 +75,7 @@ export const publishedWorks = [
     title: "The Quiet Metric",
     genre: "Psychological Literary Fiction",
     description: "A narrator who has always survived by reading other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — until being perfectly understood becomes a cage.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/5f75ce2eeb8b796747d89fd1f2b1b3d3.png",
+    coverImage: "/covers/the-quiet-metric-front.jpg",
     formats: [
       { key: "ISBN", value: "9798197296160" },
       { key: "FORMAT", value: "Paperback, 192pp" },
@@ -199,7 +199,7 @@ export const bookPages = [
     positioningLine: "The paperwork knew before anyone else did.",
     coverImage: "/covers/what-survives-is-proof-front.jpg",
     shortDescription: "When Evan Hale dies in his sleep, his widow Nora finds the cryptic \"Before 40\" list he left behind — and a trail of receipts, initials, and a second handwritten ledger that restores the names a medical foundation worked to erase.",
-    expandedSynopsis: "Nora Hale wakes to the sound of nothing: her methodical husband Evan, still warm, already gone. What he leaves is not grief in the ordinary sense but a trail — receipts that don't align, a list written for a future he won't see, initials carved where no one should have been waiting. Following it, Nora uncovers a system of denials inside a medical foundation, patients reduced to numbers and then erased, and a second, handwritten ledger where someone insisted on restoring the names that had been taken. Evan was building a relay before he died, and Nora is now part of it. A quiet, methodical unraveling of marriage, memory, and the architecture of truth — where evidence doesn't announce itself, and the most dangerous thing isn't what's hidden but what's been carefully left behind.",
+    expandedSynopsis: "Evan Halloran's last message to his wife was about milk.\n\nSix days later, Nora is still finding him everywhere. A diner receipt in a funeral home folder. A lanyard with no badge on it. A casserole in the fridge with instructions taped to the lid in her sister's handwriting. And behind the office door she cannot bring herself to open, a list in Evan's hand. Ten items. No explanation.\n\nThe hospital calls him exemplary. The hospital calls him a valued member of our family. The hospital gets the year he started wrong by two.\n\nNora is not an investigator. She is a woman who keeps receipts, and in the first weeks that is the only thing she can still do. What she assembles over the months that follow, from a man at the funeral who never signed the guestbook, from the one detective who returns a call, from a recording that should not exist, is not a secret so much as a procedure. Something Evan was doing carefully, for a long time, with people whose names she is only beginning to learn.\n\nProving it will take everything she has left. It will also cost her the version of him she would rather keep.\n\nWhat Survives Is Proof is a quiet, exacting novel about a widow who treats her grief the way she was taught to treat everything else: as a problem of evidence. It is a book about what the dead owe us, what we are willing to verify, and the particular loneliness of being the last person who still wants an answer.",
     thematicKeywords: [
       "Grief", "Evidence", "The \"Before 40\" List", "A Medical Foundation",
       "Erased Patients", "The Second Ledger", "Marriage and Memory", "Institutional Denial",
@@ -475,7 +475,7 @@ export const bookPages = [
     subtitle: "An Anatomy of Attention",
     genre: "Psychological Literary Fiction",
     positioningLine: "A narrator who survives by reading other people meets a man whose attention matches their own.",
-    coverImage: "https://horizons-cdn.hostinger.com/382cedd2-9572-4434-8e0c-f3ad52cc678a/5f75ce2eeb8b796747d89fd1f2b1b3d3.png",
+    coverImage: "/covers/the-quiet-metric-front.jpg",
     shortDescription: "A narrator who has always survived by interpreting other people meets a man whose attention matches their own. What begins as recognition becomes calibration, then revision — a cool, exact study of how understanding becomes a form of ownership.",
     expandedSynopsis: "The narrator of The Quiet Metric has always lived by interpretation — entering a room before deciding how to be seen, reading bodies the way other people read print. At a bookstore reading they notice a man who listens the way they do, and recognition arrives without the usual labor. What follows is an intimacy built almost entirely of attention: commitment, calibration, agreement, revision. Told in cool, precise prose, the novel measures how being perfectly understood can become a cage — and how the one doing the understanding quietly revises what they claim to love. A literary novel about attention as the rarest generosity, and the most discreet form of control.",
     thematicKeywords: [
